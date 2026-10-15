@@ -1,0 +1,23 @@
+PRE-OWNED CARS - PAARL | FREE AUTOMATED BUYER DISCOVERY
+
+WHAT THIS DOES
+- index.html: Public buyer form. A buyer sends their details to your WhatsApp after tapping Send in WhatsApp.
+- dashboard.html: Public search shortcuts, automated public-search feed, local prospect tracker and CSV export.
+- collector.py: Runs Google News RSS search queries for public buyer-request phrases. Results are unverified and often irrelevant; RSS indexes news, not every Facebook/classified listing.
+- GitHub Actions: Runs the collector daily (subject to GitHub limits, outages and schedule delays).
+
+HOW TO PUBLISH FOR FREE
+1. Create a free GitHub account at https://github.com and a new PUBLIC repository called pre-owned-cars-paarl.
+2. Upload ALL contents of this ZIP, preserving the .github/workflows/discover.yml folder. Do NOT upload actual customer information or your prospect CSV.
+3. Under repository Settings > Pages, choose Deploy from a branch > main > /(root), Save.
+4. Your public buyer URL will be https://YOURUSERNAME.github.io/pre-owned-cars-paarl/
+5. In repository Actions, open Public buyer discovery and select Run workflow once to populate discoveries.json. The scheduled job is configured for 06:15 UTC daily, and may run late or be skipped on inactive repositories.
+6. Open dashboard.html locally for personal prospect notes. Its automated feed can load from the live site if you access the hosted dashboard, BUT do not enter customer personal data on a shared/public computer. Prefer local use and export CSV backups.
+7. To load the automatic feed in a LOCAL dashboard, use the hosted dashboard for browsing results only, then keep a separate local copy for private prospect tracking; browser storage does not sync between these origins.
+
+IMPORTANT
+- GitHub Pages is public. NEVER upload your customer lead list or prospect CSV to GitHub.
+- The buyer form does not automatically save leads to the dashboard. Buyers must click Send in WhatsApp; record follow-ups manually.
+- Google News RSS does not reliably return personal buyer posts. This is automated discovery of public search results, NOT a guaranteed stream of qualified buyers.
+- Only contact people through legitimate public contact channels, follow site rules, and comply with South Africa's POPIA/direct-marketing requirements. Obtain consent for marketing follow-ups.
+- No paid hosting or API key required for this version. Free services have quotas and may change.

@@ -1,0 +1,1 @@
+self.addEventListener('install',e=>e.waitUntil(caches.open('cars-paarl-v1').then(c=>c.addAll(['./index.html','./manifest.webmanifest']))));self.addEventListener('fetch',e=>{if(e.request.mode==='navigate')e.respondWith(fetch(e.request).catch(()=>caches.match('./index.html')))});
