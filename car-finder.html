@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Tell Willie what used car or bakkie you need in Paarl and the Western Cape. Send your request by WhatsApp.">
+<title>Willie Car Finder | Pre-Owned Cars - Paarl</title>
+<style>
+:root{font-family:system-ui,-apple-system,Segoe UI,sans-serif;color:#192333;background:#f3f5f9}*{box-sizing:border-box}body{margin:0}header{background:#15283e;color:white;padding:18px 5vw}header a{color:#fff;text-decoration:none;font-size:14px}main{max-width:850px;margin:34px auto;padding:0 16px}.hero{text-align:center;margin-bottom:24px}.hero h1{font-size:clamp(30px,5vw,46px);margin:8px 0}.hero p{color:#526071;line-height:1.5}.card{background:white;padding:clamp(20px,4vw,36px);border-radius:18px;box-shadow:0 8px 30px #172b4414}label{font-weight:650;display:block;margin:0 0 7px}input,select,textarea{width:100%;padding:13px;border:1px solid #c8d0da;border-radius:9px;font:inherit;background:white}input:focus,select:focus,textarea:focus{outline:2px solid #4b9cdd;outline-offset:1px}.grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.field{margin-bottom:19px}.note{font-size:13px;color:#586578;line-height:1.5}.consent{display:flex;gap:10px;align-items:flex-start;margin:10px 0 22px}.consent input{width:19px;height:19px;flex:none;margin-top:2px}button{background:#0c7c4b;color:white;border:0;border-radius:10px;padding:16px 22px;width:100%;font:inherit;font-weight:750;cursor:pointer}button:hover{background:#09683f}.small{text-align:center;color:#657083;font-size:13px;margin-top:14px}footer{text-align:center;font-size:13px;color:#677484;margin:26px 0 45px}@media(max-width:620px){.grid{grid-template-columns:1fr;gap:0}}
+</style>
+</head>
+<body>
+<header><a href="./index.html">← Pre-Owned Cars - Paarl</a></header>
+<main>
+<section class="hero"><div>🚗 PAARL • CAPE WINELANDS • WESTERN CAPE</div><h1>WILLIE CAR FINDER</h1><p>Looking for a reliable pre-owned car or bakkie? Tell me what you need and I'll help you look for the right vehicle.</p></section>
+<section class="card"><h2>Find my next car</h2><p class="note">Complete the details below, then tap the button to open WhatsApp with your enquiry ready to send. You must press Send in WhatsApp to deliver it.</p>
+<form id="finder">
+<div class="grid"><div class="field"><label for="name">Your name *</label><input id="name" name="name" autocomplete="name" maxlength="80" required placeholder="Your name"></div><div class="field"><label for="phone">Your WhatsApp number *</label><input id="phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" maxlength="25" required placeholder="e.g. 082 123 4567"></div></div>
+<div class="grid"><div class="field"><label for="type">Vehicle type *</label><select id="type" required><option value="">Select a vehicle</option><option>Bakkie</option><option>SUV</option><option>Hatchback</option><option>Sedan</option><option>7-seater</option><option>Any suitable vehicle</option></select></div><div class="field"><label for="make">Preferred make/model</label><input id="make" maxlength="100" placeholder="e.g. Toyota Hilux, Ford Ranger"></div></div>
+<div class="grid"><div class="field"><label for="budget">Maximum budget *</label><select id="budget" required><option value="">Select budget</option><option>Under R150,000</option><option>R150,000 – R250,000</option><option>R250,000 – R400,000</option><option>R400,000 – R600,000</option><option>Above R600,000</option><option>Not sure yet</option></select></div><div class="field"><label for="area">Your area *</label><select id="area" required><option value="">Select area</option><option>Paarl</option><option>Cape Town</option><option>Stellenbosch</option><option>Wellington</option><option>Somerset West</option><option>Other Western Cape</option><option>Other area</option></select></div></div>
+<div class="grid"><div class="field"><label for="finance">Payment preference</label><select id="finance"><option>Not sure yet</option><option>Vehicle finance</option><option>Cash</option></select></div><div class="field"><label for="trade">Trade-in vehicle?</label><select id="trade"><option>No</option><option>Yes</option><option>Maybe</option></select></div></div>
+<div class="field"><label for="notes">Anything else?</label><textarea id="notes" rows="3" maxlength="500" placeholder="e.g. automatic, diesel, low mileage"></textarea></div>
+<label class="consent"><input type="checkbox" id="consent" required><span>I agree to share these details with Willie through WhatsApp so he can respond to my vehicle enquiry. *</span></label>
+<button type="submit">Send my car request on WhatsApp →</button><div id="feedback" class="small" role="status" aria-live="polite"></div>
+</form></section>
+<footer>Willie • Pre-Owned Cars - Paarl • WhatsApp: 076 601 6155<br>Enquiries are sent through WhatsApp. This page does not store your details.</footer>
+</main>
+<script>
+(function(){
+const f=document.getElementById('finder');
+const val=id=>document.getElementById(id).value.trim();
+f.addEventListener('submit',function(e){e.preventDefault();if(!f.reportValidity())return;
+const message=['Hi Willie, I am looking for a pre-owned vehicle.','','Name: '+val('name'),'My WhatsApp: '+val('phone'),'Vehicle type: '+val('type'),'Preferred make/model: '+(val('make')||'Open to options'),'Budget: '+val('budget'),'Area: '+val('area'),'Payment: '+val('finance'),'Trade-in: '+val('trade'),'Additional requirements: '+(val('notes')||'None'),'','Please contact me about my vehicle enquiry.'].join('\n');
+const url='https://wa.me/27766016155?text='+encodeURIComponent(message);
+document.getElementById('feedback').textContent='WhatsApp is opening. Please press Send there to deliver your enquiry.';
+const win=window.open(url,'_blank','noopener,noreferrer');if(!win)window.location.href=url;
+});
+})();
+</script>
+</body></html>
