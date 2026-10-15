@@ -1,86 +1,119 @@
 #!/usr/bin/env python3
-"""Discover possible buyer requests from public RSS feeds. No private data collection."""
-import csv, datetime as dt, email.utils, html, os, re, urllib.parse, urllib.request
+"""Buyer Discovery 3.1: public search-feed discovery, no personal-data scraping.
+
+Uses Bing's publicly available RSS search endpoint (availability is not guaranteed)
+and optionally user-authorised RSS/Atom URLs supplied in EXTRA_RSS_FEEDS.
+Outputs an Excel-friendly CSV plus diagnostics, even when feeds fail.
+"""
+import csv
+import datetime as dt
+import email.utils
+import html
+import os
+import re
+import time
+import urllib.error
+import urllib.parse
+import urllib.request
 import xml.etree.ElementTree as ET
 from pathlib import Path
 
-OUT = Path('buyer_opportunities_v3.csv')
-FEEDS = [
-    ('Reddit South Africa cars', 'https://www.reddit.com/r/carsSouthAfrica/search.rss?q=' + urllib.parse.quote('"looking for" OR "want to buy" OR "buying"') + '&restrict_sr=1&sort=new&t=month'),
-    ('Reddit South Africa', 'https://www.reddit.com/r/southafrica/search.rss?q=' + urllib.parse.quote('"looking for a car" OR "buy a car"') + '&restrict_sr=1&sort=new&t=month'),
-    ('Reddit Cape Town', 'https://www.reddit.com/r/capetown/search.rss?q=' + urllib.parse.quote('"looking for a car" OR "buy a bakkie" OR "car wanted"') + '&restrict_sr=1&sort=new&t=month'),
+OUT = Path('buyer_opportunities_v3.csv')  # keep existing workflow compatible
+DIAG = Path('buyer_discovery_diagnostics.txt')
+FIELDS = ['found_at_utc', 'source', 'title', 'url', 'summary', 'location_match', 'intent', 'priority']
+SEARCHES = [
+    '"looking to buy" "car" "Cape Town"',
+    '"want to buy" "bakkie" "Western Cape"',
+    '"looking for a car" "Paarl"',
+    '"looking for a bakkie" "Cape Town"',
+    '"wanted to buy" "vehicle" "Stellenbosch"',
+    '"car wanted" "Western Cape"',
+    '"bakkie wanted" "Cape Town"',
 ]
-# Add only RSS/Atom URLs you are authorized to access, separated by commas.
-for n, url in enumerate(os.getenv('EXTRA_RSS_FEEDS', '').split(','), 1):
-    url = url.strip()
-    if url.startswith('https://'):
-        FEEDS.append((f'Additional feed {n}', url))
+REGIONS = ['western cape', 'cape town', 'paarl', 'stellenbosch', 'bellville',
+           'durbanville', 'somerset west', 'brackenfell', 'kuils river', 'wellington',
+           'strand', 'goodwood', 'milnerton', 'malmesbury', 'franschhoek', 'piketberg']
+BUYER = re.compile(r'\b(?:looking (?:to buy|for)|want(?:ing)? to buy|wanted to buy|in (?:the )?market for|seeking to buy|car wanted|vehicle wanted|bakkie wanted|need to buy)\b', re.I)
+VEHICLE = re.compile(r'\b(?:car|vehicle|bakkie|pickup|suv|hatchback|sedan|4x4|ford ranger|toyota hilux|vw polo)\b', re.I)
+SELLER = re.compile(r'\b(?:for sale|we sell|selling my|stock available|apply for finance|dealer special)\b', re.I)
+USER_AGENT = 'Mozilla/5.0 (compatible; BuyerDiscovery/3.1; public RSS reader)'
 
-INTENT = re.compile(r'\b(looking for|looking to buy|want to buy|wanted to buy|need to buy|planning to buy|in the market for|searching for|buying a|purchase a|car wanted|vehicle wanted|bakkie wanted)\b', re.I)
-VEHICLE = re.compile(r'\b(car|cars|vehicle|bakkie|suv|hatchback|sedan|pickup|ford ranger|hilux|polo|corolla|np200|double cab)\b', re.I)
-NEGATIVE = re.compile(r'\b(for sale|selling my|we buy cars|cash for cars|scrap cars|spares|breaking for parts|wanted: mechanic|job wanted)\b', re.I)
-WESTERN = re.compile(r'\b(western cape|cape town|paarl|stellenbosch|somerset west|franschhoek|wellington|bellville|durbanville|brackenfell|strand|parow|cape winelands)\b', re.I)
-TAG = re.compile(r'<[^>]+>')
 
-def clean(s):
-    return re.sub(r'\s+', ' ', html.unescape(TAG.sub(' ', s or ''))).strip()
+def plain(value):
+    return re.sub(r'\s+', ' ', html.unescape(re.sub(r'<[^>]*>', ' ', value or ''))).strip()
 
-def parse_date(value):
-    if not value: return None
-    try:
-        x = dt.datetime.fromisoformat(value.replace('Z', '+00:00'))
-    except ValueError:
-        try: x = email.utils.parsedate_to_datetime(value)
-        except (ValueError, TypeError): return None
-    return x.replace(tzinfo=x.tzinfo or dt.timezone.utc).astimezone(dt.timezone.utc)
 
 def entries(xml_bytes):
     root = ET.fromstring(xml_bytes)
-    if root.tag.endswith('feed'):
-        ns = {'a': 'http://www.w3.org/2005/Atom'}
-        for entry in root.findall('a:entry', ns):
-            link = next((x.get('href','') for x in entry.findall('a:link', ns) if x.get('rel','alternate') == 'alternate'), '')
-            if not link:
-                link = next((x.get('href','') for x in entry.findall('a:link', ns)), '')
-            yield (entry.findtext('a:title', '', ns), entry.findtext('a:content', '', ns) or entry.findtext('a:summary', '', ns), link, entry.findtext('a:updated', '', ns) or entry.findtext('a:published', '', ns))
-    else:
-        for entry in root.findall('.//item'):
-            yield (entry.findtext('title',''), entry.findtext('description',''), entry.findtext('link',''), entry.findtext('pubDate',''))
+    found = []
+    for item in root.findall('.//item'):
+        def get(tag):
+            node = item.find(tag)
+            return ''.join(node.itertext()).strip() if node is not None else ''
+        found.append((get('title'), get('link'), get('description')))
+    if found:
+        return found
+    ns = {'a': 'http://www.w3.org/2005/Atom'}
+    for item in root.findall('.//a:entry', ns):
+        title = item.findtext('a:title', default='', namespaces=ns)
+        summary = item.findtext('a:summary', default='', namespaces=ns)
+        link = item.find('a:link', ns)
+        url = link.attrib.get('href', '') if link is not None else ''
+        found.append((title, url, summary))
+    return found
 
-def assess(title, description, link, date, source, now):
-    text = clean(title + ' ' + description)
-    if not INTENT.search(text) or not VEHICLE.search(text) or NEGATIVE.search(clean(title)):
-        return None
-    posted = parse_date(date)
-    if not posted or posted > now + dt.timedelta(days=1) or (now-posted).days > 30:
-        return None
-    if not link.startswith('https://'):
-        return None
-    region = bool(WESTERN.search(text)) or 'capetown' in source.lower()
-    score = 60 + (25 if region else 0) + (10 if (now-posted).days <= 7 else 0)
-    return [source, clean(title)[:250], 'Western Cape mentioned' if region else 'Location unconfirmed', posted.date().isoformat(), score, link, 'Unverified - review original post']
 
 def main():
-    now = dt.datetime.now(dt.timezone.utc)
-    found, seen, errors = [], set(), []
-    for source, url in FEEDS:
+    now = dt.datetime.now(dt.timezone.utc).isoformat(timespec='seconds')
+    diagnostics = [f'Buyer Discovery 3.1 — {now}', 'Sources are unverified until checked manually.', '']
+    feeds = []
+    for query in SEARCHES:
+        url = 'https://www.bing.com/search?format=rss&q=' + urllib.parse.quote(query)
+        feeds.append((f'Bing RSS: {query}', url))
+    for i, url in enumerate(os.getenv('EXTRA_RSS_FEEDS', '').split(','), 1):
+        url = url.strip()
+        if url and urllib.parse.urlparse(url).scheme == 'https':
+            feeds.append((f'Authorised feed {i}', url))
+    rows, seen = [], set()
+    for source, url in feeds:
         try:
-            req = urllib.request.Request(url, headers={'User-Agent':'PreOwnedPaarlBuyerDiscovery/3.0 (public RSS reader; contact via original platform)', 'Accept':'application/atom+xml,application/rss+xml,application/xml'})
-            with urllib.request.urlopen(req, timeout=18) as resp:
-                data = resp.read(2_000_000)
-            for title, desc, link, date in entries(data):
-                row = assess(title, desc, link, date, source, now)
-                if row and link not in seen:
-                    seen.add(link); found.append(row)
-        except Exception as exc:
-            errors.append(f'{source}: {type(exc).__name__}: {exc}')
-    found.sort(key=lambda row: (-row[4], row[3]), reverse=False)
-    with OUT.open('w', newline='', encoding='utf-8-sig') as f:
-        writer = csv.writer(f)
-        writer.writerow(['Source','Title','Location assessment','Published','Priority score','Original URL','Verification'])
-        writer.writerows(found)
-    Path('buyer_discovery_status.txt').write_text('Run UTC: '+now.isoformat()+'\nCandidates: '+str(len(found))+'\nFeeds checked: '+str(len(FEEDS))+'\nErrors:\n'+ ('\n'.join(errors) if errors else 'None')+'\n\nNo result is a verified buyer. RSS feeds may be blocked or have no matches. Review all links before outreach.\n', encoding='utf-8')
-    print('Candidate public posts:', len(found))
-    for e in errors: print('Feed unavailable:', e)
+            req = urllib.request.Request(url, headers={'User-Agent': USER_AGENT, 'Accept': 'application/rss+xml, application/atom+xml, application/xml, text/xml'})
+            with urllib.request.urlopen(req, timeout=18) as response:
+                data = response.read(1_500_000)
+            items = entries(data)
+            kept = 0
+            for title, link, summary in items:
+                title, summary = plain(title), plain(summary)
+                combined = f'{title} {summary}'
+                locations = [r for r in REGIONS if r in combined.lower()]
+                if not (BUYER.search(combined) and VEHICLE.search(combined) and locations):
+                    continue
+                if SELLER.search(title):
+                    continue
+                if not link.startswith(('https://', 'http://')):
+                    continue
+                key = link.split('#', 1)[0].rstrip('/')
+                if key in seen:
+                    continue
+                seen.add(key)
+                priority = 'Review first' if any(r in locations for r in ('paarl', 'stellenbosch', 'cape town')) else 'Review'
+                rows.append([now, source, title[:240], link, summary[:500], ', '.join(locations), 'Possible buyer request — unverified', priority])
+                kept += 1
+            diagnostics.append(f'{source}: accessible; {len(items)} feed items; {kept} possible matches')
+        except (urllib.error.URLError, TimeoutError, ET.ParseError, ValueError, OSError) as exc:
+            diagnostics.append(f'{source}: UNAVAILABLE — {type(exc).__name__}: {exc}')
+        time.sleep(0.4)
+    with OUT.open('w', encoding='utf-8-sig', newline='') as fh:
+        writer = csv.writer(fh)
+        writer.writerow(FIELDS)
+        writer.writerows(rows)
+    diagnostics += ['', f'Total possible matches: {len(rows)}', 'Zero results can mean no matching posts, inaccessible feeds, or restrictive filters.', 'Do not collect private contact details or send unsolicited messages.', '', 'Manual review: https://www.junkmail.co.za/cars/wanted', 'Manual review: https://www.junkmail.co.za/western-cape/wanted']
+    DIAG.write_text('\n'.join(diagnostics) + '\n', encoding='utf-8')
+    print(f'Candidate public posts: {len(rows)}')
+    print(f'Reports: {OUT} and {DIAG}')
+    for line in diagnostics[3:3 + len(feeds)]:
+        print(line)
 
-if __name__ == '__main__': main()
+
+if __name__ == '__main__':
+    main()
