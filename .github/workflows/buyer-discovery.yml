@@ -22,12 +22,16 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Search for buyer opportunities
+      - name: Run Buyer Discovery 3.0
         run: python scripts/discover.py
 
-      - name: Save buyer opportunity report
+      - name: Save Buyer Discovery 3.0 results
+        if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: buyer-opportunities
-          path: buyer_opportunities.csv
+          name: buyer-opportunities-v3
+          path: |
+            buyer_opportunities_v3.csv
+            buyer_discovery_diagnostics.txt
+          if-no-files-found: warn
           retention-days: 30
