@@ -43,8 +43,8 @@ jobs:
         with:
           path: buyer_radar_seen.json
           key: buyer-radar-seen-${{ github.run_id }}-${{ github.run_attempt }}
-      - name: Email new leads or send a test
-        if: ${{ steps.seen.outputs.cache-matched-key != '' || inputs.send_test_email == true }}
+      - name: Email new leads or send a test background: 
+        if: if: ${{ false }}${{ steps.seen.outputs.cache-matched-key != '' || inputs.send_test_email == true }}
         env:
           ALERT_TO: williec@westvaal.co.za
           SMTP_HOST: ${{ secrets.RADAR_SMTP_HOST }}
