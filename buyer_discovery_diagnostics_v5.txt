@@ -1,14 +1,15 @@
-Willie Buyer Radar 5.2 — 2026-10-21T13:05:22+00:00
-Checked 201 results across 19 feeds; matched 7; dashboard has 7 opportunities.
+Willie Buyer Radar 5.3 — 2026-10-21T13:23:01+00:00
+Checked 201 results across 19 feeds; matched 1; dashboard has 1 opportunities.
 
 REJECTION REASONS (an item may have multiple):
+no clear vehicle purchase request: 193
 below minimum score: 192
-no buyer-intent phrase: 190
-no Western Cape location in result text: 187
-no vehicle term: 154
-irrelevant reference/entertainment website: 98
-older than age limit: 11
-seller/advertisement wording: 10
+no Western Cape location in result text: 188
+no vehicle term: 173
+irrelevant reference/entertainment website: 118
+older than age limit: 26
+seller/advertisement wording: 4
+unrelated housing, employment or repair request: 1
 
 FEED RESULTS:
 Bing RSS: site:reddit.com/r/capetown "looking to buy" car: 10 items, 0 matches
@@ -29,68 +30,68 @@ Bing RSS: "looking for a Ford Ranger" "Western Cape" -dealer: 10 items, 0 matche
 Bing RSS: "anyone selling a bakkie" "Paarl": 10 items, 0 matches
 Bing RSS: "soek n bakkie" "Kaapstad": 10 items, 0 matches
 Bing RSS: "soek n kar" "Paarl": 10 items, 0 matches
-Approved RSS 1: 21 items, 7 matches
+Approved RSS 1: 21 items, 1 matches
 
 SAMPLE REJECTIONS:
-- Looking (TV series) - Wikipedia | irrelevant reference/entertainment website; no buyer-intent phrase; no vehicle term; no Western Cape location in result text; below minimum score
-- Looking (TV Series 2014–2015) - IMDb | irrelevant reference/entertainment website; no buyer-intent phrase; no vehicle term; no Western Cape location in result text; below minimum score
-- LOOKING Synonyms: 90 Similar and Opposite Words - Merriam-Webster | irrelevant reference/entertainment website; no buyer-intent phrase; no vehicle term; no Western Cape location in result text; below minimum score
-- Looking - definition of looking by The Free Dictionary | irrelevant reference/entertainment website; no buyer-intent phrase; no Western Cape location in result text; below minimum score
-- Looking - watch tv show streaming online - JustWatch | no buyer-intent phrase; no vehicle term; no Western Cape location in result text; below minimum score
-- LOOK Definition & Meaning - Merriam-Webster | irrelevant reference/entertainment website; no buyer-intent phrase; no vehicle term; no Western Cape location in result text; below minimum score
-- Looking: Season 1 | Rotten Tomatoes | irrelevant reference/entertainment website; no buyer-intent phrase; no vehicle term; no Western Cape location in result text; below minimum score
-- Looking - Wikipedia | irrelevant reference/entertainment website; no buyer-intent phrase; no vehicle term; no Western Cape location in result text; below minimum score
-- Watch Looking Streaming Online - Hulu | no buyer-intent phrase; no vehicle term; no Western Cape location in result text; below minimum score
-- 'Looking' cast: Where are they now? | Out.com | no buyer-intent phrase; no vehicle term; no Western Cape location in result text; older than age limit; below minimum score
-- Looking (TV series) - Wikipedia | irrelevant reference/entertainment website; no buyer-intent phrase; no vehicle term; no Western Cape location in result text; below minimum score
-- Looking (TV Series 2014–2015) - IMDb | irrelevant reference/entertainment website; no buyer-intent phrase; no vehicle term; no Western Cape location in result text; below minimum score
-- LOOKING Synonyms: 90 Similar and Opposite Words - Merriam-Webster | irrelevant reference/entertainment website; no buyer-intent phrase; no vehicle term; no Western Cape location in result text; below minimum score
-- Looking - definition of looking by The Free Dictionary | irrelevant reference/entertainment website; no buyer-intent phrase; no Western Cape location in result text; below minimum score
-- Looking - watch tv show streaming online - JustWatch | no buyer-intent phrase; no vehicle term; no Western Cape location in result text; below minimum score
-- LOOK Definition & Meaning - Merriam-Webster | irrelevant reference/entertainment website; no buyer-intent phrase; no vehicle term; no Western Cape location in result text; below minimum score
-- Looking: Season 1 | Rotten Tomatoes | irrelevant reference/entertainment website; no buyer-intent phrase; no vehicle term; no Western Cape location in result text; below minimum score
-- Looking - Wikipedia | irrelevant reference/entertainment website; no buyer-intent phrase; no vehicle term; no Western Cape location in result text; below minimum score
-- Watch Looking Streaming Online - Hulu | no buyer-intent phrase; no vehicle term; no Western Cape location in result text; below minimum score
-- 'Looking' cast: Where are they now? | Out.com | no buyer-intent phrase; no vehicle term; no Western Cape location in result text; older than age limit; below minimum score
-- Looking (TV series) - Wikipedia | irrelevant reference/entertainment website; no buyer-intent phrase; no vehicle term; no Western Cape location in result text; below minimum score
-- Looking (TV Series 2014–2015) - IMDb | irrelevant reference/entertainment website; no buyer-intent phrase; no vehicle term; no Western Cape location in result text; below minimum score
-- LOOKING Synonyms: 90 Similar and Opposite Words - Merriam-Webster | irrelevant reference/entertainment website; no buyer-intent phrase; no vehicle term; no Western Cape location in result text; below minimum score
-- Looking - definition of looking by The Free Dictionary | irrelevant reference/entertainment website; no buyer-intent phrase; no Western Cape location in result text; below minimum score
-- Looking - watch tv show streaming online - JustWatch | no buyer-intent phrase; no vehicle term; no Western Cape location in result text; below minimum score
-- LOOK Definition & Meaning - Merriam-Webster | irrelevant reference/entertainment website; no buyer-intent phrase; no vehicle term; no Western Cape location in result text; below minimum score
-- Looking: Season 1 | Rotten Tomatoes | irrelevant reference/entertainment website; no buyer-intent phrase; no vehicle term; no Western Cape location in result text; below minimum score
-- Looking - Wikipedia | irrelevant reference/entertainment website; no buyer-intent phrase; no vehicle term; no Western Cape location in result text; below minimum score
-- Watch Looking Streaming Online - Hulu | no buyer-intent phrase; no vehicle term; no Western Cape location in result text; below minimum score
-- 'Looking' cast: Where are they now? | Out.com | no buyer-intent phrase; no vehicle term; no Western Cape location in result text; older than age limit; below minimum score
-- WANT Definition & Meaning - Merriam-Webster | irrelevant reference/entertainment website; no buyer-intent phrase; no vehicle term; no Western Cape location in result text; below minimum score
-- WANT | English meaning - Cambridge Dictionary | irrelevant reference/entertainment website; no buyer-intent phrase; no vehicle term; no Western Cape location in result text; below minimum score
-- WANT Definition & Meaning | Dictionary.com | irrelevant reference/entertainment website; no buyer-intent phrase; no vehicle term; no Western Cape location in result text; below minimum score
-- Want - Wikipedia | irrelevant reference/entertainment website; no buyer-intent phrase; no vehicle term; no Western Cape location in result text; below minimum score
-- WANT | definition in the Cambridge English Dictionary | irrelevant reference/entertainment website; no buyer-intent phrase; no vehicle term; no Western Cape location in result text; below minimum score
-- WANT Synonyms: 252 Similar and Opposite Words - Merriam-Webster | irrelevant reference/entertainment website; no buyer-intent phrase; no vehicle term; no Western Cape location in result text; below minimum score
-- WANT definition and meaning | Collins English Dictionary | irrelevant reference/entertainment website; no buyer-intent phrase; no vehicle term; no Western Cape location in result text; below minimum score
-- Want - Definition, Meaning & Synonyms | Vocabulary.com | no buyer-intent phrase; no vehicle term; no Western Cape location in result text; below minimum score
-- Want - definition of want by The Free Dictionary | irrelevant reference/entertainment website; no buyer-intent phrase; no vehicle term; no Western Cape location in result text; below minimum score
-- WANT Synonyms & Antonyms - 167 words | Thesaurus.com | irrelevant reference/entertainment website; no buyer-intent phrase; no vehicle term; no Western Cape location in result text; below minimum score
-- Anyone or Any one – What’s the Difference? - Writing Explained | no vehicle term; no Western Cape location in result text; older than age limit; below minimum score
-- Justin Bieber - Anyone (Lyrics) - YouTube | no buyer-intent phrase; no vehicle term; no Western Cape location in result text; below minimum score
-- Justin Bieber - Anyone (Lyrics) - YouTube | no buyer-intent phrase; no vehicle term; no Western Cape location in result text; below minimum score
-- Find the best real estate agents near you | Anyone.com | no buyer-intent phrase; no vehicle term; no Western Cape location in result text; below minimum score
-- ANYONE Definition & Meaning - Merriam-Webster | irrelevant reference/entertainment website; no buyer-intent phrase; no vehicle term; no Western Cape location in result text; below minimum score
-- ANYONE | English meaning - Cambridge Dictionary | irrelevant reference/entertainment website; no buyer-intent phrase; no vehicle term; no Western Cape location in result text; below minimum score
-- Anyone (Justin Bieber song) - Wikipedia | irrelevant reference/entertainment website; no buyer-intent phrase; no vehicle term; no Western Cape location in result text; below minimum score
-- Buy or Sell a Home Online | Anyone.com | no buyer-intent phrase; no vehicle term; no Western Cape location in result text; below minimum score
-- Anyone - YouTube Music | no buyer-intent phrase; no vehicle term; no Western Cape location in result text; below minimum score
-- Justin Bieber: Anyone (Music Video 2021) - IMDb | irrelevant reference/entertainment website; no buyer-intent phrase; no vehicle term; no Western Cape location in result text; below minimum score
-- Looking (TV series) - Wikipedia | irrelevant reference/entertainment website; no buyer-intent phrase; no vehicle term; no Western Cape location in result text; below minimum score
-- Looking (TV Series 2014–2015) - IMDb | irrelevant reference/entertainment website; no buyer-intent phrase; no vehicle term; no Western Cape location in result text; below minimum score
-- LOOKING Synonyms: 90 Similar and Opposite Words - Merriam-Webster | irrelevant reference/entertainment website; no buyer-intent phrase; no vehicle term; no Western Cape location in result text; below minimum score
-- Looking - definition of looking by The Free Dictionary | irrelevant reference/entertainment website; no buyer-intent phrase; no Western Cape location in result text; below minimum score
-- Looking - watch tv show streaming online - JustWatch | no buyer-intent phrase; no vehicle term; no Western Cape location in result text; below minimum score
-- LOOK Definition & Meaning - Merriam-Webster | irrelevant reference/entertainment website; no buyer-intent phrase; no vehicle term; no Western Cape location in result text; below minimum score
-- Looking: Season 1 | Rotten Tomatoes | irrelevant reference/entertainment website; no buyer-intent phrase; no vehicle term; no Western Cape location in result text; below minimum score
-- Looking - Wikipedia | irrelevant reference/entertainment website; no buyer-intent phrase; no vehicle term; no Western Cape location in result text; below minimum score
-- Watch Looking Streaming Online - Hulu | no buyer-intent phrase; no vehicle term; no Western Cape location in result text; below minimum score
-- 'Looking' cast: Where are they now? | Out.com | no buyer-intent phrase; no vehicle term; no Western Cape location in result text; older than age limit; below minimum score
+- Looking (TV series) - Wikipedia | irrelevant reference/entertainment website; no clear vehicle purchase request; no vehicle term; no Western Cape location in result text; below minimum score
+- Looking - definition of looking by The Free Dictionary | irrelevant reference/entertainment website; no clear vehicle purchase request; no vehicle term; no Western Cape location in result text; below minimum score
+- LOOKING Synonyms: 90 Similar and Opposite Words - Merriam-Webster | irrelevant reference/entertainment website; no clear vehicle purchase request; no vehicle term; no Western Cape location in result text; below minimum score
+- Looking (TV Series 2014–2015) - IMDb | irrelevant reference/entertainment website; no clear vehicle purchase request; no vehicle term; no Western Cape location in result text; below minimum score
+- Looking - watch tv show streaming online - JustWatch | no clear vehicle purchase request; no vehicle term; no Western Cape location in result text; below minimum score
+- LOOK | English meaning - Cambridge Dictionary | irrelevant reference/entertainment website; no clear vehicle purchase request; no vehicle term; no Western Cape location in result text; below minimum score
+- LOOK Definition & Meaning - Merriam-Webster | irrelevant reference/entertainment website; no clear vehicle purchase request; no vehicle term; no Western Cape location in result text; below minimum score
+- Looking - Wikipedia | irrelevant reference/entertainment website; no clear vehicle purchase request; no vehicle term; no Western Cape location in result text; below minimum score
+- Looking (TV Movie 2016) - IMDb | irrelevant reference/entertainment website; no clear vehicle purchase request; no vehicle term; no Western Cape location in result text; below minimum score
+- LOOKING Definition & Meaning | Dictionary.com | irrelevant reference/entertainment website; no clear vehicle purchase request; no vehicle term; no Western Cape location in result text; below minimum score
+- Looking (TV series) - Wikipedia | irrelevant reference/entertainment website; no clear vehicle purchase request; no vehicle term; no Western Cape location in result text; below minimum score
+- Looking - definition of looking by The Free Dictionary | irrelevant reference/entertainment website; no clear vehicle purchase request; no vehicle term; no Western Cape location in result text; below minimum score
+- LOOKING Synonyms: 90 Similar and Opposite Words - Merriam-Webster | irrelevant reference/entertainment website; no clear vehicle purchase request; no vehicle term; no Western Cape location in result text; below minimum score
+- Looking (TV Series 2014–2015) - IMDb | irrelevant reference/entertainment website; no clear vehicle purchase request; no vehicle term; no Western Cape location in result text; below minimum score
+- Looking - watch tv show streaming online - JustWatch | no clear vehicle purchase request; no vehicle term; no Western Cape location in result text; below minimum score
+- LOOK | English meaning - Cambridge Dictionary | irrelevant reference/entertainment website; no clear vehicle purchase request; no vehicle term; no Western Cape location in result text; below minimum score
+- LOOK Definition & Meaning - Merriam-Webster | irrelevant reference/entertainment website; no clear vehicle purchase request; no vehicle term; no Western Cape location in result text; below minimum score
+- Looking - Wikipedia | irrelevant reference/entertainment website; no clear vehicle purchase request; no vehicle term; no Western Cape location in result text; below minimum score
+- Looking (TV Movie 2016) - IMDb | irrelevant reference/entertainment website; no clear vehicle purchase request; no vehicle term; no Western Cape location in result text; below minimum score
+- LOOKING Definition & Meaning | Dictionary.com | irrelevant reference/entertainment website; no clear vehicle purchase request; no vehicle term; no Western Cape location in result text; below minimum score
+- Looking (TV series) - Wikipedia | irrelevant reference/entertainment website; no clear vehicle purchase request; no vehicle term; no Western Cape location in result text; below minimum score
+- Looking - definition of looking by The Free Dictionary | irrelevant reference/entertainment website; no clear vehicle purchase request; no vehicle term; no Western Cape location in result text; below minimum score
+- LOOKING Synonyms: 90 Similar and Opposite Words - Merriam-Webster | irrelevant reference/entertainment website; no clear vehicle purchase request; no vehicle term; no Western Cape location in result text; below minimum score
+- Looking (TV Series 2014–2015) - IMDb | irrelevant reference/entertainment website; no clear vehicle purchase request; no vehicle term; no Western Cape location in result text; below minimum score
+- Looking - watch tv show streaming online - JustWatch | no clear vehicle purchase request; no vehicle term; no Western Cape location in result text; below minimum score
+- LOOK | English meaning - Cambridge Dictionary | irrelevant reference/entertainment website; no clear vehicle purchase request; no vehicle term; no Western Cape location in result text; below minimum score
+- LOOK Definition & Meaning - Merriam-Webster | irrelevant reference/entertainment website; no clear vehicle purchase request; no vehicle term; no Western Cape location in result text; below minimum score
+- Looking - Wikipedia | irrelevant reference/entertainment website; no clear vehicle purchase request; no vehicle term; no Western Cape location in result text; below minimum score
+- Looking (TV Movie 2016) - IMDb | irrelevant reference/entertainment website; no clear vehicle purchase request; no vehicle term; no Western Cape location in result text; below minimum score
+- LOOKING Definition & Meaning | Dictionary.com | irrelevant reference/entertainment website; no clear vehicle purchase request; no vehicle term; no Western Cape location in result text; below minimum score
+- WANT Definition & Meaning - Merriam-Webster | irrelevant reference/entertainment website; no clear vehicle purchase request; no vehicle term; no Western Cape location in result text; below minimum score
+- WANT | English meaning - Cambridge Dictionary | irrelevant reference/entertainment website; no clear vehicle purchase request; no vehicle term; no Western Cape location in result text; below minimum score
+- WANT Definition & Meaning | Dictionary.com | irrelevant reference/entertainment website; no clear vehicle purchase request; no vehicle term; no Western Cape location in result text; below minimum score
+- WANT | definition in the Cambridge English Dictionary | irrelevant reference/entertainment website; no clear vehicle purchase request; no vehicle term; no Western Cape location in result text; below minimum score
+- Want - Wikipedia | irrelevant reference/entertainment website; no clear vehicle purchase request; no vehicle term; no Western Cape location in result text; below minimum score
+- WANT Synonyms: 252 Similar and Opposite Words - Merriam-Webster | irrelevant reference/entertainment website; no clear vehicle purchase request; no vehicle term; no Western Cape location in result text; below minimum score
+- WANT definition and meaning | Collins English Dictionary | irrelevant reference/entertainment website; no clear vehicle purchase request; no vehicle term; no Western Cape location in result text; below minimum score
+- Want - Definition, Meaning & Synonyms | Vocabulary.com | no clear vehicle purchase request; no vehicle term; no Western Cape location in result text; below minimum score
+- Want - definition of want by The Free Dictionary | irrelevant reference/entertainment website; no clear vehicle purchase request; no vehicle term; no Western Cape location in result text; below minimum score
+- WANT Synonyms & Antonyms - 167 words | Thesaurus.com | irrelevant reference/entertainment website; no clear vehicle purchase request; no vehicle term; no Western Cape location in result text; below minimum score
+- Justin Bieber - Anyone (Lyrics) - YouTube | no clear vehicle purchase request; no vehicle term; no Western Cape location in result text; below minimum score
+- Anyone or Any one – What’s the Difference? - Writing Explained | no clear vehicle purchase request; no vehicle term; no Western Cape location in result text; older than age limit; below minimum score
+- Justin Bieber - Anyone (Lyrics) - YouTube | no clear vehicle purchase request; no vehicle term; no Western Cape location in result text; below minimum score
+- Find the best real estate agents near you | Anyone.com | no clear vehicle purchase request; no vehicle term; no Western Cape location in result text; below minimum score
+- ANYONE Definition & Meaning - Merriam-Webster | irrelevant reference/entertainment website; no clear vehicle purchase request; no vehicle term; no Western Cape location in result text; below minimum score
+- Buy or Sell a Home Online | Anyone.com | no clear vehicle purchase request; no vehicle term; no Western Cape location in result text; below minimum score
+- ANYONE | English meaning - Cambridge Dictionary | irrelevant reference/entertainment website; no clear vehicle purchase request; no vehicle term; no Western Cape location in result text; older than age limit; below minimum score
+- Anyone - YouTube Music | no clear vehicle purchase request; no vehicle term; no Western Cape location in result text; below minimum score
+- Anyone (Justin Bieber song) - Wikipedia | irrelevant reference/entertainment website; no clear vehicle purchase request; no vehicle term; no Western Cape location in result text; below minimum score
+- ANYONE Definition & Meaning | Dictionary.com | irrelevant reference/entertainment website; no clear vehicle purchase request; no vehicle term; no Western Cape location in result text; below minimum score
+- Looking (TV series) - Wikipedia | irrelevant reference/entertainment website; no clear vehicle purchase request; no vehicle term; no Western Cape location in result text; below minimum score
+- Looking - definition of looking by The Free Dictionary | irrelevant reference/entertainment website; no clear vehicle purchase request; no vehicle term; no Western Cape location in result text; below minimum score
+- LOOKING Synonyms: 90 Similar and Opposite Words - Merriam-Webster | irrelevant reference/entertainment website; no clear vehicle purchase request; no vehicle term; no Western Cape location in result text; below minimum score
+- Looking (TV Series 2014–2015) - IMDb | irrelevant reference/entertainment website; no clear vehicle purchase request; no vehicle term; no Western Cape location in result text; below minimum score
+- Looking - watch tv show streaming online - JustWatch | no clear vehicle purchase request; no vehicle term; no Western Cape location in result text; below minimum score
+- LOOK | English meaning - Cambridge Dictionary | irrelevant reference/entertainment website; no clear vehicle purchase request; no vehicle term; no Western Cape location in result text; below minimum score
+- LOOK Definition & Meaning - Merriam-Webster | irrelevant reference/entertainment website; no clear vehicle purchase request; no vehicle term; no Western Cape location in result text; below minimum score
+- Looking - Wikipedia | irrelevant reference/entertainment website; no clear vehicle purchase request; no vehicle term; no Western Cape location in result text; below minimum score
+- Looking (TV Movie 2016) - IMDb | irrelevant reference/entertainment website; no clear vehicle purchase request; no vehicle term; no Western Cape location in result text; below minimum score
+- LOOKING Definition & Meaning | Dictionary.com | irrelevant reference/entertainment website; no clear vehicle purchase request; no vehicle term; no Western Cape location in result text; below minimum score
 
 Public RSS only. Search engines may not index buyer posts. Matches are unverified.
