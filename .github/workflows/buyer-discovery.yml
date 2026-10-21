@@ -2,17 +2,11 @@ name: Hourly Buyer Discovery
 
 on:
   workflow_dispatch:
-    inputs:
-      send_test_email:
-        description: 'Send SMTP test email (does not require a buyer lead)'
-        required: false
-        type: boolean
-        default: false
   schedule:
     - cron: '0 * * * *'
 
 permissions:
-  contents: read
+  contents: write
 
 concurrency:
   group: willie-buyer-radar
@@ -24,34 +18,30 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
+        with:
+          persist-credentials: true
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Restore previously seen lead IDs
-        id: seen
-        uses: actions/cache/restore@v4
-        with:
-          path: buyer_radar_seen.json
-          key: buyer-radar-seen-${{ github.run_id }}-${{ github.run_attempt }}
-          restore-keys: |
-            buyer-radar-seen-
-      - name: Run Buyer Discovery 4.0
+      - name: Run Buyer Radar 5.0
         run: python scripts/discover.py
-      - name: Save seen lead IDs for next run
-        uses: actions/cache/save@v4
-        with:
-          path: buyer_radar_seen.json
-          key: buyer-radar-seen-${{ github.run_id }}-${{ github.run_attempt }}
-      - name: Email new leads or send a test
-        if: ${{ false }}
-        run: python scripts/email_alerts.py
-      - name: Upload buyer reports
+      - name: Commit public dashboard data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add buyer-radar-data.json buyer_opportunities_v5.csv buyer_discovery_diagnostics_v5.txt buyer_radar_seen_v5.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Update Buyer Radar 5.0 dashboard [skip ci]"
+            git push
+          fi
+      - name: Upload reports for download
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: buyer-opportunities-v4
+          name: buyer-opportunities-v5
           path: |
-            buyer_opportunities_v3.csv
-            buyer_discovery_diagnostics.txt
+            buyer-radar-data.json
+            buyer_opportunities_v5.csv
+            buyer_discovery_diagnostics_v5.txt
           if-no-files-found: warn
