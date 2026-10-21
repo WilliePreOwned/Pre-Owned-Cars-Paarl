@@ -25,11 +25,11 @@ jobs:
         with:
           python-version: '3.12'
       - name: Run Buyer Radar 5.2
-      env:
-      EXTRA_RSS_FEEDS: "https://www.reddit.com/r/capetown/search.rss?q=buy%20car&restrict_sr=1&sort=new&t=year"
-      run: python scripts/discover.py
+        env:
+          EXTRA_RSS_FEEDS: "https://www.reddit.com/r/capetown/search.rss?q=buy%20car&restrict_sr=1&sort=new&t=year"
+        run: python scripts/discover.py
       - name: Commit public dashboard data
-      run: |
+        run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add buyer-radar-data.json buyer_opportunities_v5.csv buyer_discovery_diagnostics_v5.txt buyer_radar_seen_v5.json
