@@ -1,0 +1,8 @@
+{
+  "version": "5.0",
+  "last_scan_utc": null,
+  "status": "awaiting_first_scan",
+  "stats": {"sources_checked": 0, "sources_accessible": 0, "items_checked": 0, "matches_this_scan": 0, "new_this_scan": 0, "dashboard_opportunities": 0, "retained_from_prior_scans": 0},
+  "rejection_reasons": {}, "feed_stats": [], "rejection_samples": [], "opportunities": [],
+  "disclaimer": "Unverified public search results; verify at source."
+}
