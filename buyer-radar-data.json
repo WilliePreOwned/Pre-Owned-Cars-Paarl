@@ -1,24 +1,24 @@
 {
   "version": "5.2",
-  "last_scan_utc": "2026-10-21T12:42:25+00:00",
+  "last_scan_utc": "2026-10-21T13:05:22+00:00",
   "status": "completed",
   "stats": {
-    "sources_checked": 18,
-    "sources_accessible": 18,
-    "items_checked": 180,
-    "matches_this_scan": 0,
-    "new_this_scan": 0,
-    "dashboard_opportunities": 0,
+    "sources_checked": 19,
+    "sources_accessible": 19,
+    "items_checked": 201,
+    "matches_this_scan": 7,
+    "new_this_scan": 7,
+    "dashboard_opportunities": 7,
     "retained_from_prior_scans": 0
   },
   "rejection_reasons": {
-    "below minimum score": 180,
-    "no Western Cape location in result text": 180,
-    "no vehicle term": 170,
-    "no buyer-intent phrase": 169,
-    "irrelevant reference/entertainment website": 118,
-    "older than age limit": 5,
-    "seller/advertisement wording": 5
+    "below minimum score": 192,
+    "no buyer-intent phrase": 190,
+    "no Western Cape location in result text": 187,
+    "no vehicle term": 154,
+    "irrelevant reference/entertainment website": 98,
+    "older than age limit": 11,
+    "seller/advertisement wording": 10
   },
   "feed_stats": [
     {
@@ -128,6 +128,12 @@
       "items": 10,
       "matches": 0,
       "error": ""
+    },
+    {
+      "source": "Approved RSS 1",
+      "items": 21,
+      "matches": 7,
+      "error": ""
     }
   ],
   "rejection_samples": [
@@ -143,7 +149,7 @@
       "source": "Bing RSS: site:reddit.com/r/capetown \"looking to buy\" car"
     },
     {
-      "title": "Looking - definition of looking by The Free Dictionary",
+      "title": "Looking (TV Series 2014–2015) - IMDb",
       "reasons": [
         "irrelevant reference/entertainment website",
         "no buyer-intent phrase",
@@ -165,11 +171,10 @@
       "source": "Bing RSS: site:reddit.com/r/capetown \"looking to buy\" car"
     },
     {
-      "title": "Looking (TV Series 2014–2015) - IMDb",
+      "title": "Looking - definition of looking by The Free Dictionary",
       "reasons": [
         "irrelevant reference/entertainment website",
         "no buyer-intent phrase",
-        "no vehicle term",
         "no Western Cape location in result text",
         "below minimum score"
       ],
@@ -186,9 +191,10 @@
       "source": "Bing RSS: site:reddit.com/r/capetown \"looking to buy\" car"
     },
     {
-      "title": "LOOK | English meaning - Cambridge Dictionary",
+      "title": "LOOK Definition & Meaning - Merriam-Webster",
       "reasons": [
         "irrelevant reference/entertainment website",
+        "no buyer-intent phrase",
         "no vehicle term",
         "no Western Cape location in result text",
         "below minimum score"
@@ -196,7 +202,7 @@
       "source": "Bing RSS: site:reddit.com/r/capetown \"looking to buy\" car"
     },
     {
-      "title": "LOOK Definition & Meaning - Merriam-Webster",
+      "title": "Looking: Season 1 | Rotten Tomatoes",
       "reasons": [
         "irrelevant reference/entertainment website",
         "no buyer-intent phrase",
@@ -218,9 +224,8 @@
       "source": "Bing RSS: site:reddit.com/r/capetown \"looking to buy\" car"
     },
     {
-      "title": "Looking (TV Movie 2016) - IMDb",
+      "title": "Watch Looking Streaming Online - Hulu",
       "reasons": [
-        "irrelevant reference/entertainment website",
         "no buyer-intent phrase",
         "no vehicle term",
         "no Western Cape location in result text",
@@ -229,12 +234,12 @@
       "source": "Bing RSS: site:reddit.com/r/capetown \"looking to buy\" car"
     },
     {
-      "title": "LOOKING Definition & Meaning | Dictionary.com",
+      "title": "'Looking' cast: Where are they now? | Out.com",
       "reasons": [
-        "irrelevant reference/entertainment website",
         "no buyer-intent phrase",
         "no vehicle term",
         "no Western Cape location in result text",
+        "older than age limit",
         "below minimum score"
       ],
       "source": "Bing RSS: site:reddit.com/r/capetown \"looking to buy\" car"
@@ -251,7 +256,7 @@
       "source": "Bing RSS: site:reddit.com/r/capetown \"looking for\" bakkie"
     },
     {
-      "title": "Looking - definition of looking by The Free Dictionary",
+      "title": "Looking (TV Series 2014–2015) - IMDb",
       "reasons": [
         "irrelevant reference/entertainment website",
         "no buyer-intent phrase",
@@ -273,11 +278,10 @@
       "source": "Bing RSS: site:reddit.com/r/capetown \"looking for\" bakkie"
     },
     {
-      "title": "Looking (TV Series 2014–2015) - IMDb",
+      "title": "Looking - definition of looking by The Free Dictionary",
       "reasons": [
         "irrelevant reference/entertainment website",
         "no buyer-intent phrase",
-        "no vehicle term",
         "no Western Cape location in result text",
         "below minimum score"
       ],
@@ -294,9 +298,10 @@
       "source": "Bing RSS: site:reddit.com/r/capetown \"looking for\" bakkie"
     },
     {
-      "title": "LOOK | English meaning - Cambridge Dictionary",
+      "title": "LOOK Definition & Meaning - Merriam-Webster",
       "reasons": [
         "irrelevant reference/entertainment website",
+        "no buyer-intent phrase",
         "no vehicle term",
         "no Western Cape location in result text",
         "below minimum score"
@@ -304,7 +309,7 @@
       "source": "Bing RSS: site:reddit.com/r/capetown \"looking for\" bakkie"
     },
     {
-      "title": "LOOK Definition & Meaning - Merriam-Webster",
+      "title": "Looking: Season 1 | Rotten Tomatoes",
       "reasons": [
         "irrelevant reference/entertainment website",
         "no buyer-intent phrase",
@@ -326,9 +331,8 @@
       "source": "Bing RSS: site:reddit.com/r/capetown \"looking for\" bakkie"
     },
     {
-      "title": "Looking (TV Movie 2016) - IMDb",
+      "title": "Watch Looking Streaming Online - Hulu",
       "reasons": [
-        "irrelevant reference/entertainment website",
         "no buyer-intent phrase",
         "no vehicle term",
         "no Western Cape location in result text",
@@ -337,12 +341,12 @@
       "source": "Bing RSS: site:reddit.com/r/capetown \"looking for\" bakkie"
     },
     {
-      "title": "LOOKING Definition & Meaning | Dictionary.com",
+      "title": "'Looking' cast: Where are they now? | Out.com",
       "reasons": [
-        "irrelevant reference/entertainment website",
         "no buyer-intent phrase",
         "no vehicle term",
         "no Western Cape location in result text",
+        "older than age limit",
         "below minimum score"
       ],
       "source": "Bing RSS: site:reddit.com/r/capetown \"looking for\" bakkie"
@@ -359,7 +363,7 @@
       "source": "Bing RSS: site:reddit.com/r/askSouthAfrica \"looking to buy\" car \"Cape Town\""
     },
     {
-      "title": "Looking - definition of looking by The Free Dictionary",
+      "title": "Looking (TV Series 2014–2015) - IMDb",
       "reasons": [
         "irrelevant reference/entertainment website",
         "no buyer-intent phrase",
@@ -381,11 +385,10 @@
       "source": "Bing RSS: site:reddit.com/r/askSouthAfrica \"looking to buy\" car \"Cape Town\""
     },
     {
-      "title": "Looking (TV Series 2014–2015) - IMDb",
+      "title": "Looking - definition of looking by The Free Dictionary",
       "reasons": [
         "irrelevant reference/entertainment website",
         "no buyer-intent phrase",
-        "no vehicle term",
         "no Western Cape location in result text",
         "below minimum score"
       ],
@@ -402,9 +405,10 @@
       "source": "Bing RSS: site:reddit.com/r/askSouthAfrica \"looking to buy\" car \"Cape Town\""
     },
     {
-      "title": "LOOK | English meaning - Cambridge Dictionary",
+      "title": "LOOK Definition & Meaning - Merriam-Webster",
       "reasons": [
         "irrelevant reference/entertainment website",
+        "no buyer-intent phrase",
         "no vehicle term",
         "no Western Cape location in result text",
         "below minimum score"
@@ -412,7 +416,7 @@
       "source": "Bing RSS: site:reddit.com/r/askSouthAfrica \"looking to buy\" car \"Cape Town\""
     },
     {
-      "title": "LOOK Definition & Meaning - Merriam-Webster",
+      "title": "Looking: Season 1 | Rotten Tomatoes",
       "reasons": [
         "irrelevant reference/entertainment website",
         "no buyer-intent phrase",
@@ -434,9 +438,8 @@
       "source": "Bing RSS: site:reddit.com/r/askSouthAfrica \"looking to buy\" car \"Cape Town\""
     },
     {
-      "title": "Looking (TV Movie 2016) - IMDb",
+      "title": "Watch Looking Streaming Online - Hulu",
       "reasons": [
-        "irrelevant reference/entertainment website",
         "no buyer-intent phrase",
         "no vehicle term",
         "no Western Cape location in result text",
@@ -445,12 +448,12 @@
       "source": "Bing RSS: site:reddit.com/r/askSouthAfrica \"looking to buy\" car \"Cape Town\""
     },
     {
-      "title": "LOOKING Definition & Meaning | Dictionary.com",
+      "title": "'Looking' cast: Where are they now? | Out.com",
       "reasons": [
-        "irrelevant reference/entertainment website",
         "no buyer-intent phrase",
         "no vehicle term",
         "no Western Cape location in result text",
+        "older than age limit",
         "below minimum score"
       ],
       "source": "Bing RSS: site:reddit.com/r/askSouthAfrica \"looking to buy\" car \"Cape Town\""
@@ -489,7 +492,7 @@
       "source": "Bing RSS: site:reddit.com/r/southafrica \"want to buy\" car \"Cape Town\""
     },
     {
-      "title": "WANT | definition in the Cambridge English Dictionary",
+      "title": "Want - Wikipedia",
       "reasons": [
         "irrelevant reference/entertainment website",
         "no buyer-intent phrase",
@@ -500,7 +503,7 @@
       "source": "Bing RSS: site:reddit.com/r/southafrica \"want to buy\" car \"Cape Town\""
     },
     {
-      "title": "Want - Wikipedia",
+      "title": "WANT | definition in the Cambridge English Dictionary",
       "reasons": [
         "irrelevant reference/entertainment website",
         "no buyer-intent phrase",
@@ -565,21 +568,21 @@
       "source": "Bing RSS: site:reddit.com/r/southafrica \"want to buy\" car \"Cape Town\""
     },
     {
-      "title": "Justin Bieber - Anyone (Lyrics) - YouTube",
-      "reasons": [
-        "no buyer-intent phrase",
-        "no vehicle term",
-        "no Western Cape location in result text",
-        "below minimum score"
-      ],
-      "source": "Bing RSS: site:reddit.com \"anyone selling\" car \"Cape Town\""
-    },
-    {
       "title": "Anyone or Any one – What’s the Difference? - Writing Explained",
       "reasons": [
         "no vehicle term",
         "no Western Cape location in result text",
         "older than age limit",
+        "below minimum score"
+      ],
+      "source": "Bing RSS: site:reddit.com \"anyone selling\" car \"Cape Town\""
+    },
+    {
+      "title": "Justin Bieber - Anyone (Lyrics) - YouTube",
+      "reasons": [
+        "no buyer-intent phrase",
+        "no vehicle term",
+        "no Western Cape location in result text",
         "below minimum score"
       ],
       "source": "Bing RSS: site:reddit.com \"anyone selling\" car \"Cape Town\""
@@ -616,30 +619,9 @@
       "source": "Bing RSS: site:reddit.com \"anyone selling\" car \"Cape Town\""
     },
     {
-      "title": "Buy or Sell a Home Online | Anyone.com",
-      "reasons": [
-        "no buyer-intent phrase",
-        "no vehicle term",
-        "no Western Cape location in result text",
-        "below minimum score"
-      ],
-      "source": "Bing RSS: site:reddit.com \"anyone selling\" car \"Cape Town\""
-    },
-    {
       "title": "ANYONE | English meaning - Cambridge Dictionary",
       "reasons": [
         "irrelevant reference/entertainment website",
-        "no buyer-intent phrase",
-        "no vehicle term",
-        "no Western Cape location in result text",
-        "older than age limit",
-        "below minimum score"
-      ],
-      "source": "Bing RSS: site:reddit.com \"anyone selling\" car \"Cape Town\""
-    },
-    {
-      "title": "Anyone - YouTube Music",
-      "reasons": [
         "no buyer-intent phrase",
         "no vehicle term",
         "no Western Cape location in result text",
@@ -659,7 +641,27 @@
       "source": "Bing RSS: site:reddit.com \"anyone selling\" car \"Cape Town\""
     },
     {
-      "title": "ANYONE Definition & Meaning | Dictionary.com",
+      "title": "Buy or Sell a Home Online | Anyone.com",
+      "reasons": [
+        "no buyer-intent phrase",
+        "no vehicle term",
+        "no Western Cape location in result text",
+        "below minimum score"
+      ],
+      "source": "Bing RSS: site:reddit.com \"anyone selling\" car \"Cape Town\""
+    },
+    {
+      "title": "Anyone - YouTube Music",
+      "reasons": [
+        "no buyer-intent phrase",
+        "no vehicle term",
+        "no Western Cape location in result text",
+        "below minimum score"
+      ],
+      "source": "Bing RSS: site:reddit.com \"anyone selling\" car \"Cape Town\""
+    },
+    {
+      "title": "Justin Bieber: Anyone (Music Video 2021) - IMDb",
       "reasons": [
         "irrelevant reference/entertainment website",
         "no buyer-intent phrase",
@@ -681,7 +683,7 @@
       "source": "Bing RSS: site:reddit.com \"looking for a car\" \"Paarl\""
     },
     {
-      "title": "Looking - definition of looking by The Free Dictionary",
+      "title": "Looking (TV Series 2014–2015) - IMDb",
       "reasons": [
         "irrelevant reference/entertainment website",
         "no buyer-intent phrase",
@@ -703,11 +705,10 @@
       "source": "Bing RSS: site:reddit.com \"looking for a car\" \"Paarl\""
     },
     {
-      "title": "Looking (TV Series 2014–2015) - IMDb",
+      "title": "Looking - definition of looking by The Free Dictionary",
       "reasons": [
         "irrelevant reference/entertainment website",
         "no buyer-intent phrase",
-        "no vehicle term",
         "no Western Cape location in result text",
         "below minimum score"
       ],
@@ -724,9 +725,10 @@
       "source": "Bing RSS: site:reddit.com \"looking for a car\" \"Paarl\""
     },
     {
-      "title": "LOOK | English meaning - Cambridge Dictionary",
+      "title": "LOOK Definition & Meaning - Merriam-Webster",
       "reasons": [
         "irrelevant reference/entertainment website",
+        "no buyer-intent phrase",
         "no vehicle term",
         "no Western Cape location in result text",
         "below minimum score"
@@ -734,7 +736,7 @@
       "source": "Bing RSS: site:reddit.com \"looking for a car\" \"Paarl\""
     },
     {
-      "title": "LOOK Definition & Meaning - Merriam-Webster",
+      "title": "Looking: Season 1 | Rotten Tomatoes",
       "reasons": [
         "irrelevant reference/entertainment website",
         "no buyer-intent phrase",
@@ -756,9 +758,8 @@
       "source": "Bing RSS: site:reddit.com \"looking for a car\" \"Paarl\""
     },
     {
-      "title": "Looking (TV Movie 2016) - IMDb",
+      "title": "Watch Looking Streaming Online - Hulu",
       "reasons": [
-        "irrelevant reference/entertainment website",
         "no buyer-intent phrase",
         "no vehicle term",
         "no Western Cape location in result text",
@@ -767,17 +768,117 @@
       "source": "Bing RSS: site:reddit.com \"looking for a car\" \"Paarl\""
     },
     {
-      "title": "LOOKING Definition & Meaning | Dictionary.com",
+      "title": "'Looking' cast: Where are they now? | Out.com",
       "reasons": [
-        "irrelevant reference/entertainment website",
         "no buyer-intent phrase",
         "no vehicle term",
         "no Western Cape location in result text",
+        "older than age limit",
         "below minimum score"
       ],
       "source": "Bing RSS: site:reddit.com \"looking for a car\" \"Paarl\""
     }
   ],
-  "opportunities": [],
+  "opportunities": [
+    {
+      "first_seen_utc": "2026-10-21T13:05:22+00:00",
+      "published_utc": "",
+      "source": "Approved RSS 1",
+      "title": "Rant about living these days.",
+      "url": "https://www.reddit.com/r/capetown/comments/1ptrka7/rant_about_living_these_days/",
+      "summary": "Hello Cape Town I really just need a space to vent. The last two years have been unbearable. The cost of simply surviving feels like it has skyrocketed, and I don’t know how much longer ordinary people are expected to cope. When I moved here I could still just about get by on minimum wage if I worked overtime. Now? Especially over the last two years, it feels like I can’t even afford to breathe. In that time, I lost my mother, my father, and my brother. I lost a job and found another one (and ye",
+      "locations": [
+        "cape town"
+      ],
+      "score": 95,
+      "priority": "High",
+      "new_this_run": true
+    },
+    {
+      "first_seen_utc": "2026-10-21T13:05:22+00:00",
+      "published_utc": "",
+      "source": "Approved RSS 1",
+      "title": "Joburger - Potentially (definitely) moving to Capetown",
+      "url": "https://www.reddit.com/r/capetown/comments/1s81mbx/joburger_potentially_definitely_moving_to_capetown/",
+      "summary": "Hi Guys There's potentially an opportunity for me to get a job in Capetown. It would require me to relocate. The offices are in the City Centre. I'd be looking for a 2 bed 1 bath within a 30 minute distance of the cbd. That said, the work hours are flexible, meaning this 30 minutes can avoid peak hour traffic. That should increase my search radius. I've done some preliminary research and am looking at Rondebosch, Kenilworth, Wynberg, Claremont, Plumstead. Generally in that area. My rental budget",
+      "locations": [
+        "claremont"
+      ],
+      "score": 85,
+      "priority": "High",
+      "new_this_run": true
+    },
+    {
+      "first_seen_utc": "2026-10-21T13:05:22+00:00",
+      "published_utc": "",
+      "source": "Approved RSS 1",
+      "title": "Cost of living crisis (to the CEO's and HR)",
+      "url": "https://www.reddit.com/r/capetown/comments/1qpg1p4/cost_of_living_crisis_to_the_ceos_and_hr/",
+      "summary": "Bit of a back story so that you can actually understand when you offer someone a salary. I have seen a job ad being posted for a position at a \"vibrant company\" with one of the perks being \"free bottomless coffee\" at a place in Seapoint. Now, if it was bottomless food, count me in I would've been in office every day. Now this offer was a maximum of 25k before deductions and minimum (5 years of experience so someone of around 30). So let's break down the costs. You'll probably walk out with aroun",
+      "locations": [
+        "cape town"
+      ],
+      "score": 85,
+      "priority": "High",
+      "new_this_run": true
+    },
+    {
+      "first_seen_utc": "2026-10-21T13:05:22+00:00",
+      "published_utc": "",
+      "source": "Approved RSS 1",
+      "title": "Help with buying a second hand car in Cape Town?",
+      "url": "https://www.reddit.com/r/capetown/comments/1ozkqwf/help_with_buying_a_second_hand_car_in_cape_town/",
+      "summary": "Okay guys, I’m in the process of leaving my husband, and I really need a getaway car. Unfortunately after years of emotional abuse I don’t have much to my name, and I have no car knowledge at all, and no one to help me since I’m trying to keep this a secret until I have everything planned. If you were in the market for a second-hand car right now, and your budget was R75000, what car would you pick and where would you go to buy it? I’ve seen mixed advice about places like WeBuyCars, so if there’",
+      "locations": [
+        "cape town"
+      ],
+      "score": 85,
+      "priority": "High",
+      "new_this_run": true
+    },
+    {
+      "first_seen_utc": "2026-10-21T13:05:22+00:00",
+      "published_utc": "",
+      "source": "Approved RSS 1",
+      "title": "In search of VW Mechanic in Cape Town",
+      "url": "https://www.reddit.com/r/capetown/comments/1u86ecv/in_search_of_vw_mechanic_in_cape_town/",
+      "summary": "Hi guys! I'm looking for recommendations for a reliable VW mechanic in the Cape Town area who won't charge dealership prices (especially given that I'm still a student). I have a 2009 Golf 6 1.6i with around 165,000km on the clock. I've owned it for less than a year, so this will be my first service since buying it. I'd also like to have a few other things checked over in addition to the service. I'm not necessarily looking for the absolute cheapest option, but rather someone who does honest, qu",
+      "locations": [
+        "cape town"
+      ],
+      "score": 75,
+      "priority": "Review",
+      "new_this_run": true
+    },
+    {
+      "first_seen_utc": "2026-10-21T13:05:22+00:00",
+      "published_utc": "",
+      "source": "Approved RSS 1",
+      "title": "buying a motorcycle",
+      "url": "https://www.reddit.com/r/capetown/comments/1qiagq9/buying_a_motorcycle/",
+      "summary": "hi, just curious and this might sounds soooo silly... so im looking for a motorcycle now... some of them go lower than ZAR20k and this one is ZAR20k for a 2015 Suzuki GS150R. I know, its a decent motor. i have 5 years of experience riding a motorcycle back in Indonesia, where the wind wasn't as strong as here. im just curious, with the winter coming, do you think it will be worth it to buy this one? idk how long do i have in cape town, but my plan is as soon as i get out (hopefully this year), i",
+      "locations": [
+        "cape town"
+      ],
+      "score": 75,
+      "priority": "Review",
+      "new_this_run": true
+    },
+    {
+      "first_seen_utc": "2026-10-21T13:05:22+00:00",
+      "published_utc": "",
+      "source": "Approved RSS 1",
+      "title": "I’m looking for a recommendations.",
+      "url": "https://www.reddit.com/r/capetown/comments/1q5d6dd/im_looking_for_a_recommendations/",
+      "summary": "It’s time to buy a “new” pre-loved car. I’m looking for any recommendations of trustworthy dealers or any other options really. I’m happy to search anywhere in Cape Town or Western Cape. If you know of any hidden jewels, please let a brother know. submitted by /u/Previous-Ad-376 [link] [comments]",
+      "locations": [
+        "cape town",
+        "western cape"
+      ],
+      "score": 75,
+      "priority": "Review",
+      "new_this_run": true
+    }
+  ],
   "disclaimer": "Unverified public RSS search results. Confirm buyer intent and location at original source; no private contact data is collected."
 }
