@@ -1,25 +1,26 @@
 {
-  "version": "5.3",
-  "last_scan_utc": "2026-10-21T13:23:01+00:00",
+  "version": "5.4",
+  "last_scan_utc": "2026-10-21T13:34:36+00:00",
   "status": "completed",
   "stats": {
     "sources_checked": 19,
     "sources_accessible": 19,
     "items_checked": 201,
-    "matches_this_scan": 1,
-    "new_this_scan": 1,
-    "dashboard_opportunities": 1,
+    "matches_this_scan": 0,
+    "new_this_scan": 0,
+    "dashboard_opportunities": 0,
     "retained_from_prior_scans": 0
   },
   "rejection_reasons": {
-    "no clear vehicle purchase request": 193,
-    "below minimum score": 192,
-    "no Western Cape location in result text": 188,
-    "no vehicle term": 173,
-    "irrelevant reference/entertainment website": 118,
-    "older than age limit": 26,
-    "seller/advertisement wording": 4,
-    "unrelated housing, employment or repair request": 1
+    "title does not clearly request buying a vehicle": 199,
+    "below minimum score": 199,
+    "no Western Cape location in result text": 189,
+    "no vehicle term in title": 185,
+    "irrelevant reference/entertainment website": 101,
+    "older than age limit": 42,
+    "unrelated subject in title": 8,
+    "seller/advertisement wording": 7,
+    "publication date unavailable": 1
   },
   "feed_stats": [
     {
@@ -133,7 +134,7 @@
     {
       "source": "Approved RSS 1",
       "items": 21,
-      "matches": 1,
+      "matches": 0,
       "error": ""
     }
   ],
@@ -142,19 +143,8 @@
       "title": "Looking (TV series) - Wikipedia",
       "reasons": [
         "irrelevant reference/entertainment website",
-        "no clear vehicle purchase request",
-        "no vehicle term",
-        "no Western Cape location in result text",
-        "below minimum score"
-      ],
-      "source": "Bing RSS: site:reddit.com/r/capetown \"looking to buy\" car"
-    },
-    {
-      "title": "Looking - definition of looking by The Free Dictionary",
-      "reasons": [
-        "irrelevant reference/entertainment website",
-        "no clear vehicle purchase request",
-        "no vehicle term",
+        "title does not clearly request buying a vehicle",
+        "no vehicle term in title",
         "no Western Cape location in result text",
         "below minimum score"
       ],
@@ -164,8 +154,8 @@
       "title": "LOOKING Synonyms: 90 Similar and Opposite Words - Merriam-Webster",
       "reasons": [
         "irrelevant reference/entertainment website",
-        "no clear vehicle purchase request",
-        "no vehicle term",
+        "title does not clearly request buying a vehicle",
+        "no vehicle term in title",
         "no Western Cape location in result text",
         "below minimum score"
       ],
@@ -175,29 +165,8 @@
       "title": "Looking (TV Series 2014–2015) - IMDb",
       "reasons": [
         "irrelevant reference/entertainment website",
-        "no clear vehicle purchase request",
-        "no vehicle term",
-        "no Western Cape location in result text",
-        "below minimum score"
-      ],
-      "source": "Bing RSS: site:reddit.com/r/capetown \"looking to buy\" car"
-    },
-    {
-      "title": "Looking - watch tv show streaming online - JustWatch",
-      "reasons": [
-        "no clear vehicle purchase request",
-        "no vehicle term",
-        "no Western Cape location in result text",
-        "below minimum score"
-      ],
-      "source": "Bing RSS: site:reddit.com/r/capetown \"looking to buy\" car"
-    },
-    {
-      "title": "LOOK | English meaning - Cambridge Dictionary",
-      "reasons": [
-        "irrelevant reference/entertainment website",
-        "no clear vehicle purchase request",
-        "no vehicle term",
+        "title does not clearly request buying a vehicle",
+        "no vehicle term in title",
         "no Western Cape location in result text",
         "below minimum score"
       ],
@@ -207,8 +176,29 @@
       "title": "LOOK Definition & Meaning - Merriam-Webster",
       "reasons": [
         "irrelevant reference/entertainment website",
-        "no clear vehicle purchase request",
-        "no vehicle term",
+        "title does not clearly request buying a vehicle",
+        "no vehicle term in title",
+        "no Western Cape location in result text",
+        "below minimum score"
+      ],
+      "source": "Bing RSS: site:reddit.com/r/capetown \"looking to buy\" car"
+    },
+    {
+      "title": "Looking - watch tv show streaming online - JustWatch",
+      "reasons": [
+        "title does not clearly request buying a vehicle",
+        "no vehicle term in title",
+        "no Western Cape location in result text",
+        "below minimum score"
+      ],
+      "source": "Bing RSS: site:reddit.com/r/capetown \"looking to buy\" car"
+    },
+    {
+      "title": "Looking - definition of looking by The Free Dictionary",
+      "reasons": [
+        "irrelevant reference/entertainment website",
+        "title does not clearly request buying a vehicle",
+        "no vehicle term in title",
         "no Western Cape location in result text",
         "below minimum score"
       ],
@@ -218,31 +208,42 @@
       "title": "Looking - Wikipedia",
       "reasons": [
         "irrelevant reference/entertainment website",
-        "no clear vehicle purchase request",
-        "no vehicle term",
+        "title does not clearly request buying a vehicle",
+        "no vehicle term in title",
         "no Western Cape location in result text",
         "below minimum score"
       ],
       "source": "Bing RSS: site:reddit.com/r/capetown \"looking to buy\" car"
     },
     {
-      "title": "Looking (TV Movie 2016) - IMDb",
+      "title": "Looking: Season 1 | Rotten Tomatoes",
       "reasons": [
         "irrelevant reference/entertainment website",
-        "no clear vehicle purchase request",
-        "no vehicle term",
+        "title does not clearly request buying a vehicle",
+        "no vehicle term in title",
         "no Western Cape location in result text",
         "below minimum score"
       ],
       "source": "Bing RSS: site:reddit.com/r/capetown \"looking to buy\" car"
     },
     {
-      "title": "LOOKING Definition & Meaning | Dictionary.com",
+      "title": "Looking (TV Series 2014–2015) - Full cast & crew - IMDb",
       "reasons": [
         "irrelevant reference/entertainment website",
-        "no clear vehicle purchase request",
-        "no vehicle term",
+        "title does not clearly request buying a vehicle",
+        "no vehicle term in title",
         "no Western Cape location in result text",
+        "below minimum score"
+      ],
+      "source": "Bing RSS: site:reddit.com/r/capetown \"looking to buy\" car"
+    },
+    {
+      "title": "'Looking' cast: Where are they now? | Out.com",
+      "reasons": [
+        "title does not clearly request buying a vehicle",
+        "no vehicle term in title",
+        "no Western Cape location in result text",
+        "older than age limit",
         "below minimum score"
       ],
       "source": "Bing RSS: site:reddit.com/r/capetown \"looking to buy\" car"
@@ -251,19 +252,8 @@
       "title": "Looking (TV series) - Wikipedia",
       "reasons": [
         "irrelevant reference/entertainment website",
-        "no clear vehicle purchase request",
-        "no vehicle term",
-        "no Western Cape location in result text",
-        "below minimum score"
-      ],
-      "source": "Bing RSS: site:reddit.com/r/capetown \"looking for\" bakkie"
-    },
-    {
-      "title": "Looking - definition of looking by The Free Dictionary",
-      "reasons": [
-        "irrelevant reference/entertainment website",
-        "no clear vehicle purchase request",
-        "no vehicle term",
+        "title does not clearly request buying a vehicle",
+        "no vehicle term in title",
         "no Western Cape location in result text",
         "below minimum score"
       ],
@@ -273,8 +263,8 @@
       "title": "LOOKING Synonyms: 90 Similar and Opposite Words - Merriam-Webster",
       "reasons": [
         "irrelevant reference/entertainment website",
-        "no clear vehicle purchase request",
-        "no vehicle term",
+        "title does not clearly request buying a vehicle",
+        "no vehicle term in title",
         "no Western Cape location in result text",
         "below minimum score"
       ],
@@ -284,29 +274,8 @@
       "title": "Looking (TV Series 2014–2015) - IMDb",
       "reasons": [
         "irrelevant reference/entertainment website",
-        "no clear vehicle purchase request",
-        "no vehicle term",
-        "no Western Cape location in result text",
-        "below minimum score"
-      ],
-      "source": "Bing RSS: site:reddit.com/r/capetown \"looking for\" bakkie"
-    },
-    {
-      "title": "Looking - watch tv show streaming online - JustWatch",
-      "reasons": [
-        "no clear vehicle purchase request",
-        "no vehicle term",
-        "no Western Cape location in result text",
-        "below minimum score"
-      ],
-      "source": "Bing RSS: site:reddit.com/r/capetown \"looking for\" bakkie"
-    },
-    {
-      "title": "LOOK | English meaning - Cambridge Dictionary",
-      "reasons": [
-        "irrelevant reference/entertainment website",
-        "no clear vehicle purchase request",
-        "no vehicle term",
+        "title does not clearly request buying a vehicle",
+        "no vehicle term in title",
         "no Western Cape location in result text",
         "below minimum score"
       ],
@@ -316,8 +285,29 @@
       "title": "LOOK Definition & Meaning - Merriam-Webster",
       "reasons": [
         "irrelevant reference/entertainment website",
-        "no clear vehicle purchase request",
-        "no vehicle term",
+        "title does not clearly request buying a vehicle",
+        "no vehicle term in title",
+        "no Western Cape location in result text",
+        "below minimum score"
+      ],
+      "source": "Bing RSS: site:reddit.com/r/capetown \"looking for\" bakkie"
+    },
+    {
+      "title": "Looking - watch tv show streaming online - JustWatch",
+      "reasons": [
+        "title does not clearly request buying a vehicle",
+        "no vehicle term in title",
+        "no Western Cape location in result text",
+        "below minimum score"
+      ],
+      "source": "Bing RSS: site:reddit.com/r/capetown \"looking for\" bakkie"
+    },
+    {
+      "title": "Looking - definition of looking by The Free Dictionary",
+      "reasons": [
+        "irrelevant reference/entertainment website",
+        "title does not clearly request buying a vehicle",
+        "no vehicle term in title",
         "no Western Cape location in result text",
         "below minimum score"
       ],
@@ -327,31 +317,42 @@
       "title": "Looking - Wikipedia",
       "reasons": [
         "irrelevant reference/entertainment website",
-        "no clear vehicle purchase request",
-        "no vehicle term",
+        "title does not clearly request buying a vehicle",
+        "no vehicle term in title",
         "no Western Cape location in result text",
         "below minimum score"
       ],
       "source": "Bing RSS: site:reddit.com/r/capetown \"looking for\" bakkie"
     },
     {
-      "title": "Looking (TV Movie 2016) - IMDb",
+      "title": "Looking: Season 1 | Rotten Tomatoes",
       "reasons": [
         "irrelevant reference/entertainment website",
-        "no clear vehicle purchase request",
-        "no vehicle term",
+        "title does not clearly request buying a vehicle",
+        "no vehicle term in title",
         "no Western Cape location in result text",
         "below minimum score"
       ],
       "source": "Bing RSS: site:reddit.com/r/capetown \"looking for\" bakkie"
     },
     {
-      "title": "LOOKING Definition & Meaning | Dictionary.com",
+      "title": "Looking (TV Series 2014–2015) - Full cast & crew - IMDb",
       "reasons": [
         "irrelevant reference/entertainment website",
-        "no clear vehicle purchase request",
-        "no vehicle term",
+        "title does not clearly request buying a vehicle",
+        "no vehicle term in title",
         "no Western Cape location in result text",
+        "below minimum score"
+      ],
+      "source": "Bing RSS: site:reddit.com/r/capetown \"looking for\" bakkie"
+    },
+    {
+      "title": "'Looking' cast: Where are they now? | Out.com",
+      "reasons": [
+        "title does not clearly request buying a vehicle",
+        "no vehicle term in title",
+        "no Western Cape location in result text",
+        "older than age limit",
         "below minimum score"
       ],
       "source": "Bing RSS: site:reddit.com/r/capetown \"looking for\" bakkie"
@@ -360,19 +361,8 @@
       "title": "Looking (TV series) - Wikipedia",
       "reasons": [
         "irrelevant reference/entertainment website",
-        "no clear vehicle purchase request",
-        "no vehicle term",
-        "no Western Cape location in result text",
-        "below minimum score"
-      ],
-      "source": "Bing RSS: site:reddit.com/r/askSouthAfrica \"looking to buy\" car \"Cape Town\""
-    },
-    {
-      "title": "Looking - definition of looking by The Free Dictionary",
-      "reasons": [
-        "irrelevant reference/entertainment website",
-        "no clear vehicle purchase request",
-        "no vehicle term",
+        "title does not clearly request buying a vehicle",
+        "no vehicle term in title",
         "no Western Cape location in result text",
         "below minimum score"
       ],
@@ -382,8 +372,8 @@
       "title": "LOOKING Synonyms: 90 Similar and Opposite Words - Merriam-Webster",
       "reasons": [
         "irrelevant reference/entertainment website",
-        "no clear vehicle purchase request",
-        "no vehicle term",
+        "title does not clearly request buying a vehicle",
+        "no vehicle term in title",
         "no Western Cape location in result text",
         "below minimum score"
       ],
@@ -393,29 +383,8 @@
       "title": "Looking (TV Series 2014–2015) - IMDb",
       "reasons": [
         "irrelevant reference/entertainment website",
-        "no clear vehicle purchase request",
-        "no vehicle term",
-        "no Western Cape location in result text",
-        "below minimum score"
-      ],
-      "source": "Bing RSS: site:reddit.com/r/askSouthAfrica \"looking to buy\" car \"Cape Town\""
-    },
-    {
-      "title": "Looking - watch tv show streaming online - JustWatch",
-      "reasons": [
-        "no clear vehicle purchase request",
-        "no vehicle term",
-        "no Western Cape location in result text",
-        "below minimum score"
-      ],
-      "source": "Bing RSS: site:reddit.com/r/askSouthAfrica \"looking to buy\" car \"Cape Town\""
-    },
-    {
-      "title": "LOOK | English meaning - Cambridge Dictionary",
-      "reasons": [
-        "irrelevant reference/entertainment website",
-        "no clear vehicle purchase request",
-        "no vehicle term",
+        "title does not clearly request buying a vehicle",
+        "no vehicle term in title",
         "no Western Cape location in result text",
         "below minimum score"
       ],
@@ -425,8 +394,29 @@
       "title": "LOOK Definition & Meaning - Merriam-Webster",
       "reasons": [
         "irrelevant reference/entertainment website",
-        "no clear vehicle purchase request",
-        "no vehicle term",
+        "title does not clearly request buying a vehicle",
+        "no vehicle term in title",
+        "no Western Cape location in result text",
+        "below minimum score"
+      ],
+      "source": "Bing RSS: site:reddit.com/r/askSouthAfrica \"looking to buy\" car \"Cape Town\""
+    },
+    {
+      "title": "Looking - watch tv show streaming online - JustWatch",
+      "reasons": [
+        "title does not clearly request buying a vehicle",
+        "no vehicle term in title",
+        "no Western Cape location in result text",
+        "below minimum score"
+      ],
+      "source": "Bing RSS: site:reddit.com/r/askSouthAfrica \"looking to buy\" car \"Cape Town\""
+    },
+    {
+      "title": "Looking - definition of looking by The Free Dictionary",
+      "reasons": [
+        "irrelevant reference/entertainment website",
+        "title does not clearly request buying a vehicle",
+        "no vehicle term in title",
         "no Western Cape location in result text",
         "below minimum score"
       ],
@@ -436,31 +426,42 @@
       "title": "Looking - Wikipedia",
       "reasons": [
         "irrelevant reference/entertainment website",
-        "no clear vehicle purchase request",
-        "no vehicle term",
+        "title does not clearly request buying a vehicle",
+        "no vehicle term in title",
         "no Western Cape location in result text",
         "below minimum score"
       ],
       "source": "Bing RSS: site:reddit.com/r/askSouthAfrica \"looking to buy\" car \"Cape Town\""
     },
     {
-      "title": "Looking (TV Movie 2016) - IMDb",
+      "title": "Looking: Season 1 | Rotten Tomatoes",
       "reasons": [
         "irrelevant reference/entertainment website",
-        "no clear vehicle purchase request",
-        "no vehicle term",
+        "title does not clearly request buying a vehicle",
+        "no vehicle term in title",
         "no Western Cape location in result text",
         "below minimum score"
       ],
       "source": "Bing RSS: site:reddit.com/r/askSouthAfrica \"looking to buy\" car \"Cape Town\""
     },
     {
-      "title": "LOOKING Definition & Meaning | Dictionary.com",
+      "title": "Looking (TV Series 2014–2015) - Full cast & crew - IMDb",
       "reasons": [
         "irrelevant reference/entertainment website",
-        "no clear vehicle purchase request",
-        "no vehicle term",
+        "title does not clearly request buying a vehicle",
+        "no vehicle term in title",
         "no Western Cape location in result text",
+        "below minimum score"
+      ],
+      "source": "Bing RSS: site:reddit.com/r/askSouthAfrica \"looking to buy\" car \"Cape Town\""
+    },
+    {
+      "title": "'Looking' cast: Where are they now? | Out.com",
+      "reasons": [
+        "title does not clearly request buying a vehicle",
+        "no vehicle term in title",
+        "no Western Cape location in result text",
+        "older than age limit",
         "below minimum score"
       ],
       "source": "Bing RSS: site:reddit.com/r/askSouthAfrica \"looking to buy\" car \"Cape Town\""
@@ -469,8 +470,8 @@
       "title": "WANT Definition & Meaning - Merriam-Webster",
       "reasons": [
         "irrelevant reference/entertainment website",
-        "no clear vehicle purchase request",
-        "no vehicle term",
+        "title does not clearly request buying a vehicle",
+        "no vehicle term in title",
         "no Western Cape location in result text",
         "below minimum score"
       ],
@@ -480,8 +481,8 @@
       "title": "WANT | English meaning - Cambridge Dictionary",
       "reasons": [
         "irrelevant reference/entertainment website",
-        "no clear vehicle purchase request",
-        "no vehicle term",
+        "title does not clearly request buying a vehicle",
+        "no vehicle term in title",
         "no Western Cape location in result text",
         "below minimum score"
       ],
@@ -491,30 +492,8 @@
       "title": "WANT Definition & Meaning | Dictionary.com",
       "reasons": [
         "irrelevant reference/entertainment website",
-        "no clear vehicle purchase request",
-        "no vehicle term",
-        "no Western Cape location in result text",
-        "below minimum score"
-      ],
-      "source": "Bing RSS: site:reddit.com/r/southafrica \"want to buy\" car \"Cape Town\""
-    },
-    {
-      "title": "WANT | definition in the Cambridge English Dictionary",
-      "reasons": [
-        "irrelevant reference/entertainment website",
-        "no clear vehicle purchase request",
-        "no vehicle term",
-        "no Western Cape location in result text",
-        "below minimum score"
-      ],
-      "source": "Bing RSS: site:reddit.com/r/southafrica \"want to buy\" car \"Cape Town\""
-    },
-    {
-      "title": "Want - Wikipedia",
-      "reasons": [
-        "irrelevant reference/entertainment website",
-        "no clear vehicle purchase request",
-        "no vehicle term",
+        "title does not clearly request buying a vehicle",
+        "no vehicle term in title",
         "no Western Cape location in result text",
         "below minimum score"
       ],
@@ -524,8 +503,51 @@
       "title": "WANT Synonyms: 252 Similar and Opposite Words - Merriam-Webster",
       "reasons": [
         "irrelevant reference/entertainment website",
-        "no clear vehicle purchase request",
-        "no vehicle term",
+        "title does not clearly request buying a vehicle",
+        "no vehicle term in title",
+        "no Western Cape location in result text",
+        "below minimum score"
+      ],
+      "source": "Bing RSS: site:reddit.com/r/southafrica \"want to buy\" car \"Cape Town\""
+    },
+    {
+      "title": "WANT | definition in the Cambridge English Dictionary",
+      "reasons": [
+        "irrelevant reference/entertainment website",
+        "title does not clearly request buying a vehicle",
+        "no vehicle term in title",
+        "no Western Cape location in result text",
+        "below minimum score"
+      ],
+      "source": "Bing RSS: site:reddit.com/r/southafrica \"want to buy\" car \"Cape Town\""
+    },
+    {
+      "title": "Want - Wikipedia",
+      "reasons": [
+        "irrelevant reference/entertainment website",
+        "title does not clearly request buying a vehicle",
+        "no vehicle term in title",
+        "no Western Cape location in result text",
+        "below minimum score"
+      ],
+      "source": "Bing RSS: site:reddit.com/r/southafrica \"want to buy\" car \"Cape Town\""
+    },
+    {
+      "title": "want - Wiktionary, the free dictionary",
+      "reasons": [
+        "irrelevant reference/entertainment website",
+        "title does not clearly request buying a vehicle",
+        "no vehicle term in title",
+        "no Western Cape location in result text",
+        "below minimum score"
+      ],
+      "source": "Bing RSS: site:reddit.com/r/southafrica \"want to buy\" car \"Cape Town\""
+    },
+    {
+      "title": "Want - Definition, Meaning & Synonyms | Vocabulary.com",
+      "reasons": [
+        "title does not clearly request buying a vehicle",
+        "no vehicle term in title",
         "no Western Cape location in result text",
         "below minimum score"
       ],
@@ -535,18 +557,8 @@
       "title": "WANT definition and meaning | Collins English Dictionary",
       "reasons": [
         "irrelevant reference/entertainment website",
-        "no clear vehicle purchase request",
-        "no vehicle term",
-        "no Western Cape location in result text",
-        "below minimum score"
-      ],
-      "source": "Bing RSS: site:reddit.com/r/southafrica \"want to buy\" car \"Cape Town\""
-    },
-    {
-      "title": "Want - Definition, Meaning & Synonyms | Vocabulary.com",
-      "reasons": [
-        "no clear vehicle purchase request",
-        "no vehicle term",
+        "title does not clearly request buying a vehicle",
+        "no vehicle term in title",
         "no Western Cape location in result text",
         "below minimum score"
       ],
@@ -556,39 +568,58 @@
       "title": "Want - definition of want by The Free Dictionary",
       "reasons": [
         "irrelevant reference/entertainment website",
-        "no clear vehicle purchase request",
-        "no vehicle term",
+        "title does not clearly request buying a vehicle",
+        "no vehicle term in title",
         "no Western Cape location in result text",
         "below minimum score"
       ],
       "source": "Bing RSS: site:reddit.com/r/southafrica \"want to buy\" car \"Cape Town\""
     },
     {
-      "title": "WANT Synonyms & Antonyms - 167 words | Thesaurus.com",
+      "title": "ABC News & Headlines – Australian Broadcasting Corporation",
       "reasons": [
-        "irrelevant reference/entertainment website",
-        "no clear vehicle purchase request",
-        "no vehicle term",
-        "no Western Cape location in result text",
-        "below minimum score"
-      ],
-      "source": "Bing RSS: site:reddit.com/r/southafrica \"want to buy\" car \"Cape Town\""
-    },
-    {
-      "title": "Justin Bieber - Anyone (Lyrics) - YouTube",
-      "reasons": [
-        "no clear vehicle purchase request",
-        "no vehicle term",
+        "title does not clearly request buying a vehicle",
+        "no vehicle term in title",
         "no Western Cape location in result text",
         "below minimum score"
       ],
       "source": "Bing RSS: site:reddit.com \"anyone selling\" car \"Cape Town\""
     },
     {
-      "title": "Anyone or Any one – What’s the Difference? - Writing Explained",
+      "title": "GOAT Maths - ABC Education",
       "reasons": [
-        "no clear vehicle purchase request",
-        "no vehicle term",
+        "title does not clearly request buying a vehicle",
+        "no vehicle term in title",
+        "no Western Cape location in result text",
+        "below minimum score"
+      ],
+      "source": "Bing RSS: site:reddit.com \"anyone selling\" car \"Cape Town\""
+    },
+    {
+      "title": "Where do I submit my weather photos for ABC News?",
+      "reasons": [
+        "title does not clearly request buying a vehicle",
+        "no vehicle term in title",
+        "no Western Cape location in result text",
+        "below minimum score"
+      ],
+      "source": "Bing RSS: site:reddit.com \"anyone selling\" car \"Cape Town\""
+    },
+    {
+      "title": "ABC iview Help - Australian Broadcasting Corporation",
+      "reasons": [
+        "title does not clearly request buying a vehicle",
+        "no vehicle term in title",
+        "no Western Cape location in result text",
+        "below minimum score"
+      ],
+      "source": "Bing RSS: site:reddit.com \"anyone selling\" car \"Cape Town\""
+    },
+    {
+      "title": "About the ABC",
+      "reasons": [
+        "title does not clearly request buying a vehicle",
+        "no vehicle term in title",
         "no Western Cape location in result text",
         "older than age limit",
         "below minimum score"
@@ -596,52 +627,30 @@
       "source": "Bing RSS: site:reddit.com \"anyone selling\" car \"Cape Town\""
     },
     {
-      "title": "Justin Bieber - Anyone (Lyrics) - YouTube",
+      "title": "OTP Log in - ABC Account - ABC - Australian Broadcasting Corporation",
       "reasons": [
-        "no clear vehicle purchase request",
-        "no vehicle term",
+        "title does not clearly request buying a vehicle",
+        "no vehicle term in title",
         "no Western Cape location in result text",
         "below minimum score"
       ],
       "source": "Bing RSS: site:reddit.com \"anyone selling\" car \"Cape Town\""
     },
     {
-      "title": "Find the best real estate agents near you | Anyone.com",
+      "title": "ABC Australia - ABC iview",
       "reasons": [
-        "no clear vehicle purchase request",
-        "no vehicle term",
+        "title does not clearly request buying a vehicle",
+        "no vehicle term in title",
         "no Western Cape location in result text",
         "below minimum score"
       ],
       "source": "Bing RSS: site:reddit.com \"anyone selling\" car \"Cape Town\""
     },
     {
-      "title": "ANYONE Definition & Meaning - Merriam-Webster",
+      "title": "ABC News - ABC iview",
       "reasons": [
-        "irrelevant reference/entertainment website",
-        "no clear vehicle purchase request",
-        "no vehicle term",
-        "no Western Cape location in result text",
-        "below minimum score"
-      ],
-      "source": "Bing RSS: site:reddit.com \"anyone selling\" car \"Cape Town\""
-    },
-    {
-      "title": "Buy or Sell a Home Online | Anyone.com",
-      "reasons": [
-        "no clear vehicle purchase request",
-        "no vehicle term",
-        "no Western Cape location in result text",
-        "below minimum score"
-      ],
-      "source": "Bing RSS: site:reddit.com \"anyone selling\" car \"Cape Town\""
-    },
-    {
-      "title": "ANYONE | English meaning - Cambridge Dictionary",
-      "reasons": [
-        "irrelevant reference/entertainment website",
-        "no clear vehicle purchase request",
-        "no vehicle term",
+        "title does not clearly request buying a vehicle",
+        "no vehicle term in title",
         "no Western Cape location in result text",
         "older than age limit",
         "below minimum score"
@@ -649,33 +658,22 @@
       "source": "Bing RSS: site:reddit.com \"anyone selling\" car \"Cape Town\""
     },
     {
-      "title": "Anyone - YouTube Music",
+      "title": "ABC Account - ABC - Australian Broadcasting Corporation",
       "reasons": [
-        "no clear vehicle purchase request",
-        "no vehicle term",
+        "title does not clearly request buying a vehicle",
+        "no vehicle term in title",
         "no Western Cape location in result text",
         "below minimum score"
       ],
       "source": "Bing RSS: site:reddit.com \"anyone selling\" car \"Cape Town\""
     },
     {
-      "title": "Anyone (Justin Bieber song) - Wikipedia",
+      "title": "ABC Classic 100: Greatest Of All Time - ABC Classic",
       "reasons": [
-        "irrelevant reference/entertainment website",
-        "no clear vehicle purchase request",
-        "no vehicle term",
+        "title does not clearly request buying a vehicle",
+        "no vehicle term in title",
         "no Western Cape location in result text",
-        "below minimum score"
-      ],
-      "source": "Bing RSS: site:reddit.com \"anyone selling\" car \"Cape Town\""
-    },
-    {
-      "title": "ANYONE Definition & Meaning | Dictionary.com",
-      "reasons": [
-        "irrelevant reference/entertainment website",
-        "no clear vehicle purchase request",
-        "no vehicle term",
-        "no Western Cape location in result text",
+        "older than age limit",
         "below minimum score"
       ],
       "source": "Bing RSS: site:reddit.com \"anyone selling\" car \"Cape Town\""
@@ -684,19 +682,8 @@
       "title": "Looking (TV series) - Wikipedia",
       "reasons": [
         "irrelevant reference/entertainment website",
-        "no clear vehicle purchase request",
-        "no vehicle term",
-        "no Western Cape location in result text",
-        "below minimum score"
-      ],
-      "source": "Bing RSS: site:reddit.com \"looking for a car\" \"Paarl\""
-    },
-    {
-      "title": "Looking - definition of looking by The Free Dictionary",
-      "reasons": [
-        "irrelevant reference/entertainment website",
-        "no clear vehicle purchase request",
-        "no vehicle term",
+        "title does not clearly request buying a vehicle",
+        "no vehicle term in title",
         "no Western Cape location in result text",
         "below minimum score"
       ],
@@ -706,8 +693,8 @@
       "title": "LOOKING Synonyms: 90 Similar and Opposite Words - Merriam-Webster",
       "reasons": [
         "irrelevant reference/entertainment website",
-        "no clear vehicle purchase request",
-        "no vehicle term",
+        "title does not clearly request buying a vehicle",
+        "no vehicle term in title",
         "no Western Cape location in result text",
         "below minimum score"
       ],
@@ -717,29 +704,8 @@
       "title": "Looking (TV Series 2014–2015) - IMDb",
       "reasons": [
         "irrelevant reference/entertainment website",
-        "no clear vehicle purchase request",
-        "no vehicle term",
-        "no Western Cape location in result text",
-        "below minimum score"
-      ],
-      "source": "Bing RSS: site:reddit.com \"looking for a car\" \"Paarl\""
-    },
-    {
-      "title": "Looking - watch tv show streaming online - JustWatch",
-      "reasons": [
-        "no clear vehicle purchase request",
-        "no vehicle term",
-        "no Western Cape location in result text",
-        "below minimum score"
-      ],
-      "source": "Bing RSS: site:reddit.com \"looking for a car\" \"Paarl\""
-    },
-    {
-      "title": "LOOK | English meaning - Cambridge Dictionary",
-      "reasons": [
-        "irrelevant reference/entertainment website",
-        "no clear vehicle purchase request",
-        "no vehicle term",
+        "title does not clearly request buying a vehicle",
+        "no vehicle term in title",
         "no Western Cape location in result text",
         "below minimum score"
       ],
@@ -749,8 +715,29 @@
       "title": "LOOK Definition & Meaning - Merriam-Webster",
       "reasons": [
         "irrelevant reference/entertainment website",
-        "no clear vehicle purchase request",
-        "no vehicle term",
+        "title does not clearly request buying a vehicle",
+        "no vehicle term in title",
+        "no Western Cape location in result text",
+        "below minimum score"
+      ],
+      "source": "Bing RSS: site:reddit.com \"looking for a car\" \"Paarl\""
+    },
+    {
+      "title": "Looking - watch tv show streaming online - JustWatch",
+      "reasons": [
+        "title does not clearly request buying a vehicle",
+        "no vehicle term in title",
+        "no Western Cape location in result text",
+        "below minimum score"
+      ],
+      "source": "Bing RSS: site:reddit.com \"looking for a car\" \"Paarl\""
+    },
+    {
+      "title": "Looking - definition of looking by The Free Dictionary",
+      "reasons": [
+        "irrelevant reference/entertainment website",
+        "title does not clearly request buying a vehicle",
+        "no vehicle term in title",
         "no Western Cape location in result text",
         "below minimum score"
       ],
@@ -760,51 +747,47 @@
       "title": "Looking - Wikipedia",
       "reasons": [
         "irrelevant reference/entertainment website",
-        "no clear vehicle purchase request",
-        "no vehicle term",
+        "title does not clearly request buying a vehicle",
+        "no vehicle term in title",
         "no Western Cape location in result text",
         "below minimum score"
       ],
       "source": "Bing RSS: site:reddit.com \"looking for a car\" \"Paarl\""
     },
     {
-      "title": "Looking (TV Movie 2016) - IMDb",
+      "title": "Looking: Season 1 | Rotten Tomatoes",
       "reasons": [
         "irrelevant reference/entertainment website",
-        "no clear vehicle purchase request",
-        "no vehicle term",
+        "title does not clearly request buying a vehicle",
+        "no vehicle term in title",
         "no Western Cape location in result text",
         "below minimum score"
       ],
       "source": "Bing RSS: site:reddit.com \"looking for a car\" \"Paarl\""
     },
     {
-      "title": "LOOKING Definition & Meaning | Dictionary.com",
+      "title": "Looking (TV Series 2014–2015) - Full cast & crew - IMDb",
       "reasons": [
         "irrelevant reference/entertainment website",
-        "no clear vehicle purchase request",
-        "no vehicle term",
+        "title does not clearly request buying a vehicle",
+        "no vehicle term in title",
         "no Western Cape location in result text",
+        "below minimum score"
+      ],
+      "source": "Bing RSS: site:reddit.com \"looking for a car\" \"Paarl\""
+    },
+    {
+      "title": "'Looking' cast: Where are they now? | Out.com",
+      "reasons": [
+        "title does not clearly request buying a vehicle",
+        "no vehicle term in title",
+        "no Western Cape location in result text",
+        "older than age limit",
         "below minimum score"
       ],
       "source": "Bing RSS: site:reddit.com \"looking for a car\" \"Paarl\""
     }
   ],
-  "opportunities": [
-    {
-      "first_seen_utc": "2026-10-21T13:23:01+00:00",
-      "published_utc": "2026-10-03T19:17:27+00:00",
-      "source": "Approved RSS 1",
-      "title": "Do you guys buy food for beggars outside takeaway restaurants?",
-      "url": "https://www.reddit.com/r/capetown/comments/1wwvgqa/do_you_guys_buy_food_for_beggars_outside_takeaway/",
-      "summary": "Hey folks, If you regularly get takeout in Cape Town you’re probably familiar with people outside the restaurants asking if you can buy them something. Now I’m not exactly made of money because I work as a part time tutor while I’m studying, but I usually try to buy them something cheap, since if I’m getting takeout I can probably afford to spend a bit extra. Just tonight I went to Chicken Licken and somebody outside asked me to buy them something. I kinda mumbled something between “I’ll see” an",
-      "locations": [
-        "cape town"
-      ],
-      "score": 90,
-      "priority": "Review",
-      "new_this_run": true
-    }
-  ],
-  "disclaimer": "Unverified recent public RSS posts, not confirmed buyers. Verify original post, age, intent and location. No private contact data collected."
+  "opportunities": [],
+  "disclaimer": "Unverified public RSS posts, not confirmed buyers. Verify source, date, intent and location. No private contact data collected."
 }
