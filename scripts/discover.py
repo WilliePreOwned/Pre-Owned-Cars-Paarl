@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
-"""Willie Buyer Radar 5.1: public RSS discovery and transparent filtering."""
+"""Willie Buyer Radar 5.2 — public RSS buyer-request discovery.
+
+Uses public search RSS and optional authorised RSS feeds only. No login, private
+profiles, personal contact harvesting, or circumvention of access controls.
+"""
 import collections
 import csv
 import datetime as dt
@@ -21,11 +25,17 @@ DIAG_OUT = ROOT / 'buyer_discovery_diagnostics_v5.txt'
 STATE = ROOT / 'buyer_radar_seen_v5.json'
 UTC = dt.timezone.utc
 
-# Avoid broad 'looking for' searches: Bing RSS sometimes returns dictionary/TV pages.
+# Broad Bing searches remain useful as a backup, but do not reliably index
+# social buyer posts. Source-targeted queries can improve relevance.
 SEARCHES = [
-    '"looking for a bakkie" "Cape Town" -sale -dealer',
-    '"looking to buy a car" "Cape Town" -dealer',
-    '"want to buy a car" "Western Cape" -dealership',
+    'site:reddit.com/r/capetown "looking to buy" car',
+    'site:reddit.com/r/capetown "looking for" bakkie',
+    'site:reddit.com/r/askSouthAfrica "looking to buy" car "Cape Town"',
+    'site:reddit.com/r/southafrica "want to buy" car "Cape Town"',
+    'site:reddit.com "anyone selling" car "Cape Town"',
+    'site:reddit.com "looking for a car" "Paarl"',
+    '"looking to buy a car" "Cape Town" -dealer -dealership',
+    '"want to buy a car" "Western Cape" -dealer',
     '"need a reliable car" "Cape Town" -dealer',
     '"bakkie wanted" "Western Cape" -dealer',
     '"vehicle wanted" "Paarl" -dealer',
@@ -33,11 +43,9 @@ SEARCHES = [
     '"looking for a double cab" "Western Cape" -dealer',
     '"looking to buy a Hilux" "Cape Town" -dealer',
     '"looking for a Ford Ranger" "Western Cape" -dealer',
-    '"anyone selling a car" "Cape Town"',
     '"anyone selling a bakkie" "Paarl"',
-    '"soek ' + "'n" + ' bakkie" "Kaapstad"',
-    '"soek ' + "'n" + ' kar" "Paarl"',
-    '"op soek na ' + "'n" + ' voertuig" "Wes-Kaap"',
+    '"soek n bakkie" "Kaapstad"',
+    '"soek n kar" "Paarl"',
 ]
 LOCATIONS = [
     'western cape', 'cape town', 'paarl', 'stellenbosch', 'bellville', 'durbanville',
@@ -66,14 +74,14 @@ SELLER = re.compile(
     r'buying guide|how to buy|tips for buying|shop now|browse our stock)\b', re.I)
 BUDGET = re.compile(r'\b(?:budget|under|below|up to|maximum|max|afford|r\s?\d[\d, ]{3,}|\d{2,3}k)\b', re.I)
 URGENT = re.compile(r'\b(?:urgent|asap|this week|this month|immediately|ready to buy|cash buyer)\b', re.I)
-# Exclude known irrelevant reference and entertainment sources. Other sources still need manual verification.
 BLOCKED_DOMAINS = (
     'wikipedia.org', 'wiktionary.org', 'merriam-webster.com', 'dictionary.com',
     'thefreedictionary.com', 'imdb.com', 'rottentomatoes.com', 'thesaurus.com',
     'collinsdictionary.com', 'cambridge.org', 'britannica.com', 'tvguide.com',
     'wordreference.com', 'yourdictionary.com',
 )
-FIELDS = ['first_seen_utc','published_utc','source','title','url','summary','locations','score','priority','new_this_run']
+FIELDS = ['first_seen_utc','published_utc','source','title','url','summary',
+          'locations','score','priority','new_this_run']
 
 
 def clean(value):
@@ -115,15 +123,28 @@ def blocked_domain(url):
     return any(host == domain or host.endswith('.' + domain) for domain in BLOCKED_DOMAINS)
 
 
-def assess(title, summary, published, now, min_score=55, max_age_days=45):
+def matched_locations(text):
+    lowered = clean(text).lower()
+    return sorted({x for x in LOCATIONS
+                   if re.search(r'(?<!\w)' + re.escape(x) + r'(?!\w)', lowered)})
+
+
+def assess(title, summary, published, now, min_score=55, max_age_days=45, source_url=""):
     title = clean(title)
     text = clean(title + ' ' + summary)
-    lowered = text.lower()
-    locs = sorted(set(x for x in LOCATIONS if re.search(r'(?<!\w)' + re.escape(x) + r'(?!\w)', lowered)))
+    locs = matched_locations(text)
+    # A Cape Town community is a useful geographic signal, not proof of residence.
+    # Only infer it when the title itself explicitly describes a vehicle request.
+    host = (urllib.parse.urlparse(source_url).hostname or '').lower()
+    path = urllib.parse.urlparse(source_url).path.lower()
+    inferred_location = (not locs and host in ('reddit.com', 'www.reddit.com')
+                         and path.startswith('/r/capetown/')
+                         and bool(INTENT.search(title)) and bool(VEHICLE.search(title)))
+    if inferred_location:
+        locs = ['cape town (community; verify location)']
     has_intent = bool(INTENT.search(text))
     has_vehicle = bool(VEHICLE.search(text))
     has_seller = bool(SELLER.search(text))
-    # A title mentioning the request is stronger evidence than a generic snippet.
     title_has_intent = bool(INTENT.search(title))
     title_has_vehicle = bool(VEHICLE.search(title))
     score = min(100, 35*has_intent + 20*has_vehicle + 20*bool(locs) +
@@ -139,7 +160,7 @@ def assess(title, summary, published, now, min_score=55, max_age_days=45):
     if published and (published - now).total_seconds() > 86400:
         reasons.append('publication date in future')
     if score < min_score: reasons.append('below minimum score')
-    return score, locs, reasons
+    return score, locs, reasons, inferred_location
 
 
 def load_seen():
@@ -156,12 +177,13 @@ def main():
     max_age = int(os.getenv('MAX_POST_AGE_DAYS', '45'))
     min_score = int(os.getenv('MIN_LEAD_SCORE', '55'))
     queries = [('Bing RSS: ' + q,
-                'https://www.bing.com/search?format=rss&q=' + urllib.parse.quote(q))
+                'https://www.bing.com/search?format=rss&q=' + urllib.parse.quote(q), False)
                for q in SEARCHES]
+    # Optional, user-approved public RSS feeds. Generic feed URLs do not prove location.
     for i, feed in enumerate(os.getenv('EXTRA_RSS_FEEDS', '').split(','), 1):
         feed = feed.strip()
         if feed.startswith('https://'):
-            queries.append((f'Approved RSS {i}', feed))
+            queries.append((f'Approved RSS {i}', feed, True))
     seen = load_seen()
     old_records = {}
     try:
@@ -175,13 +197,13 @@ def main():
     samples = []
     feed_stats = []
     total = 0
-    for source, url in queries:
+    for source, url, approved in queries:
         checked = 0
         matched = 0
         error = ''
         try:
             req = urllib.request.Request(url, headers={
-                'User-Agent': 'Mozilla/5.0 (compatible; WillieBuyerRadar/5.1; public RSS reader)',
+                'User-Agent': 'WillieBuyerRadar/5.2 (+public RSS reader)',
                 'Accept': 'application/rss+xml,application/atom+xml,application/xml,text/xml'})
             with urllib.request.urlopen(req, timeout=15) as response:
                 raw = response.read(1_000_000)
@@ -197,12 +219,13 @@ def main():
                 elif blocked_domain(link):
                     reasons.append('irrelevant reference/entertainment website')
                 pub = parse_date(date)
-                score, locs, content_reasons = assess(title, summary, pub, now, min_score, max_age)
+                score, locs, content_reasons, inferred_location = assess(title, summary, pub, now, min_score, max_age, link)
+                # A community-based location is explicitly marked for verification.
                 reasons.extend(content_reasons)
                 if reasons:
                     for reason in set(reasons):
                         rejected[reason] += 1
-                    if len(samples) < 40:
+                    if len(samples) < 60:
                         samples.append({'title': title[:180], 'reasons': reasons, 'source': source})
                     continue
                 matched += 1
@@ -211,7 +234,7 @@ def main():
                 record = {'first_seen_utc': first_seen, 'published_utc': pub.isoformat() if pub else '',
                           'source': source, 'title': title[:250], 'url': link,
                           'summary': summary[:500], 'locations': locs, 'score': score,
-                          'priority': 'High' if score >= 80 else 'Review',
+                          'priority': 'Review' if inferred_location else ('High' if score >= 80 else 'Review'),
                           'new_this_run': identifier not in seen}
                 if link not in accepted or accepted[link]['score'] < score:
                     accepted[link] = record
@@ -230,7 +253,7 @@ def main():
             accepted[url] = saved
             retained += 1
     rows = sorted(accepted.values(), key=lambda x: (x['score'], x['first_seen_utc']), reverse=True)[:200]
-    data = {'version': '5.1', 'last_scan_utc': timestamp, 'status': 'completed',
+    data = {'version': '5.2', 'last_scan_utc': timestamp, 'status': 'completed',
             'stats': {'sources_checked': len(queries),
                       'sources_accessible': sum(not x['error'] for x in feed_stats),
                       'items_checked': total,
@@ -241,7 +264,7 @@ def main():
             'rejection_reasons': dict(rejected.most_common()),
             'feed_stats': feed_stats, 'rejection_samples': samples,
             'opportunities': rows,
-            'disclaimer': 'Unverified public search results. Confirm intent and location at original source; no private contact data is collected.'}
+            'disclaimer': 'Unverified public RSS search results. Confirm buyer intent and location at original source; no private contact data is collected.'}
     JSON_OUT.write_text(json.dumps(data, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
     STATE.write_text(json.dumps(seen, indent=2) + '\n', encoding='utf-8')
     with CSV_OUT.open('w', newline='', encoding='utf-8-sig') as handle:
@@ -249,7 +272,7 @@ def main():
         writer.writeheader()
         for row in rows:
             writer.writerow({**row, 'locations': ', '.join(row['locations'])})
-    lines = [f'Willie Buyer Radar 5.1 — {timestamp}',
+    lines = [f'Willie Buyer Radar 5.2 — {timestamp}',
              f'Checked {total} results across {len(queries)} feeds; matched {data["stats"]["matches_this_scan"]}; dashboard has {len(rows)} opportunities.',
              '', 'REJECTION REASONS (an item may have multiple):']
     lines += [f'{k}: {v}' for k, v in rejected.most_common()]
@@ -258,9 +281,9 @@ def main():
               (f', ERROR {f["error"]}' if f['error'] else '') for f in feed_stats]
     lines += ['', 'SAMPLE REJECTIONS:']
     lines += [f'- {s["title"]} | {"; ".join(s["reasons"])}' for s in samples]
-    lines += ['', 'Only public RSS results are used. Search engines may not index buyer posts. Results are not verified buyers.']
+    lines += ['', 'Public RSS only. Search engines may not index buyer posts. Matches are unverified.']
     DIAG_OUT.write_text('\n'.join(lines) + '\n', encoding='utf-8')
-    print(f'Radar 5.1: {total} checked, {data["stats"]["matches_this_scan"]} matched, {len(rows)} displayed')
+    print(f'Radar 5.2: {total} checked, {data["stats"]["matches_this_scan"]} matched, {len(rows)} displayed')
 
 if __name__ == '__main__':
     main()
