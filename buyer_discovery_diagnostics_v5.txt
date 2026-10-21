@@ -1,98 +1,81 @@
-Willie Buyer Radar 5.4 — 2026-10-21T13:34:36+00:00
-Checked 201 results across 19 feeds; matched 0; dashboard has 0 opportunities.
+Willie Buyer Radar 6.0 — 2026-10-21T13:45:00+00:00
+Checked 181 results across 17 feeds; matched 0; dashboard has 0 opportunities.
 
-REJECTION REASONS (an item may have multiple):
-title does not clearly request buying a vehicle: 199
-below minimum score: 199
-no Western Cape location in result text: 189
-no vehicle term in title: 185
-irrelevant reference/entertainment website: 101
-older than age limit: 42
-unrelated subject in title: 8
-seller/advertisement wording: 7
-publication date unavailable: 1
+REJECTION REASONS:
+title does not clearly request buying a vehicle: 179
+no Western Cape location in result text: 168
+irrelevant reference/entertainment website: 65
+older than age limit: 23
+seller/advertisement title: 9
+unrelated subject in title: 5
 
 FEED RESULTS:
-Bing RSS: site:reddit.com/r/capetown "looking to buy" car: 10 items, 0 matches
-Bing RSS: site:reddit.com/r/capetown "looking for" bakkie: 10 items, 0 matches
-Bing RSS: site:reddit.com/r/askSouthAfrica "looking to buy" car "Cape Town": 10 items, 0 matches
-Bing RSS: site:reddit.com/r/southafrica "want to buy" car "Cape Town": 10 items, 0 matches
-Bing RSS: site:reddit.com "anyone selling" car "Cape Town": 10 items, 0 matches
-Bing RSS: site:reddit.com "looking for a car" "Paarl": 10 items, 0 matches
-Bing RSS: "looking to buy a car" "Cape Town" -dealer -dealership: 10 items, 0 matches
-Bing RSS: "want to buy a car" "Western Cape" -dealer: 10 items, 0 matches
-Bing RSS: "need a reliable car" "Cape Town" -dealer: 10 items, 0 matches
-Bing RSS: "bakkie wanted" "Western Cape" -dealer: 10 items, 0 matches
-Bing RSS: "vehicle wanted" "Paarl" -dealer: 10 items, 0 matches
-Bing RSS: "looking for a used car" "Bellville" -dealership: 10 items, 0 matches
-Bing RSS: "looking for a double cab" "Western Cape" -dealer: 10 items, 0 matches
-Bing RSS: "looking to buy a Hilux" "Cape Town" -dealer: 10 items, 0 matches
-Bing RSS: "looking for a Ford Ranger" "Western Cape" -dealer: 10 items, 0 matches
-Bing RSS: "anyone selling a bakkie" "Paarl": 10 items, 0 matches
-Bing RSS: "soek n bakkie" "Kaapstad": 10 items, 0 matches
-Bing RSS: "soek n kar" "Paarl": 10 items, 0 matches
+Bing RSS: "looking to buy a car" "Cape Town" -dealer: 10 items, 0 matches
+Bing RSS: "looking to buy a bakkie" "Western Cape" -dealer: 10 items, 0 matches
+Bing RSS: "looking for a used car" "Paarl" -dealer: 10 items, 0 matches
+Bing RSS: "need a car" "Cape Town" -rental -dealer: 10 items, 0 matches
+Bing RSS: "need a bakkie" "Western Cape" -rental -dealer: 10 items, 0 matches
+Bing RSS: "want to buy a car" "Stellenbosch" -dealer: 10 items, 0 matches
+Bing RSS: "looking for a double cab" "Cape Town" -dealer: 10 items, 0 matches
+Bing RSS: "buying my first car" "Cape Town": 10 items, 0 matches
+Bing RSS: "what car should I buy" "Cape Town": 10 items, 0 matches
+Bing RSS: "car wanted" "Western Cape" -dealer: 10 items, 0 matches
+Bing RSS: "bakkie wanted" "Paarl" -dealer: 10 items, 0 matches
+Bing RSS: "soek n kar" "Kaapstad": 10 items, 0 matches
+Bing RSS: "soek n bakkie" "Paarl": 10 items, 0 matches
+Bing RSS: site:reddit.com/r/capetown "buying a car": 10 items, 0 matches
+Bing RSS: site:reddit.com/r/capetown "looking for a car": 10 items, 0 matches
+Bing RSS: site:reddit.com/r/askSouthAfrica "buy a car" "Cape Town": 10 items, 0 matches
 Approved RSS 1: 21 items, 0 matches
 
 SAMPLE REJECTIONS:
-- Looking (TV series) - Wikipedia | irrelevant reference/entertainment website; title does not clearly request buying a vehicle; no vehicle term in title; no Western Cape location in result text; below minimum score
-- LOOKING Synonyms: 90 Similar and Opposite Words - Merriam-Webster | irrelevant reference/entertainment website; title does not clearly request buying a vehicle; no vehicle term in title; no Western Cape location in result text; below minimum score
-- Looking (TV Series 2014–2015) - IMDb | irrelevant reference/entertainment website; title does not clearly request buying a vehicle; no vehicle term in title; no Western Cape location in result text; below minimum score
-- LOOK Definition & Meaning - Merriam-Webster | irrelevant reference/entertainment website; title does not clearly request buying a vehicle; no vehicle term in title; no Western Cape location in result text; below minimum score
-- Looking - watch tv show streaming online - JustWatch | title does not clearly request buying a vehicle; no vehicle term in title; no Western Cape location in result text; below minimum score
-- Looking - definition of looking by The Free Dictionary | irrelevant reference/entertainment website; title does not clearly request buying a vehicle; no vehicle term in title; no Western Cape location in result text; below minimum score
-- Looking - Wikipedia | irrelevant reference/entertainment website; title does not clearly request buying a vehicle; no vehicle term in title; no Western Cape location in result text; below minimum score
-- Looking: Season 1 | Rotten Tomatoes | irrelevant reference/entertainment website; title does not clearly request buying a vehicle; no vehicle term in title; no Western Cape location in result text; below minimum score
-- Looking (TV Series 2014–2015) - Full cast & crew - IMDb | irrelevant reference/entertainment website; title does not clearly request buying a vehicle; no vehicle term in title; no Western Cape location in result text; below minimum score
-- 'Looking' cast: Where are they now? | Out.com | title does not clearly request buying a vehicle; no vehicle term in title; no Western Cape location in result text; older than age limit; below minimum score
-- Looking (TV series) - Wikipedia | irrelevant reference/entertainment website; title does not clearly request buying a vehicle; no vehicle term in title; no Western Cape location in result text; below minimum score
-- LOOKING Synonyms: 90 Similar and Opposite Words - Merriam-Webster | irrelevant reference/entertainment website; title does not clearly request buying a vehicle; no vehicle term in title; no Western Cape location in result text; below minimum score
-- Looking (TV Series 2014–2015) - IMDb | irrelevant reference/entertainment website; title does not clearly request buying a vehicle; no vehicle term in title; no Western Cape location in result text; below minimum score
-- LOOK Definition & Meaning - Merriam-Webster | irrelevant reference/entertainment website; title does not clearly request buying a vehicle; no vehicle term in title; no Western Cape location in result text; below minimum score
-- Looking - watch tv show streaming online - JustWatch | title does not clearly request buying a vehicle; no vehicle term in title; no Western Cape location in result text; below minimum score
-- Looking - definition of looking by The Free Dictionary | irrelevant reference/entertainment website; title does not clearly request buying a vehicle; no vehicle term in title; no Western Cape location in result text; below minimum score
-- Looking - Wikipedia | irrelevant reference/entertainment website; title does not clearly request buying a vehicle; no vehicle term in title; no Western Cape location in result text; below minimum score
-- Looking: Season 1 | Rotten Tomatoes | irrelevant reference/entertainment website; title does not clearly request buying a vehicle; no vehicle term in title; no Western Cape location in result text; below minimum score
-- Looking (TV Series 2014–2015) - Full cast & crew - IMDb | irrelevant reference/entertainment website; title does not clearly request buying a vehicle; no vehicle term in title; no Western Cape location in result text; below minimum score
-- 'Looking' cast: Where are they now? | Out.com | title does not clearly request buying a vehicle; no vehicle term in title; no Western Cape location in result text; older than age limit; below minimum score
-- Looking (TV series) - Wikipedia | irrelevant reference/entertainment website; title does not clearly request buying a vehicle; no vehicle term in title; no Western Cape location in result text; below minimum score
-- LOOKING Synonyms: 90 Similar and Opposite Words - Merriam-Webster | irrelevant reference/entertainment website; title does not clearly request buying a vehicle; no vehicle term in title; no Western Cape location in result text; below minimum score
-- Looking (TV Series 2014–2015) - IMDb | irrelevant reference/entertainment website; title does not clearly request buying a vehicle; no vehicle term in title; no Western Cape location in result text; below minimum score
-- LOOK Definition & Meaning - Merriam-Webster | irrelevant reference/entertainment website; title does not clearly request buying a vehicle; no vehicle term in title; no Western Cape location in result text; below minimum score
-- Looking - watch tv show streaming online - JustWatch | title does not clearly request buying a vehicle; no vehicle term in title; no Western Cape location in result text; below minimum score
-- Looking - definition of looking by The Free Dictionary | irrelevant reference/entertainment website; title does not clearly request buying a vehicle; no vehicle term in title; no Western Cape location in result text; below minimum score
-- Looking - Wikipedia | irrelevant reference/entertainment website; title does not clearly request buying a vehicle; no vehicle term in title; no Western Cape location in result text; below minimum score
-- Looking: Season 1 | Rotten Tomatoes | irrelevant reference/entertainment website; title does not clearly request buying a vehicle; no vehicle term in title; no Western Cape location in result text; below minimum score
-- Looking (TV Series 2014–2015) - Full cast & crew - IMDb | irrelevant reference/entertainment website; title does not clearly request buying a vehicle; no vehicle term in title; no Western Cape location in result text; below minimum score
-- 'Looking' cast: Where are they now? | Out.com | title does not clearly request buying a vehicle; no vehicle term in title; no Western Cape location in result text; older than age limit; below minimum score
-- WANT Definition & Meaning - Merriam-Webster | irrelevant reference/entertainment website; title does not clearly request buying a vehicle; no vehicle term in title; no Western Cape location in result text; below minimum score
-- WANT | English meaning - Cambridge Dictionary | irrelevant reference/entertainment website; title does not clearly request buying a vehicle; no vehicle term in title; no Western Cape location in result text; below minimum score
-- WANT Definition & Meaning | Dictionary.com | irrelevant reference/entertainment website; title does not clearly request buying a vehicle; no vehicle term in title; no Western Cape location in result text; below minimum score
-- WANT Synonyms: 252 Similar and Opposite Words - Merriam-Webster | irrelevant reference/entertainment website; title does not clearly request buying a vehicle; no vehicle term in title; no Western Cape location in result text; below minimum score
-- WANT | definition in the Cambridge English Dictionary | irrelevant reference/entertainment website; title does not clearly request buying a vehicle; no vehicle term in title; no Western Cape location in result text; below minimum score
-- Want - Wikipedia | irrelevant reference/entertainment website; title does not clearly request buying a vehicle; no vehicle term in title; no Western Cape location in result text; below minimum score
-- want - Wiktionary, the free dictionary | irrelevant reference/entertainment website; title does not clearly request buying a vehicle; no vehicle term in title; no Western Cape location in result text; below minimum score
-- Want - Definition, Meaning & Synonyms | Vocabulary.com | title does not clearly request buying a vehicle; no vehicle term in title; no Western Cape location in result text; below minimum score
-- WANT definition and meaning | Collins English Dictionary | irrelevant reference/entertainment website; title does not clearly request buying a vehicle; no vehicle term in title; no Western Cape location in result text; below minimum score
-- Want - definition of want by The Free Dictionary | irrelevant reference/entertainment website; title does not clearly request buying a vehicle; no vehicle term in title; no Western Cape location in result text; below minimum score
-- ABC News & Headlines – Australian Broadcasting Corporation | title does not clearly request buying a vehicle; no vehicle term in title; no Western Cape location in result text; below minimum score
-- GOAT Maths - ABC Education | title does not clearly request buying a vehicle; no vehicle term in title; no Western Cape location in result text; below minimum score
-- Where do I submit my weather photos for ABC News? | title does not clearly request buying a vehicle; no vehicle term in title; no Western Cape location in result text; below minimum score
-- ABC iview Help - Australian Broadcasting Corporation | title does not clearly request buying a vehicle; no vehicle term in title; no Western Cape location in result text; below minimum score
-- About the ABC | title does not clearly request buying a vehicle; no vehicle term in title; no Western Cape location in result text; older than age limit; below minimum score
-- OTP Log in - ABC Account - ABC - Australian Broadcasting Corporation | title does not clearly request buying a vehicle; no vehicle term in title; no Western Cape location in result text; below minimum score
-- ABC Australia - ABC iview | title does not clearly request buying a vehicle; no vehicle term in title; no Western Cape location in result text; below minimum score
-- ABC News - ABC iview | title does not clearly request buying a vehicle; no vehicle term in title; no Western Cape location in result text; older than age limit; below minimum score
-- ABC Account - ABC - Australian Broadcasting Corporation | title does not clearly request buying a vehicle; no vehicle term in title; no Western Cape location in result text; below minimum score
-- ABC Classic 100: Greatest Of All Time - ABC Classic | title does not clearly request buying a vehicle; no vehicle term in title; no Western Cape location in result text; older than age limit; below minimum score
-- Looking (TV series) - Wikipedia | irrelevant reference/entertainment website; title does not clearly request buying a vehicle; no vehicle term in title; no Western Cape location in result text; below minimum score
-- LOOKING Synonyms: 90 Similar and Opposite Words - Merriam-Webster | irrelevant reference/entertainment website; title does not clearly request buying a vehicle; no vehicle term in title; no Western Cape location in result text; below minimum score
-- Looking (TV Series 2014–2015) - IMDb | irrelevant reference/entertainment website; title does not clearly request buying a vehicle; no vehicle term in title; no Western Cape location in result text; below minimum score
-- LOOK Definition & Meaning - Merriam-Webster | irrelevant reference/entertainment website; title does not clearly request buying a vehicle; no vehicle term in title; no Western Cape location in result text; below minimum score
-- Looking - watch tv show streaming online - JustWatch | title does not clearly request buying a vehicle; no vehicle term in title; no Western Cape location in result text; below minimum score
-- Looking - definition of looking by The Free Dictionary | irrelevant reference/entertainment website; title does not clearly request buying a vehicle; no vehicle term in title; no Western Cape location in result text; below minimum score
-- Looking - Wikipedia | irrelevant reference/entertainment website; title does not clearly request buying a vehicle; no vehicle term in title; no Western Cape location in result text; below minimum score
-- Looking: Season 1 | Rotten Tomatoes | irrelevant reference/entertainment website; title does not clearly request buying a vehicle; no vehicle term in title; no Western Cape location in result text; below minimum score
-- Looking (TV Series 2014–2015) - Full cast & crew - IMDb | irrelevant reference/entertainment website; title does not clearly request buying a vehicle; no vehicle term in title; no Western Cape location in result text; below minimum score
-- 'Looking' cast: Where are they now? | Out.com | title does not clearly request buying a vehicle; no vehicle term in title; no Western Cape location in result text; older than age limit; below minimum score
-
-Public RSS only. Search engines may not index buyer posts. Matches are unverified.
+- Looking (TV series) - Wikipedia | title does not clearly request buying a vehicle; no Western Cape location in result text; irrelevant reference/entertainment website
+- Looking - definition of looking by The Free Dictionary | title does not clearly request buying a vehicle; no Western Cape location in result text; irrelevant reference/entertainment website
+- LOOKING Synonyms: 90 Similar and Opposite Words - Merriam-Webster | title does not clearly request buying a vehicle; no Western Cape location in result text; irrelevant reference/entertainment website
+- Looking (TV Series 2014–2015) - IMDb | title does not clearly request buying a vehicle; no Western Cape location in result text; irrelevant reference/entertainment website
+- Looking - watch tv show streaming online - JustWatch | title does not clearly request buying a vehicle; no Western Cape location in result text
+- LOOK | English meaning - Cambridge Dictionary | title does not clearly request buying a vehicle; no Western Cape location in result text
+- LOOK Definition & Meaning - Merriam-Webster | title does not clearly request buying a vehicle; no Western Cape location in result text; irrelevant reference/entertainment website
+- Looking - Wikipedia | title does not clearly request buying a vehicle; no Western Cape location in result text; irrelevant reference/entertainment website
+- Looking (TV Movie 2016) - IMDb | title does not clearly request buying a vehicle; no Western Cape location in result text; irrelevant reference/entertainment website
+- LOOKING Definition & Meaning | Dictionary.com | title does not clearly request buying a vehicle; no Western Cape location in result text; irrelevant reference/entertainment website
+- Looking (TV series) - Wikipedia | title does not clearly request buying a vehicle; no Western Cape location in result text; irrelevant reference/entertainment website
+- Looking - definition of looking by The Free Dictionary | title does not clearly request buying a vehicle; no Western Cape location in result text; irrelevant reference/entertainment website
+- LOOKING Synonyms: 90 Similar and Opposite Words - Merriam-Webster | title does not clearly request buying a vehicle; no Western Cape location in result text; irrelevant reference/entertainment website
+- Looking (TV Series 2014–2015) - IMDb | title does not clearly request buying a vehicle; no Western Cape location in result text; irrelevant reference/entertainment website
+- Looking - watch tv show streaming online - JustWatch | title does not clearly request buying a vehicle; no Western Cape location in result text
+- LOOK | English meaning - Cambridge Dictionary | title does not clearly request buying a vehicle; no Western Cape location in result text
+- LOOK Definition & Meaning - Merriam-Webster | title does not clearly request buying a vehicle; no Western Cape location in result text; irrelevant reference/entertainment website
+- Looking - Wikipedia | title does not clearly request buying a vehicle; no Western Cape location in result text; irrelevant reference/entertainment website
+- Looking (TV Movie 2016) - IMDb | title does not clearly request buying a vehicle; no Western Cape location in result text; irrelevant reference/entertainment website
+- LOOKING Definition & Meaning | Dictionary.com | title does not clearly request buying a vehicle; no Western Cape location in result text; irrelevant reference/entertainment website
+- Looking (TV series) - Wikipedia | title does not clearly request buying a vehicle; no Western Cape location in result text; irrelevant reference/entertainment website
+- Looking - definition of looking by The Free Dictionary | title does not clearly request buying a vehicle; no Western Cape location in result text; irrelevant reference/entertainment website
+- LOOKING Synonyms: 90 Similar and Opposite Words - Merriam-Webster | title does not clearly request buying a vehicle; no Western Cape location in result text; irrelevant reference/entertainment website
+- Looking (TV Series 2014–2015) - IMDb | title does not clearly request buying a vehicle; no Western Cape location in result text; irrelevant reference/entertainment website
+- Looking - watch tv show streaming online - JustWatch | title does not clearly request buying a vehicle; no Western Cape location in result text
+- LOOK | English meaning - Cambridge Dictionary | title does not clearly request buying a vehicle; no Western Cape location in result text
+- LOOK Definition & Meaning - Merriam-Webster | title does not clearly request buying a vehicle; no Western Cape location in result text; irrelevant reference/entertainment website
+- Looking - Wikipedia | title does not clearly request buying a vehicle; no Western Cape location in result text; irrelevant reference/entertainment website
+- Looking (TV Movie 2016) - IMDb | title does not clearly request buying a vehicle; no Western Cape location in result text; irrelevant reference/entertainment website
+- LOOKING Definition & Meaning | Dictionary.com | title does not clearly request buying a vehicle; no Western Cape location in result text; irrelevant reference/entertainment website
+- NEED Definition & Meaning - Merriam-Webster | title does not clearly request buying a vehicle; no Western Cape location in result text; irrelevant reference/entertainment website
+- National Energy Education Development Program · National Energy ... | title does not clearly request buying a vehicle; no Western Cape location in result text
+- NEED | English meaning - Cambridge Dictionary | title does not clearly request buying a vehicle; no Western Cape location in result text
+- Need - Wikipedia | title does not clearly request buying a vehicle; no Western Cape location in result text; irrelevant reference/entertainment website
+- Need - definition of need by The Free Dictionary | title does not clearly request buying a vehicle; no Western Cape location in result text; irrelevant reference/entertainment website
+- Need: Definition, Meaning, and Examples - usdictionary.com | title does not clearly request buying a vehicle; no Western Cape location in result text
+- NEED Definition & Meaning | Dictionary.com | title does not clearly request buying a vehicle; no Western Cape location in result text; irrelevant reference/entertainment website
+- NEED Synonyms & Antonyms - 166 words | Thesaurus.com | title does not clearly request buying a vehicle; no Western Cape location in result text; irrelevant reference/entertainment website
+- Need - Definition, Meaning & Synonyms | Vocabulary.com | title does not clearly request buying a vehicle; no Western Cape location in result text
+- NEED Synonyms: 184 Similar and Opposite Words - Merriam-Webster | title does not clearly request buying a vehicle; no Western Cape location in result text; irrelevant reference/entertainment website
+- NEED Definition & Meaning - Merriam-Webster | title does not clearly request buying a vehicle; no Western Cape location in result text; irrelevant reference/entertainment website
+- National Energy Education Development Program · National Energy ... | title does not clearly request buying a vehicle; no Western Cape location in result text
+- NEED | English meaning - Cambridge Dictionary | title does not clearly request buying a vehicle; no Western Cape location in result text
+- Need - Wikipedia | title does not clearly request buying a vehicle; no Western Cape location in result text; irrelevant reference/entertainment website
+- Need - definition of need by The Free Dictionary | title does not clearly request buying a vehicle; no Western Cape location in result text; irrelevant reference/entertainment website
+- Need: Definition, Meaning, and Examples - usdictionary.com | title does not clearly request buying a vehicle; no Western Cape location in result text
+- NEED Definition & Meaning | Dictionary.com | title does not clearly request buying a vehicle; no Western Cape location in result text; irrelevant reference/entertainment website
+- NEED Synonyms & Antonyms - 166 words | Thesaurus.com | title does not clearly request buying a vehicle; no Western Cape location in result text; irrelevant reference/entertainment website
+- Need - Definition, Meaning & Synonyms | Vocabulary.com | title does not clearly request buying a vehicle; no Western Cape location in result text
+- NEED Synonyms: 184 Similar and Opposite Words - Merriam-Webster | title does not clearly request buying a vehicle; no Western Cape location in result text; irrelevant reference/entertainment website
