@@ -1,61 +1,72 @@
-Willie Buyer Radar 5.0 — 2026-10-21T11:05:38+00:00
-Checked 150 results across 15 feeds; matched 0; dashboard has 0 opportunities.
+Willie Buyer Radar 5.1 — 2026-10-21T11:26:13+00:00
+Checked 124 results across 15 feeds; matched 0; dashboard has 0 opportunities.
 
 REJECTION REASONS (an item may have multiple):
-no Western Cape location in result text: 150
-below minimum score: 150
-no buyer-intent phrase: 149
-no vehicle term: 121
-seller/advertisement wording: 14
-older than age limit: 2
+below minimum score: 124
+no Western Cape location in result text: 124
+no buyer-intent phrase: 123
+no vehicle term: 105
+irrelevant reference/entertainment website: 27
+seller/advertisement wording: 9
+older than age limit: 6
 
 FEED RESULTS:
-Bing RSS: "looking for a bakkie" "Cape Town": 10 items, 0 matches
-Bing RSS: "looking for a car" "Paarl": 10 items, 0 matches
-Bing RSS: "want to buy a car" "Western Cape": 10 items, 0 matches
-Bing RSS: "need a car" "Cape Town": 10 items, 0 matches
-Bing RSS: "car wanted" "Western Cape": 10 items, 0 matches
-Bing RSS: "bakkie wanted" "Cape Town": 10 items, 0 matches
-Bing RSS: "looking for an automatic" "Cape Town" car: 10 items, 0 matches
-Bing RSS: "looking for an SUV" "Western Cape": 10 items, 0 matches
-Bing RSS: "vehicle wanted" "Stellenbosch": 10 items, 0 matches
-Bing RSS: "looking to buy" "Hilux" "Cape Town": 10 items, 0 matches
-Bing RSS: "looking for" "Ford Ranger" "Western Cape": 10 items, 0 matches
-Bing RSS: "looking for a used car" "Bellville": 10 items, 0 matches
-Bing RSS: "looking to buy a car" "Somerset West": 10 items, 0 matches
-Bing RSS: "soek n bakkie" "Kaapstad": 10 items, 0 matches
+Bing RSS: "looking for a bakkie" "Cape Town" -sale -dealer: 1 items, 0 matches
+Bing RSS: "looking to buy a car" "Cape Town" -dealer: 10 items, 0 matches
+Bing RSS: "want to buy a car" "Western Cape" -dealership: 10 items, 0 matches
+Bing RSS: "need a reliable car" "Cape Town" -dealer: 10 items, 0 matches
+Bing RSS: "bakkie wanted" "Western Cape" -dealer: 10 items, 0 matches
+Bing RSS: "vehicle wanted" "Paarl" -dealer: 10 items, 0 matches
+Bing RSS: "looking for a used car" "Bellville" -dealership: 1 items, 0 matches
+Bing RSS: "looking for a double cab" "Western Cape" -dealer: 10 items, 0 matches
+Bing RSS: "looking to buy a Hilux" "Cape Town" -dealer: 10 items, 0 matches
+Bing RSS: "looking for a Ford Ranger" "Western Cape" -dealer: 10 items, 0 matches
+Bing RSS: "anyone selling a car" "Cape Town": 2 items, 0 matches
+Bing RSS: "anyone selling a bakkie" "Paarl": 10 items, 0 matches
+Bing RSS: "soek 'n bakkie" "Kaapstad": 10 items, 0 matches
 Bing RSS: "soek 'n kar" "Paarl": 10 items, 0 matches
+Bing RSS: "op soek na 'n voertuig" "Wes-Kaap": 10 items, 0 matches
 
 SAMPLE REJECTIONS:
-- Looking (TV series) - Wikipedia | no buyer-intent phrase; no vehicle term; no Western Cape location in result text; below minimum score
-- Looking (TV Series 2014–2015) - IMDb | no buyer-intent phrase; no vehicle term; no Western Cape location in result text; below minimum score
-- LOOKING Synonyms: 90 Similar and Opposite Words - Merriam-Webster | no buyer-intent phrase; no vehicle term; no Western Cape location in result text; below minimum score
-- Looking - definition of looking by The Free Dictionary | no buyer-intent phrase; no Western Cape location in result text; below minimum score
-- Looking - watch tv show streaming online - JustWatch | no buyer-intent phrase; no vehicle term; no Western Cape location in result text; below minimum score
-- LOOK Definition & Meaning - Merriam-Webster | no buyer-intent phrase; no vehicle term; no Western Cape location in result text; below minimum score
-- Looking - Wikipedia | no buyer-intent phrase; no vehicle term; no Western Cape location in result text; below minimum score
-- Looking: Season 1 | Rotten Tomatoes | no buyer-intent phrase; no vehicle term; no Western Cape location in result text; below minimum score
-- Looking - Definition, Meaning & Synonyms | Vocabulary.com | no buyer-intent phrase; no vehicle term; no Western Cape location in result text; below minimum score
-- LOOKING Definition & Meaning | Dictionary.com | no buyer-intent phrase; no vehicle term; no Western Cape location in result text; below minimum score
-- Looking (TV series) - Wikipedia | no buyer-intent phrase; no vehicle term; no Western Cape location in result text; below minimum score
-- Looking (TV Series 2014–2015) - IMDb | no buyer-intent phrase; no vehicle term; no Western Cape location in result text; below minimum score
-- LOOKING Synonyms: 90 Similar and Opposite Words - Merriam-Webster | no buyer-intent phrase; no vehicle term; no Western Cape location in result text; below minimum score
-- Looking - definition of looking by The Free Dictionary | no buyer-intent phrase; no Western Cape location in result text; below minimum score
-- Looking - watch tv show streaming online - JustWatch | no buyer-intent phrase; no vehicle term; no Western Cape location in result text; below minimum score
-- LOOK Definition & Meaning - Merriam-Webster | no buyer-intent phrase; no vehicle term; no Western Cape location in result text; below minimum score
-- Looking - Wikipedia | no buyer-intent phrase; no vehicle term; no Western Cape location in result text; below minimum score
-- Looking: Season 1 | Rotten Tomatoes | no buyer-intent phrase; no vehicle term; no Western Cape location in result text; below minimum score
-- Looking - Definition, Meaning & Synonyms | Vocabulary.com | no buyer-intent phrase; no vehicle term; no Western Cape location in result text; below minimum score
-- LOOKING Definition & Meaning | Dictionary.com | no buyer-intent phrase; no vehicle term; no Western Cape location in result text; below minimum score
-- WANT Definition & Meaning - Merriam-Webster | no buyer-intent phrase; no vehicle term; no Western Cape location in result text; below minimum score
-- WANT | English meaning - Cambridge Dictionary | no buyer-intent phrase; no vehicle term; no Western Cape location in result text; below minimum score
-- WANT Definition & Meaning | Dictionary.com | no buyer-intent phrase; no vehicle term; no Western Cape location in result text; below minimum score
-- WANT Synonyms: 252 Similar and Opposite Words - Merriam-Webster | no buyer-intent phrase; no vehicle term; no Western Cape location in result text; below minimum score
+- Pols & Politics: Brensley launches write-in bid for Sec. of State ... | no buyer-intent phrase; no vehicle term; no Western Cape location in result text; older than age limit; below minimum score
+- Movie Showtimes and Theaters near Seattle, WA | Fandango | no buyer-intent phrase; no vehicle term; no Western Cape location in result text; below minimum score
+- Movie Showtimes and Theaters near , | Fandango | no buyer-intent phrase; no vehicle term; no Western Cape location in result text; below minimum score
+- Regal Meridian Movie Tickets and Showtimes | Regal - Regal Theatres | no buyer-intent phrase; no vehicle term; no Western Cape location in result text; below minimum score
+- Seattle Movies | Movies Now playing in Seattle | Seattle Movie Times | no buyer-intent phrase; no vehicle term; no Western Cape location in result text; below minimum score
+- Movies Near Me in Seattle, WA | Showtimes & Trailers - CinemaClock | no buyer-intent phrase; no vehicle term; no Western Cape location in result text; below minimum score
+- Movies in Theaters, Seattle, WA - showtimes.com | no buyer-intent phrase; no vehicle term; no Western Cape location in result text; below minimum score
+- The Beacon | no buyer-intent phrase; no vehicle term; no Western Cape location in result text; below minimum score
+- Cinema Seattle - Seattle Movie Showtimes & Cinema Map | no buyer-intent phrase; no vehicle term; no Western Cape location in result text; below minimum score
+- SIFF Cinema Downtown | no buyer-intent phrase; no vehicle term; no Western Cape location in result text; below minimum score
+- In Theaters - Seattle International Film Festival | no buyer-intent phrase; no vehicle term; no Western Cape location in result text; below minimum score
+- WANT Definition & Meaning - Merriam-Webster | irrelevant reference/entertainment website; no buyer-intent phrase; no vehicle term; no Western Cape location in result text; below minimum score
+- WANT | English meaning - Cambridge Dictionary | irrelevant reference/entertainment website; no buyer-intent phrase; no vehicle term; no Western Cape location in result text; below minimum score
+- WANT Definition & Meaning | Dictionary.com | irrelevant reference/entertainment website; no buyer-intent phrase; no vehicle term; no Western Cape location in result text; below minimum score
+- WANT Synonyms: 252 Similar and Opposite Words - Merriam-Webster | irrelevant reference/entertainment website; no buyer-intent phrase; no vehicle term; no Western Cape location in result text; below minimum score
 - What does WANT mean? - Definitions.net | no buyer-intent phrase; no vehicle term; no Western Cape location in result text; below minimum score
-- Want - Wikipedia | no buyer-intent phrase; no vehicle term; no Western Cape location in result text; below minimum score
-- Want - definition of want by The Free Dictionary | no buyer-intent phrase; no vehicle term; no Western Cape location in result text; below minimum score
-- WANT | definition in the Cambridge English Dictionary | no buyer-intent phrase; no vehicle term; no Western Cape location in result text; below minimum score
-- WANT definition and meaning | Collins English Dictionary | no buyer-intent phrase; no vehicle term; no Western Cape location in result text; below minimum score
-- want - Wiktionary, the free dictionary | no buyer-intent phrase; no vehicle term; no Western Cape location in result text; below minimum score
+- Want - Wikipedia | irrelevant reference/entertainment website; no buyer-intent phrase; no vehicle term; no Western Cape location in result text; below minimum score
+- Want - definition of want by The Free Dictionary | irrelevant reference/entertainment website; no buyer-intent phrase; no vehicle term; no Western Cape location in result text; below minimum score
+- WANT | definition in the Cambridge English Dictionary | irrelevant reference/entertainment website; no buyer-intent phrase; no vehicle term; no Western Cape location in result text; below minimum score
+- WANT definition and meaning | Collins English Dictionary | irrelevant reference/entertainment website; no buyer-intent phrase; no vehicle term; no Western Cape location in result text; below minimum score
+- want - Wiktionary, the free dictionary | irrelevant reference/entertainment website; no buyer-intent phrase; no vehicle term; no Western Cape location in result text; below minimum score
+- More Models, One Copilot | Microsoft Community Hub | no buyer-intent phrase; no vehicle term; no Western Cape location in result text; below minimum score
+- Windows Insider Program | Microsoft Community Hub | no buyer-intent phrase; no vehicle term; no Western Cape location in result text; below minimum score
+- Contact Us - Microsoft Support | no buyer-intent phrase; no vehicle term; no Western Cape location in result text; below minimum score
+- Mettre à jour les pilotes via Gestionnaire de périphériques dans ... | no buyer-intent phrase; no vehicle term; no Western Cape location in result text; below minimum score
+- Contact Microsoft customer support | no buyer-intent phrase; no vehicle term; no Western Cape location in result text; below minimum score
+- Sign in to Microsoft Forms | no buyer-intent phrase; no vehicle term; no Western Cape location in result text; below minimum score
+- Edit or delete a Group in Outlook | Microsoft Support | no vehicle term; no Western Cape location in result text; below minimum score
+- Windows 8.1 ISO download for 64 and 32 bit | Microsoft Community Hub | no buyer-intent phrase; no vehicle term; no Western Cape location in result text; below minimum score
+- Verify your age for a Microsoft account. | Microsoft Support | no buyer-intent phrase; no vehicle term; no Western Cape location in result text; below minimum score
+- Microsoft Security | Microsoft Community Hub | no buyer-intent phrase; no vehicle term; no Western Cape location in result text; below minimum score
+- Bakkie - Wikipedia | irrelevant reference/entertainment website; no buyer-intent phrase; no Western Cape location in result text; below minimum score
+- BAKKIE Definition & Meaning - Merriam-Webster | irrelevant reference/entertainment website; no buyer-intent phrase; no Western Cape location in result text; below minimum score
+- What Is a Bakkie? (with picture) - WikiMotors | no buyer-intent phrase; no Western Cape location in result text; below minimum score
+- Bakkies For Sale in South Africa - AutoTrader | no buyer-intent phrase; no Western Cape location in result text; seller/advertisement wording; below minimum score
+- Single Cab Bakkie For Sale (New and Used) - Cars.co.za | no buyer-intent phrase; no Western Cape location in result text; seller/advertisement wording; below minimum score
+- Pickup truck - Wikipedia | irrelevant reference/entertainment website; no buyer-intent phrase; no Western Cape location in result text; below minimum score
+- BAKKIE | English meaning - Cambridge Dictionary | irrelevant reference/entertainment website; no buyer-intent phrase; no Western Cape location in result text; below minimum score
+- bakkie - Wiktionary, the free dictionary | irrelevant reference/entertainment website; no buyer-intent phrase; no Western Cape location in result text; below minimum score
+- CHANGAN Hunter | no buyer-intent phrase; no Western Cape location in result text; below minimum score
 
 Only public RSS results are used. Search engines may not index buyer posts. Results are not verified buyers.
