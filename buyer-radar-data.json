@@ -1,8 +1,416 @@
 {
   "version": "5.0",
-  "last_scan_utc": null,
-  "status": "awaiting_first_scan",
-  "stats": {"sources_checked": 0, "sources_accessible": 0, "items_checked": 0, "matches_this_scan": 0, "new_this_scan": 0, "dashboard_opportunities": 0, "retained_from_prior_scans": 0},
-  "rejection_reasons": {}, "feed_stats": [], "rejection_samples": [], "opportunities": [],
-  "disclaimer": "Unverified public search results; verify at source."
+  "last_scan_utc": "2026-10-21T11:05:38+00:00",
+  "status": "completed",
+  "stats": {
+    "sources_checked": 15,
+    "sources_accessible": 15,
+    "items_checked": 150,
+    "matches_this_scan": 0,
+    "new_this_scan": 0,
+    "dashboard_opportunities": 0,
+    "retained_from_prior_scans": 0
+  },
+  "rejection_reasons": {
+    "no Western Cape location in result text": 150,
+    "below minimum score": 150,
+    "no buyer-intent phrase": 149,
+    "no vehicle term": 121,
+    "seller/advertisement wording": 14,
+    "older than age limit": 2
+  },
+  "feed_stats": [
+    {
+      "source": "Bing RSS: \"looking for a bakkie\" \"Cape Town\"",
+      "items": 10,
+      "matches": 0,
+      "error": ""
+    },
+    {
+      "source": "Bing RSS: \"looking for a car\" \"Paarl\"",
+      "items": 10,
+      "matches": 0,
+      "error": ""
+    },
+    {
+      "source": "Bing RSS: \"want to buy a car\" \"Western Cape\"",
+      "items": 10,
+      "matches": 0,
+      "error": ""
+    },
+    {
+      "source": "Bing RSS: \"need a car\" \"Cape Town\"",
+      "items": 10,
+      "matches": 0,
+      "error": ""
+    },
+    {
+      "source": "Bing RSS: \"car wanted\" \"Western Cape\"",
+      "items": 10,
+      "matches": 0,
+      "error": ""
+    },
+    {
+      "source": "Bing RSS: \"bakkie wanted\" \"Cape Town\"",
+      "items": 10,
+      "matches": 0,
+      "error": ""
+    },
+    {
+      "source": "Bing RSS: \"looking for an automatic\" \"Cape Town\" car",
+      "items": 10,
+      "matches": 0,
+      "error": ""
+    },
+    {
+      "source": "Bing RSS: \"looking for an SUV\" \"Western Cape\"",
+      "items": 10,
+      "matches": 0,
+      "error": ""
+    },
+    {
+      "source": "Bing RSS: \"vehicle wanted\" \"Stellenbosch\"",
+      "items": 10,
+      "matches": 0,
+      "error": ""
+    },
+    {
+      "source": "Bing RSS: \"looking to buy\" \"Hilux\" \"Cape Town\"",
+      "items": 10,
+      "matches": 0,
+      "error": ""
+    },
+    {
+      "source": "Bing RSS: \"looking for\" \"Ford Ranger\" \"Western Cape\"",
+      "items": 10,
+      "matches": 0,
+      "error": ""
+    },
+    {
+      "source": "Bing RSS: \"looking for a used car\" \"Bellville\"",
+      "items": 10,
+      "matches": 0,
+      "error": ""
+    },
+    {
+      "source": "Bing RSS: \"looking to buy a car\" \"Somerset West\"",
+      "items": 10,
+      "matches": 0,
+      "error": ""
+    },
+    {
+      "source": "Bing RSS: \"soek n bakkie\" \"Kaapstad\"",
+      "items": 10,
+      "matches": 0,
+      "error": ""
+    },
+    {
+      "source": "Bing RSS: \"soek 'n kar\" \"Paarl\"",
+      "items": 10,
+      "matches": 0,
+      "error": ""
+    }
+  ],
+  "rejection_samples": [
+    {
+      "title": "Looking (TV series) - Wikipedia",
+      "reasons": [
+        "no buyer-intent phrase",
+        "no vehicle term",
+        "no Western Cape location in result text",
+        "below minimum score"
+      ],
+      "source": "Bing RSS: \"looking for a bakkie\" \"Cape Town\""
+    },
+    {
+      "title": "Looking (TV Series 2014–2015) - IMDb",
+      "reasons": [
+        "no buyer-intent phrase",
+        "no vehicle term",
+        "no Western Cape location in result text",
+        "below minimum score"
+      ],
+      "source": "Bing RSS: \"looking for a bakkie\" \"Cape Town\""
+    },
+    {
+      "title": "LOOKING Synonyms: 90 Similar and Opposite Words - Merriam-Webster",
+      "reasons": [
+        "no buyer-intent phrase",
+        "no vehicle term",
+        "no Western Cape location in result text",
+        "below minimum score"
+      ],
+      "source": "Bing RSS: \"looking for a bakkie\" \"Cape Town\""
+    },
+    {
+      "title": "Looking - definition of looking by The Free Dictionary",
+      "reasons": [
+        "no buyer-intent phrase",
+        "no Western Cape location in result text",
+        "below minimum score"
+      ],
+      "source": "Bing RSS: \"looking for a bakkie\" \"Cape Town\""
+    },
+    {
+      "title": "Looking - watch tv show streaming online - JustWatch",
+      "reasons": [
+        "no buyer-intent phrase",
+        "no vehicle term",
+        "no Western Cape location in result text",
+        "below minimum score"
+      ],
+      "source": "Bing RSS: \"looking for a bakkie\" \"Cape Town\""
+    },
+    {
+      "title": "LOOK Definition & Meaning - Merriam-Webster",
+      "reasons": [
+        "no buyer-intent phrase",
+        "no vehicle term",
+        "no Western Cape location in result text",
+        "below minimum score"
+      ],
+      "source": "Bing RSS: \"looking for a bakkie\" \"Cape Town\""
+    },
+    {
+      "title": "Looking - Wikipedia",
+      "reasons": [
+        "no buyer-intent phrase",
+        "no vehicle term",
+        "no Western Cape location in result text",
+        "below minimum score"
+      ],
+      "source": "Bing RSS: \"looking for a bakkie\" \"Cape Town\""
+    },
+    {
+      "title": "Looking: Season 1 | Rotten Tomatoes",
+      "reasons": [
+        "no buyer-intent phrase",
+        "no vehicle term",
+        "no Western Cape location in result text",
+        "below minimum score"
+      ],
+      "source": "Bing RSS: \"looking for a bakkie\" \"Cape Town\""
+    },
+    {
+      "title": "Looking - Definition, Meaning & Synonyms | Vocabulary.com",
+      "reasons": [
+        "no buyer-intent phrase",
+        "no vehicle term",
+        "no Western Cape location in result text",
+        "below minimum score"
+      ],
+      "source": "Bing RSS: \"looking for a bakkie\" \"Cape Town\""
+    },
+    {
+      "title": "LOOKING Definition & Meaning | Dictionary.com",
+      "reasons": [
+        "no buyer-intent phrase",
+        "no vehicle term",
+        "no Western Cape location in result text",
+        "below minimum score"
+      ],
+      "source": "Bing RSS: \"looking for a bakkie\" \"Cape Town\""
+    },
+    {
+      "title": "Looking (TV series) - Wikipedia",
+      "reasons": [
+        "no buyer-intent phrase",
+        "no vehicle term",
+        "no Western Cape location in result text",
+        "below minimum score"
+      ],
+      "source": "Bing RSS: \"looking for a car\" \"Paarl\""
+    },
+    {
+      "title": "Looking (TV Series 2014–2015) - IMDb",
+      "reasons": [
+        "no buyer-intent phrase",
+        "no vehicle term",
+        "no Western Cape location in result text",
+        "below minimum score"
+      ],
+      "source": "Bing RSS: \"looking for a car\" \"Paarl\""
+    },
+    {
+      "title": "LOOKING Synonyms: 90 Similar and Opposite Words - Merriam-Webster",
+      "reasons": [
+        "no buyer-intent phrase",
+        "no vehicle term",
+        "no Western Cape location in result text",
+        "below minimum score"
+      ],
+      "source": "Bing RSS: \"looking for a car\" \"Paarl\""
+    },
+    {
+      "title": "Looking - definition of looking by The Free Dictionary",
+      "reasons": [
+        "no buyer-intent phrase",
+        "no Western Cape location in result text",
+        "below minimum score"
+      ],
+      "source": "Bing RSS: \"looking for a car\" \"Paarl\""
+    },
+    {
+      "title": "Looking - watch tv show streaming online - JustWatch",
+      "reasons": [
+        "no buyer-intent phrase",
+        "no vehicle term",
+        "no Western Cape location in result text",
+        "below minimum score"
+      ],
+      "source": "Bing RSS: \"looking for a car\" \"Paarl\""
+    },
+    {
+      "title": "LOOK Definition & Meaning - Merriam-Webster",
+      "reasons": [
+        "no buyer-intent phrase",
+        "no vehicle term",
+        "no Western Cape location in result text",
+        "below minimum score"
+      ],
+      "source": "Bing RSS: \"looking for a car\" \"Paarl\""
+    },
+    {
+      "title": "Looking - Wikipedia",
+      "reasons": [
+        "no buyer-intent phrase",
+        "no vehicle term",
+        "no Western Cape location in result text",
+        "below minimum score"
+      ],
+      "source": "Bing RSS: \"looking for a car\" \"Paarl\""
+    },
+    {
+      "title": "Looking: Season 1 | Rotten Tomatoes",
+      "reasons": [
+        "no buyer-intent phrase",
+        "no vehicle term",
+        "no Western Cape location in result text",
+        "below minimum score"
+      ],
+      "source": "Bing RSS: \"looking for a car\" \"Paarl\""
+    },
+    {
+      "title": "Looking - Definition, Meaning & Synonyms | Vocabulary.com",
+      "reasons": [
+        "no buyer-intent phrase",
+        "no vehicle term",
+        "no Western Cape location in result text",
+        "below minimum score"
+      ],
+      "source": "Bing RSS: \"looking for a car\" \"Paarl\""
+    },
+    {
+      "title": "LOOKING Definition & Meaning | Dictionary.com",
+      "reasons": [
+        "no buyer-intent phrase",
+        "no vehicle term",
+        "no Western Cape location in result text",
+        "below minimum score"
+      ],
+      "source": "Bing RSS: \"looking for a car\" \"Paarl\""
+    },
+    {
+      "title": "WANT Definition & Meaning - Merriam-Webster",
+      "reasons": [
+        "no buyer-intent phrase",
+        "no vehicle term",
+        "no Western Cape location in result text",
+        "below minimum score"
+      ],
+      "source": "Bing RSS: \"want to buy a car\" \"Western Cape\""
+    },
+    {
+      "title": "WANT | English meaning - Cambridge Dictionary",
+      "reasons": [
+        "no buyer-intent phrase",
+        "no vehicle term",
+        "no Western Cape location in result text",
+        "below minimum score"
+      ],
+      "source": "Bing RSS: \"want to buy a car\" \"Western Cape\""
+    },
+    {
+      "title": "WANT Definition & Meaning | Dictionary.com",
+      "reasons": [
+        "no buyer-intent phrase",
+        "no vehicle term",
+        "no Western Cape location in result text",
+        "below minimum score"
+      ],
+      "source": "Bing RSS: \"want to buy a car\" \"Western Cape\""
+    },
+    {
+      "title": "WANT Synonyms: 252 Similar and Opposite Words - Merriam-Webster",
+      "reasons": [
+        "no buyer-intent phrase",
+        "no vehicle term",
+        "no Western Cape location in result text",
+        "below minimum score"
+      ],
+      "source": "Bing RSS: \"want to buy a car\" \"Western Cape\""
+    },
+    {
+      "title": "What does WANT mean? - Definitions.net",
+      "reasons": [
+        "no buyer-intent phrase",
+        "no vehicle term",
+        "no Western Cape location in result text",
+        "below minimum score"
+      ],
+      "source": "Bing RSS: \"want to buy a car\" \"Western Cape\""
+    },
+    {
+      "title": "Want - Wikipedia",
+      "reasons": [
+        "no buyer-intent phrase",
+        "no vehicle term",
+        "no Western Cape location in result text",
+        "below minimum score"
+      ],
+      "source": "Bing RSS: \"want to buy a car\" \"Western Cape\""
+    },
+    {
+      "title": "Want - definition of want by The Free Dictionary",
+      "reasons": [
+        "no buyer-intent phrase",
+        "no vehicle term",
+        "no Western Cape location in result text",
+        "below minimum score"
+      ],
+      "source": "Bing RSS: \"want to buy a car\" \"Western Cape\""
+    },
+    {
+      "title": "WANT | definition in the Cambridge English Dictionary",
+      "reasons": [
+        "no buyer-intent phrase",
+        "no vehicle term",
+        "no Western Cape location in result text",
+        "below minimum score"
+      ],
+      "source": "Bing RSS: \"want to buy a car\" \"Western Cape\""
+    },
+    {
+      "title": "WANT definition and meaning | Collins English Dictionary",
+      "reasons": [
+        "no buyer-intent phrase",
+        "no vehicle term",
+        "no Western Cape location in result text",
+        "below minimum score"
+      ],
+      "source": "Bing RSS: \"want to buy a car\" \"Western Cape\""
+    },
+    {
+      "title": "want - Wiktionary, the free dictionary",
+      "reasons": [
+        "no buyer-intent phrase",
+        "no vehicle term",
+        "no Western Cape location in result text",
+        "below minimum score"
+      ],
+      "source": "Bing RSS: \"want to buy a car\" \"Western Cape\""
+    }
+  ],
+  "opportunities": [],
+  "disclaimer": "Unverified public search results. Confirm intent and location at original source; no private contact data is collected."
 }
