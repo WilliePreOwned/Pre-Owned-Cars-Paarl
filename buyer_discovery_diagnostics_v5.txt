@@ -1,79 +1,87 @@
-Willie Buyer Radar 6.0 — 2026-10-22T11:45:55+00:00
-Checked 160 results across 16 feeds; matched 0; dashboard has 0 opportunities.
+Willie Buyer Radar 7.1 — 2026-10-22T11:52:18+00:00
+Checked 233 results across 24 feeds; matched 0; dashboard has 0 opportunities.
 
 REJECTION REASONS:
-no Western Cape location in result text: 160
-title does not clearly request buying a vehicle: 155
-irrelevant reference/entertainment website: 57
-seller/advertisement title: 18
-older than age limit: 11
+title does not clearly request buying a vehicle: 233
+no Western Cape location in result text: 233
+irrelevant reference/entertainment website: 88
+older than age limit: 22
+seller/advertisement title: 11
 
 FEED RESULTS:
-Bing RSS: "looking to buy a car" "Cape Town" -dealer: 10 items, 0 matches
-Bing RSS: "looking to buy a bakkie" "Western Cape" -dealer: 10 items, 0 matches
-Bing RSS: "looking for a used car" "Paarl" -dealer: 10 items, 0 matches
-Bing RSS: "need a car" "Cape Town" -rental -dealer: 10 items, 0 matches
-Bing RSS: "need a bakkie" "Western Cape" -rental -dealer: 10 items, 0 matches
-Bing RSS: "want to buy a car" "Stellenbosch" -dealer: 10 items, 0 matches
-Bing RSS: "looking for a double cab" "Cape Town" -dealer: 10 items, 0 matches
-Bing RSS: "buying my first car" "Cape Town": 10 items, 0 matches
+Bing RSS: site:reddit.com/r/capetown/ "looking for" "car": 9 items, 0 matches
+Bing RSS: site:reddit.com/r/capetown/ "buy" "bakkie": 10 items, 0 matches
+Bing RSS: site:reddit.com/r/capetown/ "first car" "buy": 10 items, 0 matches
+Bing RSS: site:reddit.com/r/capetown/ "which car" "buy": 10 items, 0 matches
+Bing RSS: site:reddit.com/r/askSouthAfrica/ "buy a car" "Cape Town": 10 items, 0 matches
+Bing RSS: site:mybroadband.co.za/forum/ "looking to buy" "car" "Cape Town": 10 items, 0 matches
+Bing RSS: site:4x4community.co.za/forum/ "looking for" "bakkie" "Western Cape": 10 items, 0 matches
+Bing RSS: "looking to buy a car" "Cape Town" -dealer -stock: 10 items, 0 matches
+Bing RSS: "looking for a used car" "Paarl" -dealer -stock: 10 items, 0 matches
+Bing RSS: "looking to buy a bakkie" "Western Cape" -dealer -stock: 10 items, 0 matches
+Bing RSS: "want to buy a car" "Stellenbosch" -dealer -stock: 7 items, 0 matches
 Bing RSS: "what car should I buy" "Cape Town": 10 items, 0 matches
-Bing RSS: "car wanted" "Western Cape" -dealer: 10 items, 0 matches
-Bing RSS: "bakkie wanted" "Paarl" -dealer: 10 items, 0 matches
-Bing RSS: "soek n kar" "Kaapstad": 10 items, 0 matches
-Bing RSS: "soek n bakkie" "Paarl": 10 items, 0 matches
-Bing RSS: site:reddit.com/r/capetown "buying a car": 10 items, 0 matches
-Bing RSS: site:reddit.com/r/capetown "looking for a car": 10 items, 0 matches
-Bing RSS: site:reddit.com/r/askSouthAfrica "buy a car" "Cape Town": 10 items, 0 matches
+Bing RSS: "which car should I buy" "Western Cape": 10 items, 0 matches
+Bing RSS: "looking for my first car" "Cape Town": 10 items, 0 matches
+Bing RSS: "anyone selling a bakkie" "Cape Town": 10 items, 0 matches
+Bing RSS: "need a reliable car" "Cape Town" -rental -dealer: 10 items, 0 matches
+Bing RSS: "need a car under" "Cape Town" -rental -dealer: 10 items, 0 matches
+Bing RSS: "car wanted" "Western Cape" -dealer -stock: 10 items, 0 matches
+Bing RSS: "bakkie wanted" "Paarl" -dealer -stock: 7 items, 0 matches
+Bing RSS: "op soek na" "bakkie" "Kaapstad": 10 items, 0 matches
+Bing RSS: "soek n kar" "Paarl": 10 items, 0 matches
+Bing RSS: "soek n bakkie" "Wes-Kaap": 10 items, 0 matches
+Bing RSS: "waar kan ek" "kar koop" "Kaapstad": 10 items, 0 matches
+Bing RSS: "koop raad" "motor" "Wes-Kaap": 10 items, 0 matches
 
 SAMPLE REJECTIONS:
+- Cars for Sale - Used Cars, New Cars, SUVs, and Trucks - Autotrader | title does not clearly request buying a vehicle; no Western Cape location in result text; seller/advertisement title
+- Used Cars for Sale in Renton, WA (with Photos) - CARFAX | title does not clearly request buying a vehicle; no Western Cape location in result text; seller/advertisement title
+- Used Cars for Sale near Renton, WA - Carsforsale.com® | title does not clearly request buying a vehicle; no Western Cape location in result text; seller/advertisement title
+- Used cars for sale near Renton, WA | title does not clearly request buying a vehicle; no Western Cape location in result text; seller/advertisement title; older than age limit
+- Used Cars for Sale - Autotrader | title does not clearly request buying a vehicle; no Western Cape location in result text; seller/advertisement title
+- Used Cars for Sale in Renton, WA - CarGurus | title does not clearly request buying a vehicle; no Western Cape location in result text; seller/advertisement title
+- CarMax - Shop for used cars, then buy online or at a store | title does not clearly request buying a vehicle; no Western Cape location in result text
+- Find Used Cars, Trucks & SUVs for Sale - TRUECar | title does not clearly request buying a vehicle; no Western Cape location in result text; seller/advertisement title
+- Carvana | Buy & Finance Used Cars Online | At Home Delivery | title does not clearly request buying a vehicle; no Western Cape location in result text
+- Best Buy | Official Online Store | Shop Now & Save | title does not clearly request buying a vehicle; no Western Cape location in result text
+- Computers & Tablets - Best Buy | title does not clearly request buying a vehicle; no Western Cape location in result text
+- Welcome to Costco Wholesale | title does not clearly request buying a vehicle; no Western Cape location in result text
+- Buy & Sell Locally - OfferUp - Buy. Sell. Simple. - OfferUp | title does not clearly request buying a vehicle; no Western Cape location in result text
+- Facebook Marketplace: Buy and Sell Items Locally or Shipped | title does not clearly request buying a vehicle; no Western Cape location in result text
+- Target : Expect More. Pay Less. | title does not clearly request buying a vehicle; no Western Cape location in result text
+- Local Marketplace: Buy & Sell Nearby With Mobile App | title does not clearly request buying a vehicle; no Western Cape location in result text
+- BUY Definition & Meaning - Merriam-Webster | title does not clearly request buying a vehicle; no Western Cape location in result text; irrelevant reference/entertainment website
+- Auctions - Buywander | title does not clearly request buying a vehicle; no Western Cape location in result text
+- Zillow: Real Estate, Apartments, Mortgages & Home Values | title does not clearly request buying a vehicle; no Western Cape location in result text
+- Like.the.first.time.DP.nostalgi... Shared by 1gse**v3oe | PikPak | title does not clearly request buying a vehicle; no Western Cape location in result text
+- TEAM-075.Majiiki!.First.3P.Susu... Shared by 1g1l**21e8 | PikPak | title does not clearly request buying a vehicle; no Western Cape location in result text
+- api-drive.mypikpak.com | title does not clearly request buying a vehicle; no Western Cape location in result text
+- IPZZ-829-uncensored-HD is shared on PikPak | title does not clearly request buying a vehicle; no Western Cape location in result text
+- 【Short Drama】AI短剧（持续更新中……） Shared by 159**275 | PikPak | title does not clearly request buying a vehicle; no Western Cape location in result text
+- IPX-035 Misaki Nanami FIRST IMP... Shared by 1frb**u6mc | PikPak | title does not clearly request buying a vehicle; no Western Cape location in result text
+- 1_5062243364976462201.mp4 Shared by | PikPak | title does not clearly request buying a vehicle; no Western Cape location in result text
+- [KTXP] [Psycho-Pass S3] [First In... Shared by 1fu1**ijc1 | PikPak | title does not clearly request buying a vehicle; no Western Cape location in result text; older than age limit
+- [FamilyTherapy] Hailey Little, ... Shared by 1f5v**8sa9 | PikPak | title does not clearly request buying a vehicle; no Western Cape location in result text
+- Yaya--728 Shared by | PikPak | title does not clearly request buying a vehicle; no Western Cape location in result text
+- Which? | Expert testing, reviews and advice - Which? | title does not clearly request buying a vehicle; no Western Cape location in result text
+- WHICH | English meaning - Cambridge Dictionary | title does not clearly request buying a vehicle; no Western Cape location in result text
+- WHICH Definition & Meaning - Merriam-Webster | title does not clearly request buying a vehicle; no Western Cape location in result text; irrelevant reference/entertainment website
+- Which? - Wikipedia | title does not clearly request buying a vehicle; no Western Cape location in result text; irrelevant reference/entertainment website
+- Which - Grammar - Cambridge Dictionary | title does not clearly request buying a vehicle; no Western Cape location in result text; older than age limit
+- Login to which.co.uk | Discover Best Buys & Don't Buys - Which? | title does not clearly request buying a vehicle; no Western Cape location in result text
+- which - Wiktionary, the free dictionary | title does not clearly request buying a vehicle; no Western Cape location in result text; irrelevant reference/entertainment website
+- Which - definition of which by The Free Dictionary | title does not clearly request buying a vehicle; no Western Cape location in result text; irrelevant reference/entertainment website
+- Which - Wikipedia | title does not clearly request buying a vehicle; no Western Cape location in result text; irrelevant reference/entertainment website
+- Which, That, and Who - Grammar Monster | title does not clearly request buying a vehicle; no Western Cape location in result text
+- Best Buy | Official Online Store | Shop Now & Save | title does not clearly request buying a vehicle; no Western Cape location in result text
+- Computers & Tablets - Best Buy | title does not clearly request buying a vehicle; no Western Cape location in result text
+- Welcome to Costco Wholesale | title does not clearly request buying a vehicle; no Western Cape location in result text
+- Buy & Sell Locally - OfferUp - Buy. Sell. Simple. - OfferUp | title does not clearly request buying a vehicle; no Western Cape location in result text
+- Facebook Marketplace: Buy and Sell Items Locally or Shipped | title does not clearly request buying a vehicle; no Western Cape location in result text
+- Target : Expect More. Pay Less. | title does not clearly request buying a vehicle; no Western Cape location in result text
+- Local Marketplace: Buy & Sell Nearby With Mobile App | title does not clearly request buying a vehicle; no Western Cape location in result text
+- BUY Definition & Meaning - Merriam-Webster | title does not clearly request buying a vehicle; no Western Cape location in result text; irrelevant reference/entertainment website
+- Auctions - Buywander | title does not clearly request buying a vehicle; no Western Cape location in result text
+- Zillow: Real Estate, Apartments, Mortgages & Home Values | title does not clearly request buying a vehicle; no Western Cape location in result text
 - Looking (TV series) - Wikipedia | title does not clearly request buying a vehicle; no Western Cape location in result text; irrelevant reference/entertainment website
-- Looking (TV Series 2014–2015) - IMDb | title does not clearly request buying a vehicle; no Western Cape location in result text; irrelevant reference/entertainment website
-- LOOKING Synonyms: 90 Similar and Opposite Words - Merriam-Webster | title does not clearly request buying a vehicle; no Western Cape location in result text; irrelevant reference/entertainment website
-- Looking - definition of looking by The Free Dictionary | title does not clearly request buying a vehicle; no Western Cape location in result text; irrelevant reference/entertainment website
-- LOOK Definition & Meaning - Merriam-Webster | title does not clearly request buying a vehicle; no Western Cape location in result text; irrelevant reference/entertainment website
-- Looking - Wikipedia | title does not clearly request buying a vehicle; no Western Cape location in result text; irrelevant reference/entertainment website
-- Looking - watch tv show streaming online - JustWatch | title does not clearly request buying a vehicle; no Western Cape location in result text
-- Looking: Season 1 | Rotten Tomatoes | title does not clearly request buying a vehicle; no Western Cape location in result text; irrelevant reference/entertainment website
-- 'Looking' cast: Where are they now? | Out.com | title does not clearly request buying a vehicle; no Western Cape location in result text; older than age limit
-- Looking (TV Series 2014–2015) - Full cast & crew - IMDb | title does not clearly request buying a vehicle; no Western Cape location in result text; irrelevant reference/entertainment website
-- Looking (TV series) - Wikipedia | title does not clearly request buying a vehicle; no Western Cape location in result text; irrelevant reference/entertainment website
-- Looking (TV Series 2014–2015) - IMDb | title does not clearly request buying a vehicle; no Western Cape location in result text; irrelevant reference/entertainment website
-- LOOKING Synonyms: 90 Similar and Opposite Words - Merriam-Webster | title does not clearly request buying a vehicle; no Western Cape location in result text; irrelevant reference/entertainment website
-- Looking - definition of looking by The Free Dictionary | title does not clearly request buying a vehicle; no Western Cape location in result text; irrelevant reference/entertainment website
-- LOOK Definition & Meaning - Merriam-Webster | title does not clearly request buying a vehicle; no Western Cape location in result text; irrelevant reference/entertainment website
-- Looking - Wikipedia | title does not clearly request buying a vehicle; no Western Cape location in result text; irrelevant reference/entertainment website
-- Looking - watch tv show streaming online - JustWatch | title does not clearly request buying a vehicle; no Western Cape location in result text
-- Looking: Season 1 | Rotten Tomatoes | title does not clearly request buying a vehicle; no Western Cape location in result text; irrelevant reference/entertainment website
-- 'Looking' cast: Where are they now? | Out.com | title does not clearly request buying a vehicle; no Western Cape location in result text; older than age limit
-- Looking (TV Series 2014–2015) - Full cast & crew - IMDb | title does not clearly request buying a vehicle; no Western Cape location in result text; irrelevant reference/entertainment website
-- Looking (TV series) - Wikipedia | title does not clearly request buying a vehicle; no Western Cape location in result text; irrelevant reference/entertainment website
-- Looking (TV Series 2014–2015) - IMDb | title does not clearly request buying a vehicle; no Western Cape location in result text; irrelevant reference/entertainment website
-- LOOKING Synonyms: 90 Similar and Opposite Words - Merriam-Webster | title does not clearly request buying a vehicle; no Western Cape location in result text; irrelevant reference/entertainment website
-- Looking - definition of looking by The Free Dictionary | title does not clearly request buying a vehicle; no Western Cape location in result text; irrelevant reference/entertainment website
-- LOOK Definition & Meaning - Merriam-Webster | title does not clearly request buying a vehicle; no Western Cape location in result text; irrelevant reference/entertainment website
-- Looking - Wikipedia | title does not clearly request buying a vehicle; no Western Cape location in result text; irrelevant reference/entertainment website
-- Looking - watch tv show streaming online - JustWatch | title does not clearly request buying a vehicle; no Western Cape location in result text
-- Looking: Season 1 | Rotten Tomatoes | title does not clearly request buying a vehicle; no Western Cape location in result text; irrelevant reference/entertainment website
-- 'Looking' cast: Where are they now? | Out.com | title does not clearly request buying a vehicle; no Western Cape location in result text; older than age limit
-- Looking (TV Series 2014–2015) - Full cast & crew - IMDb | title does not clearly request buying a vehicle; no Western Cape location in result text; irrelevant reference/entertainment website
-- NEED Definition & Meaning - Merriam-Webster | title does not clearly request buying a vehicle; no Western Cape location in result text; irrelevant reference/entertainment website
-- National Energy Education Development Program · National Energy ... | title does not clearly request buying a vehicle; no Western Cape location in result text
-- NEED | English meaning - Cambridge Dictionary | title does not clearly request buying a vehicle; no Western Cape location in result text
-- Need - Wikipedia | title does not clearly request buying a vehicle; no Western Cape location in result text; irrelevant reference/entertainment website
-- Need - definition of need by The Free Dictionary | title does not clearly request buying a vehicle; no Western Cape location in result text; irrelevant reference/entertainment website
-- Need: Definition, Meaning, and Examples - usdictionary.com | title does not clearly request buying a vehicle; no Western Cape location in result text
-- NEED Synonyms & Antonyms - 166 words | Thesaurus.com | title does not clearly request buying a vehicle; no Western Cape location in result text; irrelevant reference/entertainment website
-- NEED Definition & Meaning | Dictionary.com | title does not clearly request buying a vehicle; no Western Cape location in result text; irrelevant reference/entertainment website
-- NEED Synonyms: 184 Similar and Opposite Words - Merriam-Webster | title does not clearly request buying a vehicle; no Western Cape location in result text; irrelevant reference/entertainment website
-- Need - Definition, Meaning & Synonyms | Vocabulary.com | title does not clearly request buying a vehicle; no Western Cape location in result text
-- NEED Definition & Meaning - Merriam-Webster | title does not clearly request buying a vehicle; no Western Cape location in result text; irrelevant reference/entertainment website
-- National Energy Education Development Program · National Energy ... | title does not clearly request buying a vehicle; no Western Cape location in result text
-- NEED | English meaning - Cambridge Dictionary | title does not clearly request buying a vehicle; no Western Cape location in result text
-- Need - Wikipedia | title does not clearly request buying a vehicle; no Western Cape location in result text; irrelevant reference/entertainment website
-- Need - definition of need by The Free Dictionary | title does not clearly request buying a vehicle; no Western Cape location in result text; irrelevant reference/entertainment website
-- Need: Definition, Meaning, and Examples - usdictionary.com | title does not clearly request buying a vehicle; no Western Cape location in result text
-- NEED Synonyms & Antonyms - 166 words | Thesaurus.com | title does not clearly request buying a vehicle; no Western Cape location in result text; irrelevant reference/entertainment website
-- NEED Definition & Meaning | Dictionary.com | title does not clearly request buying a vehicle; no Western Cape location in result text; irrelevant reference/entertainment website
-- NEED Synonyms: 184 Similar and Opposite Words - Merriam-Webster | title does not clearly request buying a vehicle; no Western Cape location in result text; irrelevant reference/entertainment website
-- Need - Definition, Meaning & Synonyms | Vocabulary.com | title does not clearly request buying a vehicle; no Western Cape location in result text
