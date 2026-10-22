@@ -21,6 +21,8 @@ jobs:
         with:
           python-version: '3.12'
       - name: Run existing Buyer Radar scanner
+        env:
+          EXTRA_RSS_FEEDS: "https://www.reddit.com/r/capetown/search.rss?q=buy%20car&restrict_sr=1&sort=new&t=month"
         run: python scripts/discover.py
       - name: Update daily history and unique leads
         run: python scripts/build_daily_report.py
