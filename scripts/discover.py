@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Willie Buyer Radar 7.1. Public RSS only; no private profiles or contact harvesting."""
+"""Willie Buyer Radar 7.2. Public RSS only; no private profiles or contact harvesting."""
 import collections
 import csv
 import datetime as dt
@@ -26,31 +26,26 @@ FIELDS = ['first_seen_utc','published_utc','source','title','url','summary','loc
 # Wider coverage of *public indexed discussions*, not advertisements or private groups.
 # Search results are only leads when the original post passes strict title, date and area checks.
 SEARCHES = [
+    'site:reddit.com/r/capetown/ "buying" "car"',
     'site:reddit.com/r/capetown/ "looking for" "car"',
-    'site:reddit.com/r/capetown/ "buy" "bakkie"',
-    'site:reddit.com/r/capetown/ "first car" "buy"',
-    'site:reddit.com/r/capetown/ "which car" "buy"',
+    'site:reddit.com/r/capetown/ "first car"',
+    'site:reddit.com/r/capetown/ "which car should"',
+    'site:reddit.com/r/capetown/ "bakkie" "buy"',
     'site:reddit.com/r/askSouthAfrica/ "buy a car" "Cape Town"',
-    'site:mybroadband.co.za/forum/ "looking to buy" "car" "Cape Town"',
-    'site:4x4community.co.za/forum/ "looking for" "bakkie" "Western Cape"',
-    '"looking to buy a car" "Cape Town" -dealer -stock',
-    '"looking for a used car" "Paarl" -dealer -stock',
-    '"looking to buy a bakkie" "Western Cape" -dealer -stock',
-    '"want to buy a car" "Stellenbosch" -dealer -stock',
-    '"what car should I buy" "Cape Town"',
-    '"which car should I buy" "Western Cape"',
-    '"looking for my first car" "Cape Town"',
-    '"anyone selling a bakkie" "Cape Town"',
-    '"need a reliable car" "Cape Town" -rental -dealer',
-    '"need a car under" "Cape Town" -rental -dealer',
-    '"car wanted" "Western Cape" -dealer -stock',
-    '"bakkie wanted" "Paarl" -dealer -stock',
-    '"op soek na" "bakkie" "Kaapstad"',
-    '"soek n kar" "Paarl"',
-    '"soek n bakkie" "Wes-Kaap"',
-    '"waar kan ek" "kar koop" "Kaapstad"',
-    '"koop raad" "motor" "Wes-Kaap"',
+    'site:mybroadband.co.za/forum/ "buy a car" "Cape Town"',
+    'site:4x4community.co.za/forum/ "looking for" "bakkie"',
+    'site:reddit.com/r/capetown/ "second hand car"',
+    'site:reddit.com/r/capetown/ "recommend" "car"',
+    '"looking to buy a car" "Cape Town" site:reddit.com',
+    '"looking to buy a bakkie" "Western Cape" site:reddit.com',
+    '"what car should I buy" "Cape Town" site:reddit.com',
+    '"soek n bakkie" "Wes-Kaap" site:reddit.com',
+    '"op soek na" "kar" "Kaapstad" site:reddit.com',
 ]
+# Only these public discussion communities are candidates. Bing often ignores
+# query site restrictions and returns US retailers, shopping and spam sites.
+ALLOWED_DISCUSSION_HOSTS = ('reddit.com', 'mybroadband.co.za', '4x4community.co.za')
+FOREIGN_PLACE = re.compile(r'\\b(?:Renton|Seattle|Washington State|California|Texas|United States|\\bUSA\\b|\\bUK\\b)\\b', re.I)
 
 LOCATIONS = ['western cape','cape town','paarl','stellenbosch','bellville','durbanville','somerset west',
              'brackenfell','kuils river','wellington','strand','goodwood','milnerton','malmesbury',
@@ -116,10 +111,26 @@ def assess(title,summary,published,now,url='',max_age=30):
     parsed = urllib.parse.urlparse(url)
     is_cpt = (parsed.hostname or '').lower() in ('reddit.com','www.reddit.com') and parsed.path.lower().startswith('/r/capetown/')
     request = bool(BUYER_TITLE.search(title) or BUYER_QUESTION.search(title))
+    # Explicit buying-advice questions, without matching unrelated 'buy' mentions.
+    request = request or bool(re.search(
+        rf'\\b(?:help|advice|tips|recommendations?)\\s+(?:me\\s+)?(?:with|on|for|about)\\s+'
+        rf'(?:buying|purchasing)\\s+(?:(?:a|an|the|used|second[ -]?hand|first)\\s+){{0,4}}{VEHICLE}\\b',
+        title, re.I))
+    # 'Buying a used car in Cape Town?' is a genuine first-person discussion topic.
+    request = request or bool(re.search(
+        rf'^\\s*buying\\s+(?:(?:a|an|the|used|second[ -]?hand|first)\\s+){{0,4}}{VEHICLE}\\b',
+        title, re.I))
     if not locs and is_cpt and request:
         locs = ['cape town (community; verify location)']
     reasons=[]
     if not request: reasons.append('title does not clearly request buying a vehicle')
+    # Domain gate comes before considering anything a lead. Search engines may
+    # return irrelevant domains even for site:reddit.com searches.
+    host=(parsed.hostname or '').lower()
+    if not any(host == d or host.endswith('.'+d) for d in ALLOWED_DISCUSSION_HOSTS):
+        reasons.append('outside approved public discussion sources')
+    if FOREIGN_PLACE.search(title):
+        reasons.append('foreign location in title')
     if not locs: reasons.append('no Western Cape location in result text')
     if SELLER.search(title): reasons.append('seller/advertisement title')
     if re.search(r'\b(?:looking for|need|want)\s+(?:a\s+)?(?:driver|mechanic|car wash|car parts|car seat|car insurance|car loan)\b',title,re.I): reasons.append('not a vehicle purchase')
@@ -157,13 +168,14 @@ def main():
     accepted={}
     rejected=collections.Counter()
     samples=[]
+    candidate_samples=[]
     feed_stats=[]
     checked_total=0
     for source,feed in queries:
         checked=matched=0
         error=''
         try:
-            req=urllib.request.Request(feed,headers={'User-Agent':'Mozilla/5.0 (compatible; WillieBuyerRadar/7.1; public RSS reader)', 'Accept':'application/rss+xml,application/atom+xml,application/xml,text/xml'})
+            req=urllib.request.Request(feed,headers={'User-Agent':'Mozilla/5.0 (compatible; WillieBuyerRadar/7.2; public RSS reader)', 'Accept':'application/rss+xml,application/atom+xml,application/xml,text/xml'})
             with urllib.request.urlopen(req,timeout=15) as response:
                 raw=response.read(1_000_000)
             for title,url,summary,date in parse_feed(raw):
@@ -196,13 +208,13 @@ def main():
         accepted[url]=saved
         retained+=1
     rows=sorted(accepted.values(),key=lambda x:(x['score'],x['first_seen_utc']),reverse=True)[:200]
-    data={'version':'7.1','last_scan_utc':stamp,'status':'completed',
+    data={'version':'7.2','last_scan_utc':stamp,'status':'completed',
           'stats':{'sources_checked':len(queries),'sources_accessible':sum(not x['error'] for x in feed_stats),
                    'items_checked':checked_total,'matches_this_scan':sum(x['matches'] for x in feed_stats),
                    'new_this_scan':sum(x['new_this_run'] for x in rows),
                    'dashboard_opportunities':len(rows),'retained_from_prior_scans':retained},
           'rejection_reasons':dict(rejected.most_common()),'feed_stats':feed_stats,
-          'rejection_samples':samples,'opportunities':rows,
+          'rejection_samples':samples,'candidate_samples':candidate_samples,'opportunities':rows,
           'disclaimer':'Unverified public RSS results, not confirmed buyers. Verify post date, intent, location and platform rules. No private contact data collected.'}
     JSON_OUT.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     STATE.write_text(json.dumps(seen,indent=2)+'\n',encoding='utf-8')
@@ -210,12 +222,14 @@ def main():
         writer=csv.DictWriter(f,fieldnames=FIELDS)
         writer.writeheader()
         for rec in rows: writer.writerow({**rec,'locations':', '.join(rec['locations'])})
-    lines=[f'Willie Buyer Radar 7.1 — {stamp}',f'Checked {checked_total} results across {len(queries)} feeds; matched {data["stats"]["matches_this_scan"]}; dashboard has {len(rows)} opportunities.', '', 'REJECTION REASONS:']
+    lines=[f'Willie Buyer Radar 7.2 — {stamp}',f'Checked {checked_total} results across {len(queries)} feeds; matched {data["stats"]["matches_this_scan"]}; dashboard has {len(rows)} opportunities.', '', 'REJECTION REASONS:']
     lines += [f'{k}: {v}' for k,v in rejected.most_common()]
     lines += ['', 'FEED RESULTS:']+[f'{f["source"]}: {f["items"]} items, {f["matches"]} matches'+(f', ERROR {f["error"]}' if f['error'] else '') for f in feed_stats]
+    lines += ['', 'DISCUSSION SOURCE CANDIDATES (review relevance and reasons):']
+    lines += [f'- {s["title"]} | {s["url"]} | {"; ".join(s["reasons"]) or "ACCEPTED"}' for s in candidate_samples]
     lines += ['', 'SAMPLE REJECTIONS:']+[f'- {s["title"]} | {"; ".join(s["reasons"])}' for s in samples]
     DIAG_OUT.write_text('\n'.join(lines)+'\n',encoding='utf-8')
-    print(f'Radar 7.1: {checked_total} checked, {data["stats"]["matches_this_scan"]} matched, {len(rows)} displayed')
+    print(f'Radar 7.2: {checked_total} checked, {data["stats"]["matches_this_scan"]} matched, {len(rows)} displayed')
 
 if __name__=='__main__':
     main()
