@@ -159,7 +159,7 @@ def main():
     # a failed feed is logged, never treated as zero confirmed buyers.
     direct_terms = ['buy car', 'buying car', 'second hand car', 'looking for bakkie']
     queries = []
-    for community in ('capetown', 'askSouthAfrica'):
+    for community in ():
         for term in direct_terms:
             params = urllib.parse.urlencode({'q':term,'restrict_sr':'1','sort':'new','t':'month','limit':'50'})
             queries.append((f'Reddit direct r/{community}: {term}',
