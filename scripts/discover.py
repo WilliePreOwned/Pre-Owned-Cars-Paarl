@@ -161,9 +161,8 @@ def main():
             queries.append((f'Reddit direct r/{community}: {term}',
                             f'https://www.reddit.com/r/{community}/search.rss?{params}'))
     # Bing is supplemental, limited to targeted queries to avoid dictionary/US retail noise.
-    for q in SEARCHES:
-        queries.append(('Bing RSS: '+q,
-                        'https://www.bing.com/search?'+urllib.parse.urlencode({'format':'rss','q':q,'setlang':'en-ZA'})))
+    # Bing RSS disabled because it returns unrelated search results.
+# Keep approved public RSS feeds configured through EXTRA_RSS_FEEDS.
     # Optional user-approved public RSS feeds from the GitHub Actions environment.
     for i,url in enumerate(os.getenv('EXTRA_RSS_FEEDS','').split(','),1):
         url=url.strip()
