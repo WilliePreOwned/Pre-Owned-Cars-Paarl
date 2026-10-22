@@ -1,25 +1,76 @@
 {
-  "version": "7.2",
-  "last_scan_utc": "2026-10-22T12:02:44+00:00",
+  "version": "7.3",
+  "last_scan_utc": "2026-10-22T12:35:54+00:00",
   "status": "completed",
   "stats": {
-    "sources_checked": 15,
-    "sources_accessible": 15,
-    "items_checked": 147,
+    "sources_checked": 14,
+    "sources_accessible": 7,
+    "items_checked": 51,
     "matches_this_scan": 0,
     "new_this_scan": 0,
     "dashboard_opportunities": 0,
-    "retained_from_prior_scans": 0
+    "retained_from_prior_scans": 0,
+    "direct_feed_failures": 7
   },
   "rejection_reasons": {
-    "outside approved public discussion sources": 147,
-    "no Western Cape location in result text": 147,
-    "title does not clearly request buying a vehicle": 146,
-    "irrelevant reference/entertainment website": 52,
-    "older than age limit": 20,
-    "seller/advertisement title": 8
+    "no Western Cape location in result text": 51,
+    "outside approved public discussion sources": 51,
+    "title does not clearly request buying a vehicle": 51,
+    "seller/advertisement title": 11,
+    "irrelevant reference/entertainment website": 9,
+    "older than age limit": 6,
+    "foreign location in title": 5,
+    "unrelated subject in title": 1
   },
   "feed_stats": [
+    {
+      "source": "Reddit direct r/capetown: buy car",
+      "items": 0,
+      "matches": 0,
+      "error": ""
+    },
+    {
+      "source": "Reddit direct r/capetown: buying car",
+      "items": 0,
+      "matches": 0,
+      "error": "HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "source": "Reddit direct r/capetown: second hand car",
+      "items": 0,
+      "matches": 0,
+      "error": "HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "source": "Reddit direct r/capetown: looking for bakkie",
+      "items": 0,
+      "matches": 0,
+      "error": "HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "source": "Reddit direct r/askSouthAfrica: buy car",
+      "items": 0,
+      "matches": 0,
+      "error": "HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "source": "Reddit direct r/askSouthAfrica: buying car",
+      "items": 0,
+      "matches": 0,
+      "error": "HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "source": "Reddit direct r/askSouthAfrica: second hand car",
+      "items": 0,
+      "matches": 0,
+      "error": "HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "source": "Reddit direct r/askSouthAfrica: looking for bakkie",
+      "items": 0,
+      "matches": 0,
+      "error": "HTTPError: HTTP Error 429: Too Many Requests"
+    },
     {
       "source": "Bing RSS: site:reddit.com/r/capetown/ \"buying\" \"car\"",
       "items": 10,
@@ -28,13 +79,13 @@
     },
     {
       "source": "Bing RSS: site:reddit.com/r/capetown/ \"looking for\" \"car\"",
-      "items": 10,
+      "items": 9,
       "matches": 0,
       "error": ""
     },
     {
       "source": "Bing RSS: site:reddit.com/r/capetown/ \"first car\"",
-      "items": 10,
+      "items": 9,
       "matches": 0,
       "error": ""
     },
@@ -46,7 +97,7 @@
     },
     {
       "source": "Bing RSS: site:reddit.com/r/capetown/ \"bakkie\" \"buy\"",
-      "items": 10,
+      "items": 3,
       "matches": 0,
       "error": ""
     },
@@ -55,65 +106,11 @@
       "items": 10,
       "matches": 0,
       "error": ""
-    },
-    {
-      "source": "Bing RSS: site:mybroadband.co.za/forum/ \"buy a car\" \"Cape Town\"",
-      "items": 10,
-      "matches": 0,
-      "error": ""
-    },
-    {
-      "source": "Bing RSS: site:4x4community.co.za/forum/ \"looking for\" \"bakkie\"",
-      "items": 10,
-      "matches": 0,
-      "error": ""
-    },
-    {
-      "source": "Bing RSS: site:reddit.com/r/capetown/ \"second hand car\"",
-      "items": 10,
-      "matches": 0,
-      "error": ""
-    },
-    {
-      "source": "Bing RSS: site:reddit.com/r/capetown/ \"recommend\" \"car\"",
-      "items": 10,
-      "matches": 0,
-      "error": ""
-    },
-    {
-      "source": "Bing RSS: \"looking to buy a car\" \"Cape Town\" site:reddit.com",
-      "items": 10,
-      "matches": 0,
-      "error": ""
-    },
-    {
-      "source": "Bing RSS: \"looking to buy a bakkie\" \"Western Cape\" site:reddit.com",
-      "items": 10,
-      "matches": 0,
-      "error": ""
-    },
-    {
-      "source": "Bing RSS: \"what car should I buy\" \"Cape Town\" site:reddit.com",
-      "items": 10,
-      "matches": 0,
-      "error": ""
-    },
-    {
-      "source": "Bing RSS: \"soek n bakkie\" \"Wes-Kaap\" site:reddit.com",
-      "items": 7,
-      "matches": 0,
-      "error": ""
-    },
-    {
-      "source": "Bing RSS: \"op soek na\" \"kar\" \"Kaapstad\" site:reddit.com",
-      "items": 10,
-      "matches": 0,
-      "error": ""
     }
   ],
   "rejection_samples": [
     {
-      "title": "Homes for Sale, Real Estate & Property Listings | Realtor.com®",
+      "title": "Realtor.com® | Homes for Sale, Apartments & Houses for Rent",
       "reasons": [
         "title does not clearly request buying a vehicle",
         "outside approved public discussion sources",
@@ -132,6 +129,35 @@
       "source": "Bing RSS: site:reddit.com/r/capetown/ \"buying\" \"car\""
     },
     {
+      "title": "10 Steps to Buying a House: Your Complete Home Guide | Zillow",
+      "reasons": [
+        "title does not clearly request buying a vehicle",
+        "outside approved public discussion sources",
+        "no Western Cape location in result text"
+      ],
+      "source": "Bing RSS: site:reddit.com/r/capetown/ \"buying\" \"car\""
+    },
+    {
+      "title": "Homes for Sale, Real Estate & Property Listings | Realtor.com®",
+      "reasons": [
+        "title does not clearly request buying a vehicle",
+        "outside approved public discussion sources",
+        "no Western Cape location in result text",
+        "seller/advertisement title"
+      ],
+      "source": "Bing RSS: site:reddit.com/r/capetown/ \"buying\" \"car\""
+    },
+    {
+      "title": "Homebuying Checklist in (2026) - ConsumerAffairs",
+      "reasons": [
+        "title does not clearly request buying a vehicle",
+        "outside approved public discussion sources",
+        "no Western Cape location in result text",
+        "older than age limit"
+      ],
+      "source": "Bing RSS: site:reddit.com/r/capetown/ \"buying\" \"car\""
+    },
+    {
       "title": "BUY Definition & Meaning - Merriam-Webster",
       "reasons": [
         "title does not clearly request buying a vehicle",
@@ -142,17 +168,7 @@
       "source": "Bing RSS: site:reddit.com/r/capetown/ \"buying\" \"car\""
     },
     {
-      "title": "Buying - definition of buying by The Free Dictionary",
-      "reasons": [
-        "title does not clearly request buying a vehicle",
-        "outside approved public discussion sources",
-        "no Western Cape location in result text",
-        "irrelevant reference/entertainment website"
-      ],
-      "source": "Bing RSS: site:reddit.com/r/capetown/ \"buying\" \"car\""
-    },
-    {
-      "title": "10 Steps to Buying a House: Your Complete Home Guide | Zillow",
+      "title": "The Home Buying Process Timeline Explained | Redfin",
       "reasons": [
         "title does not clearly request buying a vehicle",
         "outside approved public discussion sources",
@@ -161,7 +177,7 @@
       "source": "Bing RSS: site:reddit.com/r/capetown/ \"buying\" \"car\""
     },
     {
-      "title": "Buy & Sell Locally - OfferUp - Buy. Sell. Simple. - OfferUp",
+      "title": "Buying a House: How Much Can You Really Afford? - Money Guy",
       "reasons": [
         "title does not clearly request buying a vehicle",
         "outside approved public discussion sources",
@@ -170,137 +186,117 @@
       "source": "Bing RSS: site:reddit.com/r/capetown/ \"buying\" \"car\""
     },
     {
-      "title": "Best Buy | Official Online Store | Shop Now & Save",
+      "title": "How to Buy a House: A Step-by-Step Guide - Investopedia",
       "reasons": [
         "title does not clearly request buying a vehicle",
         "outside approved public discussion sources",
-        "no Western Cape location in result text"
+        "no Western Cape location in result text",
+        "seller/advertisement title",
+        "unrelated subject in title",
+        "older than age limit"
       ],
       "source": "Bing RSS: site:reddit.com/r/capetown/ \"buying\" \"car\""
     },
     {
-      "title": "Buy | Realtor.com® News and Insights on Home Buying",
-      "reasons": [
-        "title does not clearly request buying a vehicle",
-        "outside approved public discussion sources",
-        "no Western Cape location in result text"
-      ],
-      "source": "Bing RSS: site:reddit.com/r/capetown/ \"buying\" \"car\""
-    },
-    {
-      "title": "Facebook Marketplace: Buy and Sell Items Locally or Shipped",
-      "reasons": [
-        "title does not clearly request buying a vehicle",
-        "outside approved public discussion sources",
-        "no Western Cape location in result text"
-      ],
-      "source": "Bing RSS: site:reddit.com/r/capetown/ \"buying\" \"car\""
-    },
-    {
-      "title": "BUY | English meaning - Cambridge Dictionary",
-      "reasons": [
-        "title does not clearly request buying a vehicle",
-        "outside approved public discussion sources",
-        "no Western Cape location in result text"
-      ],
-      "source": "Bing RSS: site:reddit.com/r/capetown/ \"buying\" \"car\""
-    },
-    {
-      "title": "Looking (TV series) - Wikipedia",
-      "reasons": [
-        "title does not clearly request buying a vehicle",
-        "outside approved public discussion sources",
-        "no Western Cape location in result text",
-        "irrelevant reference/entertainment website"
-      ],
-      "source": "Bing RSS: site:reddit.com/r/capetown/ \"looking for\" \"car\""
-    },
-    {
-      "title": "Looking (TV Series 2014–2015) - IMDb",
-      "reasons": [
-        "title does not clearly request buying a vehicle",
-        "outside approved public discussion sources",
-        "no Western Cape location in result text",
-        "irrelevant reference/entertainment website"
-      ],
-      "source": "Bing RSS: site:reddit.com/r/capetown/ \"looking for\" \"car\""
-    },
-    {
-      "title": "LOOKING Synonyms: 90 Similar and Opposite Words - Merriam-Webster",
-      "reasons": [
-        "title does not clearly request buying a vehicle",
-        "outside approved public discussion sources",
-        "no Western Cape location in result text",
-        "irrelevant reference/entertainment website"
-      ],
-      "source": "Bing RSS: site:reddit.com/r/capetown/ \"looking for\" \"car\""
-    },
-    {
-      "title": "Looking - definition of looking by The Free Dictionary",
-      "reasons": [
-        "title does not clearly request buying a vehicle",
-        "outside approved public discussion sources",
-        "no Western Cape location in result text",
-        "irrelevant reference/entertainment website"
-      ],
-      "source": "Bing RSS: site:reddit.com/r/capetown/ \"looking for\" \"car\""
-    },
-    {
-      "title": "LOOK Definition & Meaning - Merriam-Webster",
-      "reasons": [
-        "title does not clearly request buying a vehicle",
-        "outside approved public discussion sources",
-        "no Western Cape location in result text",
-        "irrelevant reference/entertainment website"
-      ],
-      "source": "Bing RSS: site:reddit.com/r/capetown/ \"looking for\" \"car\""
-    },
-    {
-      "title": "Looking - Wikipedia",
-      "reasons": [
-        "title does not clearly request buying a vehicle",
-        "outside approved public discussion sources",
-        "no Western Cape location in result text",
-        "irrelevant reference/entertainment website"
-      ],
-      "source": "Bing RSS: site:reddit.com/r/capetown/ \"looking for\" \"car\""
-    },
-    {
-      "title": "Looking - watch tv show streaming online - JustWatch",
-      "reasons": [
-        "title does not clearly request buying a vehicle",
-        "outside approved public discussion sources",
-        "no Western Cape location in result text"
-      ],
-      "source": "Bing RSS: site:reddit.com/r/capetown/ \"looking for\" \"car\""
-    },
-    {
-      "title": "Looking: Season 1 | Rotten Tomatoes",
-      "reasons": [
-        "title does not clearly request buying a vehicle",
-        "outside approved public discussion sources",
-        "no Western Cape location in result text",
-        "irrelevant reference/entertainment website"
-      ],
-      "source": "Bing RSS: site:reddit.com/r/capetown/ \"looking for\" \"car\""
-    },
-    {
-      "title": "'Looking' cast: Where are they now? | Out.com",
+      "title": "Buying a Home | HUD.gov / U.S. Department of Housing and Urban ...",
       "reasons": [
         "title does not clearly request buying a vehicle",
         "outside approved public discussion sources",
         "no Western Cape location in result text",
         "older than age limit"
       ],
-      "source": "Bing RSS: site:reddit.com/r/capetown/ \"looking for\" \"car\""
+      "source": "Bing RSS: site:reddit.com/r/capetown/ \"buying\" \"car\""
     },
     {
-      "title": "Looking (TV Series 2014–2015) - Full cast & crew - IMDb",
+      "title": "Cars for Sale - Used Cars, New Cars, SUVs, and Trucks - Autotrader",
       "reasons": [
         "title does not clearly request buying a vehicle",
         "outside approved public discussion sources",
         "no Western Cape location in result text",
-        "irrelevant reference/entertainment website"
+        "seller/advertisement title"
+      ],
+      "source": "Bing RSS: site:reddit.com/r/capetown/ \"looking for\" \"car\""
+    },
+    {
+      "title": "Used Cars for Sale in Renton, WA (with Photos) - CARFAX",
+      "reasons": [
+        "title does not clearly request buying a vehicle",
+        "outside approved public discussion sources",
+        "foreign location in title",
+        "no Western Cape location in result text",
+        "seller/advertisement title"
+      ],
+      "source": "Bing RSS: site:reddit.com/r/capetown/ \"looking for\" \"car\""
+    },
+    {
+      "title": "Used Cars for Sale near Renton, WA - Carsforsale.com®",
+      "reasons": [
+        "title does not clearly request buying a vehicle",
+        "outside approved public discussion sources",
+        "foreign location in title",
+        "no Western Cape location in result text",
+        "seller/advertisement title"
+      ],
+      "source": "Bing RSS: site:reddit.com/r/capetown/ \"looking for\" \"car\""
+    },
+    {
+      "title": "Used cars for sale near Renton, WA",
+      "reasons": [
+        "title does not clearly request buying a vehicle",
+        "outside approved public discussion sources",
+        "foreign location in title",
+        "no Western Cape location in result text",
+        "seller/advertisement title",
+        "older than age limit"
+      ],
+      "source": "Bing RSS: site:reddit.com/r/capetown/ \"looking for\" \"car\""
+    },
+    {
+      "title": "Used Cars for Sale - Autotrader",
+      "reasons": [
+        "title does not clearly request buying a vehicle",
+        "outside approved public discussion sources",
+        "no Western Cape location in result text",
+        "seller/advertisement title"
+      ],
+      "source": "Bing RSS: site:reddit.com/r/capetown/ \"looking for\" \"car\""
+    },
+    {
+      "title": "Used Cars for Sale in Renton, WA - CarGurus",
+      "reasons": [
+        "title does not clearly request buying a vehicle",
+        "outside approved public discussion sources",
+        "foreign location in title",
+        "no Western Cape location in result text",
+        "seller/advertisement title"
+      ],
+      "source": "Bing RSS: site:reddit.com/r/capetown/ \"looking for\" \"car\""
+    },
+    {
+      "title": "CarMax - Shop for used cars, then buy online or at a store",
+      "reasons": [
+        "title does not clearly request buying a vehicle",
+        "outside approved public discussion sources",
+        "no Western Cape location in result text"
+      ],
+      "source": "Bing RSS: site:reddit.com/r/capetown/ \"looking for\" \"car\""
+    },
+    {
+      "title": "Find Used Cars, Trucks & SUVs for Sale - TRUECar",
+      "reasons": [
+        "title does not clearly request buying a vehicle",
+        "outside approved public discussion sources",
+        "no Western Cape location in result text",
+        "seller/advertisement title"
+      ],
+      "source": "Bing RSS: site:reddit.com/r/capetown/ \"looking for\" \"car\""
+    },
+    {
+      "title": "Carvana | Buy & Finance Used Cars Online | At Home Delivery",
+      "reasons": [
+        "title does not clearly request buying a vehicle",
+        "outside approved public discussion sources",
+        "no Western Cape location in result text"
       ],
       "source": "Bing RSS: site:reddit.com/r/capetown/ \"looking for\" \"car\""
     },
@@ -343,15 +339,6 @@
       "source": "Bing RSS: site:reddit.com/r/capetown/ \"first car\""
     },
     {
-      "title": "Who Invented the Car? History of the Automobile and Motor Vehicles",
-      "reasons": [
-        "title does not clearly request buying a vehicle",
-        "outside approved public discussion sources",
-        "no Western Cape location in result text"
-      ],
-      "source": "Bing RSS: site:reddit.com/r/capetown/ \"first car\""
-    },
-    {
       "title": "Car - Wikipedia",
       "reasons": [
         "title does not clearly request buying a vehicle",
@@ -362,12 +349,20 @@
       "source": "Bing RSS: site:reddit.com/r/capetown/ \"first car\""
     },
     {
-      "title": "Automobile - Invention, Evolution, Impact | Britannica",
+      "title": "Who Invented the Car? History of the Automobile and Motor Vehicles",
       "reasons": [
         "title does not clearly request buying a vehicle",
         "outside approved public discussion sources",
-        "no Western Cape location in result text",
-        "irrelevant reference/entertainment website"
+        "no Western Cape location in result text"
+      ],
+      "source": "Bing RSS: site:reddit.com/r/capetown/ \"first car\""
+    },
+    {
+      "title": "First Car Bakersfield CA | New & Used Cars Trucks Sales",
+      "reasons": [
+        "title does not clearly request buying a vehicle",
+        "outside approved public discussion sources",
+        "no Western Cape location in result text"
       ],
       "source": "Bing RSS: site:reddit.com/r/capetown/ \"first car\""
     },
@@ -386,16 +381,6 @@
         "title does not clearly request buying a vehicle",
         "outside approved public discussion sources",
         "no Western Cape location in result text"
-      ],
-      "source": "Bing RSS: site:reddit.com/r/capetown/ \"first car\""
-    },
-    {
-      "title": "History of the automobile - Simple English Wikipedia, the free encyclopedia",
-      "reasons": [
-        "title does not clearly request buying a vehicle",
-        "outside approved public discussion sources",
-        "no Western Cape location in result text",
-        "irrelevant reference/entertainment website"
       ],
       "source": "Bing RSS: site:reddit.com/r/capetown/ \"first car\""
     },
@@ -428,6 +413,16 @@
       "source": "Bing RSS: site:reddit.com/r/capetown/ \"which car should\""
     },
     {
+      "title": "Login to which.co.uk | Discover Best Buys & Don't Buys - Which?",
+      "reasons": [
+        "title does not clearly request buying a vehicle",
+        "outside approved public discussion sources",
+        "foreign location in title",
+        "no Western Cape location in result text"
+      ],
+      "source": "Bing RSS: site:reddit.com/r/capetown/ \"which car should\""
+    },
+    {
       "title": "Which - Grammar - Cambridge Dictionary",
       "reasons": [
         "title does not clearly request buying a vehicle",
@@ -448,40 +443,12 @@
       "source": "Bing RSS: site:reddit.com/r/capetown/ \"which car should\""
     },
     {
-      "title": "Login to which.co.uk | Discover Best Buys & Don't Buys - Which?",
-      "reasons": [
-        "title does not clearly request buying a vehicle",
-        "outside approved public discussion sources",
-        "no Western Cape location in result text"
-      ],
-      "source": "Bing RSS: site:reddit.com/r/capetown/ \"which car should\""
-    },
-    {
       "title": "Which - definition of which by The Free Dictionary",
       "reasons": [
         "title does not clearly request buying a vehicle",
         "outside approved public discussion sources",
         "no Western Cape location in result text",
         "irrelevant reference/entertainment website"
-      ],
-      "source": "Bing RSS: site:reddit.com/r/capetown/ \"which car should\""
-    },
-    {
-      "title": "which - Wiktionary, the free dictionary",
-      "reasons": [
-        "title does not clearly request buying a vehicle",
-        "outside approved public discussion sources",
-        "no Western Cape location in result text",
-        "irrelevant reference/entertainment website"
-      ],
-      "source": "Bing RSS: site:reddit.com/r/capetown/ \"which car should\""
-    },
-    {
-      "title": "“Which” vs. “That”: When to Use Each | Grammarly",
-      "reasons": [
-        "title does not clearly request buying a vehicle",
-        "outside approved public discussion sources",
-        "no Western Cape location in result text"
       ],
       "source": "Bing RSS: site:reddit.com/r/capetown/ \"which car should\""
     },
@@ -496,26 +463,26 @@
       "source": "Bing RSS: site:reddit.com/r/capetown/ \"which car should\""
     },
     {
-      "title": "Phoenix, Arizona News and Weather | ABC15 Arizona",
+      "title": "Which, That, and Who - Grammar Monster",
       "reasons": [
         "title does not clearly request buying a vehicle",
         "outside approved public discussion sources",
         "no Western Cape location in result text"
       ],
-      "source": "Bing RSS: site:reddit.com/r/capetown/ \"bakkie\" \"buy\""
+      "source": "Bing RSS: site:reddit.com/r/capetown/ \"which car should\""
     },
     {
-      "title": "Things To Do in Phoenix | Restaurants, Free Events | ABC15 Arizona",
+      "title": "which - Wiktionary, the free dictionary",
       "reasons": [
         "title does not clearly request buying a vehicle",
         "outside approved public discussion sources",
         "no Western Cape location in result text",
-        "older than age limit"
+        "irrelevant reference/entertainment website"
       ],
-      "source": "Bing RSS: site:reddit.com/r/capetown/ \"bakkie\" \"buy\""
+      "source": "Bing RSS: site:reddit.com/r/capetown/ \"which car should\""
     },
     {
-      "title": "Phoenix, Arizona Weather | ABC15 Arizona | KNXV - TV",
+      "title": "Front page | Everhart & Hoover Power Line Constuction",
       "reasons": [
         "title does not clearly request buying a vehicle",
         "outside approved public discussion sources",
@@ -524,70 +491,104 @@
       "source": "Bing RSS: site:reddit.com/r/capetown/ \"bakkie\" \"buy\""
     },
     {
-      "title": "We're here to listen! Weigh in on ABC15 poll of the day",
+      "title": "About Us | Everhart & Hoover Power Line Constuction",
+      "reasons": [
+        "title does not clearly request buying a vehicle",
+        "outside approved public discussion sources",
+        "no Western Cape location in result text"
+      ],
+      "source": "Bing RSS: site:reddit.com/r/capetown/ \"bakkie\" \"buy\""
+    },
+    {
+      "title": "About | Everhart and Hoover",
+      "reasons": [
+        "title does not clearly request buying a vehicle",
+        "outside approved public discussion sources",
+        "no Western Cape location in result text"
+      ],
+      "source": "Bing RSS: site:reddit.com/r/capetown/ \"bakkie\" \"buy\""
+    },
+    {
+      "title": "Best Buy | Official Online Store | Shop Now & Save",
+      "reasons": [
+        "title does not clearly request buying a vehicle",
+        "outside approved public discussion sources",
+        "no Western Cape location in result text"
+      ],
+      "source": "Bing RSS: site:reddit.com/r/askSouthAfrica/ \"buy a car\" \"Cape Town\""
+    },
+    {
+      "title": "Local Marketplace: Buy & Sell Nearby With Mobile App",
+      "reasons": [
+        "title does not clearly request buying a vehicle",
+        "outside approved public discussion sources",
+        "no Western Cape location in result text"
+      ],
+      "source": "Bing RSS: site:reddit.com/r/askSouthAfrica/ \"buy a car\" \"Cape Town\""
+    },
+    {
+      "title": "Best Buy Store Locator: Store Hours, Directions & Events",
+      "reasons": [
+        "title does not clearly request buying a vehicle",
+        "outside approved public discussion sources",
+        "no Western Cape location in result text"
+      ],
+      "source": "Bing RSS: site:reddit.com/r/askSouthAfrica/ \"buy a car\" \"Cape Town\""
+    },
+    {
+      "title": "BUY Definition & Meaning - Merriam-Webster",
       "reasons": [
         "title does not clearly request buying a vehicle",
         "outside approved public discussion sources",
         "no Western Cape location in result text",
-        "older than age limit"
+        "irrelevant reference/entertainment website"
       ],
-      "source": "Bing RSS: site:reddit.com/r/capetown/ \"bakkie\" \"buy\""
+      "source": "Bing RSS: site:reddit.com/r/askSouthAfrica/ \"buy a car\" \"Cape Town\""
     },
     {
-      "title": "Contact Let ABC15 Know | ABC15 Arizona | KNXV - TV",
-      "reasons": [
-        "title does not clearly request buying a vehicle",
-        "outside approved public discussion sources",
-        "no Western Cape location in result text",
-        "older than age limit"
-      ],
-      "source": "Bing RSS: site:reddit.com/r/capetown/ \"bakkie\" \"buy\""
-    },
-    {
-      "title": "Uplifting Arizona | Highlighting positive stories | ABC15 | Local ...",
+      "title": "Facebook Marketplace: Buy and Sell Items Locally or Shipped",
       "reasons": [
         "title does not clearly request buying a vehicle",
         "outside approved public discussion sources",
         "no Western Cape location in result text"
       ],
-      "source": "Bing RSS: site:reddit.com/r/capetown/ \"bakkie\" \"buy\""
+      "source": "Bing RSS: site:reddit.com/r/askSouthAfrica/ \"buy a car\" \"Cape Town\""
     },
     {
-      "title": "Phoenix, Arizona Weather Radar | ABC15 Arizona | KNXV - TV",
+      "title": "Welcome to Costco Wholesale",
       "reasons": [
         "title does not clearly request buying a vehicle",
         "outside approved public discussion sources",
         "no Western Cape location in result text"
       ],
-      "source": "Bing RSS: site:reddit.com/r/capetown/ \"bakkie\" \"buy\""
+      "source": "Bing RSS: site:reddit.com/r/askSouthAfrica/ \"buy a car\" \"Cape Town\""
     },
     {
-      "title": "What's going on at Scottsdale's McCormick Ranch lakefront? - ABC15 Arizona",
+      "title": "Amazon.com. Spend less. Smile more.",
       "reasons": [
         "title does not clearly request buying a vehicle",
         "outside approved public discussion sources",
         "no Western Cape location in result text"
       ],
-      "source": "Bing RSS: site:reddit.com/r/capetown/ \"bakkie\" \"buy\""
+      "source": "Bing RSS: site:reddit.com/r/askSouthAfrica/ \"buy a car\" \"Cape Town\""
     },
     {
-      "title": "Staff | Meet the ABC15 team | ABC15 Arizona",
-      "reasons": [
-        "title does not clearly request buying a vehicle",
-        "outside approved public discussion sources",
-        "no Western Cape location in result text",
-        "older than age limit"
-      ],
-      "source": "Bing RSS: site:reddit.com/r/capetown/ \"bakkie\" \"buy\""
-    },
-    {
-      "title": "Let ABC15 Know | Consumer issues, scams in Phoenix, Arizona | ABC15 Arizona",
+      "title": "Welcome to eBay | eBay.com",
       "reasons": [
         "title does not clearly request buying a vehicle",
         "outside approved public discussion sources",
         "no Western Cape location in result text"
       ],
-      "source": "Bing RSS: site:reddit.com/r/capetown/ \"bakkie\" \"buy\""
+      "source": "Bing RSS: site:reddit.com/r/askSouthAfrica/ \"buy a car\" \"Cape Town\""
+    },
+    {
+      "title": "Etsy - Shop for handmade, vintage, custom, and unique gifts for everyone",
+      "reasons": [
+        "title does not clearly request buying a vehicle",
+        "outside approved public discussion sources",
+        "no Western Cape location in result text"
+      ],
+      "source": "Bing RSS: site:reddit.com/r/askSouthAfrica/ \"buy a car\" \"Cape Town\""
     }
   ],
   "candidate_samples": [],

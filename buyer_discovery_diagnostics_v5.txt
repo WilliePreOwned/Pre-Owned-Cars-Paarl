@@ -1,81 +1,83 @@
-Willie Buyer Radar 7.2 — 2026-10-22T12:02:44+00:00
-Checked 147 results across 15 feeds; matched 0; dashboard has 0 opportunities.
+Willie Buyer Radar 7.3 — 2026-10-22T12:35:54+00:00
+Checked 51 results across 14 feeds; matched 0; dashboard has 0 opportunities.
 
 REJECTION REASONS:
-outside approved public discussion sources: 147
-no Western Cape location in result text: 147
-title does not clearly request buying a vehicle: 146
-irrelevant reference/entertainment website: 52
-older than age limit: 20
-seller/advertisement title: 8
+no Western Cape location in result text: 51
+outside approved public discussion sources: 51
+title does not clearly request buying a vehicle: 51
+seller/advertisement title: 11
+irrelevant reference/entertainment website: 9
+older than age limit: 6
+foreign location in title: 5
+unrelated subject in title: 1
 
+DIRECT FEED FAILURES: 7 (HTTP 403/429 may indicate access restrictions; do not bypass)
 FEED RESULTS:
+Reddit direct r/capetown: buy car: 0 items, 0 matches
+Reddit direct r/capetown: buying car: 0 items, 0 matches, ERROR HTTPError: HTTP Error 429: Too Many Requests
+Reddit direct r/capetown: second hand car: 0 items, 0 matches, ERROR HTTPError: HTTP Error 429: Too Many Requests
+Reddit direct r/capetown: looking for bakkie: 0 items, 0 matches, ERROR HTTPError: HTTP Error 429: Too Many Requests
+Reddit direct r/askSouthAfrica: buy car: 0 items, 0 matches, ERROR HTTPError: HTTP Error 429: Too Many Requests
+Reddit direct r/askSouthAfrica: buying car: 0 items, 0 matches, ERROR HTTPError: HTTP Error 429: Too Many Requests
+Reddit direct r/askSouthAfrica: second hand car: 0 items, 0 matches, ERROR HTTPError: HTTP Error 429: Too Many Requests
+Reddit direct r/askSouthAfrica: looking for bakkie: 0 items, 0 matches, ERROR HTTPError: HTTP Error 429: Too Many Requests
 Bing RSS: site:reddit.com/r/capetown/ "buying" "car": 10 items, 0 matches
-Bing RSS: site:reddit.com/r/capetown/ "looking for" "car": 10 items, 0 matches
-Bing RSS: site:reddit.com/r/capetown/ "first car": 10 items, 0 matches
+Bing RSS: site:reddit.com/r/capetown/ "looking for" "car": 9 items, 0 matches
+Bing RSS: site:reddit.com/r/capetown/ "first car": 9 items, 0 matches
 Bing RSS: site:reddit.com/r/capetown/ "which car should": 10 items, 0 matches
-Bing RSS: site:reddit.com/r/capetown/ "bakkie" "buy": 10 items, 0 matches
+Bing RSS: site:reddit.com/r/capetown/ "bakkie" "buy": 3 items, 0 matches
 Bing RSS: site:reddit.com/r/askSouthAfrica/ "buy a car" "Cape Town": 10 items, 0 matches
-Bing RSS: site:mybroadband.co.za/forum/ "buy a car" "Cape Town": 10 items, 0 matches
-Bing RSS: site:4x4community.co.za/forum/ "looking for" "bakkie": 10 items, 0 matches
-Bing RSS: site:reddit.com/r/capetown/ "second hand car": 10 items, 0 matches
-Bing RSS: site:reddit.com/r/capetown/ "recommend" "car": 10 items, 0 matches
-Bing RSS: "looking to buy a car" "Cape Town" site:reddit.com: 10 items, 0 matches
-Bing RSS: "looking to buy a bakkie" "Western Cape" site:reddit.com: 10 items, 0 matches
-Bing RSS: "what car should I buy" "Cape Town" site:reddit.com: 10 items, 0 matches
-Bing RSS: "soek n bakkie" "Wes-Kaap" site:reddit.com: 7 items, 0 matches
-Bing RSS: "op soek na" "kar" "Kaapstad" site:reddit.com: 10 items, 0 matches
 
 DISCUSSION SOURCE CANDIDATES (review relevance and reasons):
 
 SAMPLE REJECTIONS:
-- Homes for Sale, Real Estate & Property Listings | Realtor.com® | title does not clearly request buying a vehicle; outside approved public discussion sources; no Western Cape location in result text; seller/advertisement title
+- Realtor.com® | Homes for Sale, Apartments & Houses for Rent | title does not clearly request buying a vehicle; outside approved public discussion sources; no Western Cape location in result text; seller/advertisement title
 - Zillow: Real Estate, Apartments, Mortgages & Home Values | title does not clearly request buying a vehicle; outside approved public discussion sources; no Western Cape location in result text
-- BUY Definition & Meaning - Merriam-Webster | title does not clearly request buying a vehicle; outside approved public discussion sources; no Western Cape location in result text; irrelevant reference/entertainment website
-- Buying - definition of buying by The Free Dictionary | title does not clearly request buying a vehicle; outside approved public discussion sources; no Western Cape location in result text; irrelevant reference/entertainment website
 - 10 Steps to Buying a House: Your Complete Home Guide | Zillow | title does not clearly request buying a vehicle; outside approved public discussion sources; no Western Cape location in result text
-- Buy & Sell Locally - OfferUp - Buy. Sell. Simple. - OfferUp | title does not clearly request buying a vehicle; outside approved public discussion sources; no Western Cape location in result text
-- Best Buy | Official Online Store | Shop Now & Save | title does not clearly request buying a vehicle; outside approved public discussion sources; no Western Cape location in result text
-- Buy | Realtor.com® News and Insights on Home Buying | title does not clearly request buying a vehicle; outside approved public discussion sources; no Western Cape location in result text
-- Facebook Marketplace: Buy and Sell Items Locally or Shipped | title does not clearly request buying a vehicle; outside approved public discussion sources; no Western Cape location in result text
-- BUY | English meaning - Cambridge Dictionary | title does not clearly request buying a vehicle; outside approved public discussion sources; no Western Cape location in result text
-- Looking (TV series) - Wikipedia | title does not clearly request buying a vehicle; outside approved public discussion sources; no Western Cape location in result text; irrelevant reference/entertainment website
-- Looking (TV Series 2014–2015) - IMDb | title does not clearly request buying a vehicle; outside approved public discussion sources; no Western Cape location in result text; irrelevant reference/entertainment website
-- LOOKING Synonyms: 90 Similar and Opposite Words - Merriam-Webster | title does not clearly request buying a vehicle; outside approved public discussion sources; no Western Cape location in result text; irrelevant reference/entertainment website
-- Looking - definition of looking by The Free Dictionary | title does not clearly request buying a vehicle; outside approved public discussion sources; no Western Cape location in result text; irrelevant reference/entertainment website
-- LOOK Definition & Meaning - Merriam-Webster | title does not clearly request buying a vehicle; outside approved public discussion sources; no Western Cape location in result text; irrelevant reference/entertainment website
-- Looking - Wikipedia | title does not clearly request buying a vehicle; outside approved public discussion sources; no Western Cape location in result text; irrelevant reference/entertainment website
-- Looking - watch tv show streaming online - JustWatch | title does not clearly request buying a vehicle; outside approved public discussion sources; no Western Cape location in result text
-- Looking: Season 1 | Rotten Tomatoes | title does not clearly request buying a vehicle; outside approved public discussion sources; no Western Cape location in result text; irrelevant reference/entertainment website
-- 'Looking' cast: Where are they now? | Out.com | title does not clearly request buying a vehicle; outside approved public discussion sources; no Western Cape location in result text; older than age limit
-- Looking (TV Series 2014–2015) - Full cast & crew - IMDb | title does not clearly request buying a vehicle; outside approved public discussion sources; no Western Cape location in result text; irrelevant reference/entertainment website
+- Homes for Sale, Real Estate & Property Listings | Realtor.com® | title does not clearly request buying a vehicle; outside approved public discussion sources; no Western Cape location in result text; seller/advertisement title
+- Homebuying Checklist in (2026) - ConsumerAffairs | title does not clearly request buying a vehicle; outside approved public discussion sources; no Western Cape location in result text; older than age limit
+- BUY Definition & Meaning - Merriam-Webster | title does not clearly request buying a vehicle; outside approved public discussion sources; no Western Cape location in result text; irrelevant reference/entertainment website
+- The Home Buying Process Timeline Explained | Redfin | title does not clearly request buying a vehicle; outside approved public discussion sources; no Western Cape location in result text
+- Buying a House: How Much Can You Really Afford? - Money Guy | title does not clearly request buying a vehicle; outside approved public discussion sources; no Western Cape location in result text
+- How to Buy a House: A Step-by-Step Guide - Investopedia | title does not clearly request buying a vehicle; outside approved public discussion sources; no Western Cape location in result text; seller/advertisement title; unrelated subject in title; older than age limit
+- Buying a Home | HUD.gov / U.S. Department of Housing and Urban ... | title does not clearly request buying a vehicle; outside approved public discussion sources; no Western Cape location in result text; older than age limit
+- Cars for Sale - Used Cars, New Cars, SUVs, and Trucks - Autotrader | title does not clearly request buying a vehicle; outside approved public discussion sources; no Western Cape location in result text; seller/advertisement title
+- Used Cars for Sale in Renton, WA (with Photos) - CARFAX | title does not clearly request buying a vehicle; outside approved public discussion sources; foreign location in title; no Western Cape location in result text; seller/advertisement title
+- Used Cars for Sale near Renton, WA - Carsforsale.com® | title does not clearly request buying a vehicle; outside approved public discussion sources; foreign location in title; no Western Cape location in result text; seller/advertisement title
+- Used cars for sale near Renton, WA | title does not clearly request buying a vehicle; outside approved public discussion sources; foreign location in title; no Western Cape location in result text; seller/advertisement title; older than age limit
+- Used Cars for Sale - Autotrader | title does not clearly request buying a vehicle; outside approved public discussion sources; no Western Cape location in result text; seller/advertisement title
+- Used Cars for Sale in Renton, WA - CarGurus | title does not clearly request buying a vehicle; outside approved public discussion sources; foreign location in title; no Western Cape location in result text; seller/advertisement title
+- CarMax - Shop for used cars, then buy online or at a store | title does not clearly request buying a vehicle; outside approved public discussion sources; no Western Cape location in result text
+- Find Used Cars, Trucks & SUVs for Sale - TRUECar | title does not clearly request buying a vehicle; outside approved public discussion sources; no Western Cape location in result text; seller/advertisement title
+- Carvana | Buy & Finance Used Cars Online | At Home Delivery | title does not clearly request buying a vehicle; outside approved public discussion sources; no Western Cape location in result text
 - History of the automobile - Wikipedia | title does not clearly request buying a vehicle; outside approved public discussion sources; no Western Cape location in result text; irrelevant reference/entertainment website
 - Who Built the First Automobile? - HISTORY | title does not clearly request buying a vehicle; outside approved public discussion sources; no Western Cape location in result text; older than age limit
 - A History of Cars: The Invention of the Automobile - ThoughtCo | title does not clearly request buying a vehicle; outside approved public discussion sources; no Western Cape location in result text
 - When Was the First Car Made? 1769, 1886 or 1908 Explained | title does not clearly request buying a vehicle; outside approved public discussion sources; no Western Cape location in result text
-- Who Invented the Car? History of the Automobile and Motor Vehicles | title does not clearly request buying a vehicle; outside approved public discussion sources; no Western Cape location in result text
 - Car - Wikipedia | title does not clearly request buying a vehicle; outside approved public discussion sources; no Western Cape location in result text; irrelevant reference/entertainment website
-- Automobile - Invention, Evolution, Impact | Britannica | title does not clearly request buying a vehicle; outside approved public discussion sources; no Western Cape location in result text; irrelevant reference/entertainment website
+- Who Invented the Car? History of the Automobile and Motor Vehicles | title does not clearly request buying a vehicle; outside approved public discussion sources; no Western Cape location in result text
+- First Car Bakersfield CA | New & Used Cars Trucks Sales | title does not clearly request buying a vehicle; outside approved public discussion sources; no Western Cape location in result text
 - What Was the First Car Ever Made? - WorldAtlas | title does not clearly request buying a vehicle; outside approved public discussion sources; no Western Cape location in result text
 - The Birth of the Automobile: How It All Began | title does not clearly request buying a vehicle; outside approved public discussion sources; no Western Cape location in result text
-- History of the automobile - Simple English Wikipedia, the free encyclopedia | title does not clearly request buying a vehicle; outside approved public discussion sources; no Western Cape location in result text; irrelevant reference/entertainment website
 - Which? | Expert testing, reviews and advice - Which? | title does not clearly request buying a vehicle; outside approved public discussion sources; no Western Cape location in result text
 - WHICH Definition & Meaning - Merriam-Webster | title does not clearly request buying a vehicle; outside approved public discussion sources; no Western Cape location in result text; irrelevant reference/entertainment website
 - WHICH | English meaning - Cambridge Dictionary | title does not clearly request buying a vehicle; outside approved public discussion sources; no Western Cape location in result text
+- Login to which.co.uk | Discover Best Buys & Don't Buys - Which? | title does not clearly request buying a vehicle; outside approved public discussion sources; foreign location in title; no Western Cape location in result text
 - Which - Grammar - Cambridge Dictionary | title does not clearly request buying a vehicle; outside approved public discussion sources; no Western Cape location in result text; older than age limit
 - Which? - Wikipedia | title does not clearly request buying a vehicle; outside approved public discussion sources; no Western Cape location in result text; irrelevant reference/entertainment website
-- Login to which.co.uk | Discover Best Buys & Don't Buys - Which? | title does not clearly request buying a vehicle; outside approved public discussion sources; no Western Cape location in result text
 - Which - definition of which by The Free Dictionary | title does not clearly request buying a vehicle; outside approved public discussion sources; no Western Cape location in result text; irrelevant reference/entertainment website
-- which - Wiktionary, the free dictionary | title does not clearly request buying a vehicle; outside approved public discussion sources; no Western Cape location in result text; irrelevant reference/entertainment website
-- “Which” vs. “That”: When to Use Each | Grammarly | title does not clearly request buying a vehicle; outside approved public discussion sources; no Western Cape location in result text
 - Which vs. That: Correct Usage | Merriam-Webster | title does not clearly request buying a vehicle; outside approved public discussion sources; no Western Cape location in result text; irrelevant reference/entertainment website
-- Phoenix, Arizona News and Weather | ABC15 Arizona | title does not clearly request buying a vehicle; outside approved public discussion sources; no Western Cape location in result text
-- Things To Do in Phoenix | Restaurants, Free Events | ABC15 Arizona | title does not clearly request buying a vehicle; outside approved public discussion sources; no Western Cape location in result text; older than age limit
-- Phoenix, Arizona Weather | ABC15 Arizona | KNXV - TV | title does not clearly request buying a vehicle; outside approved public discussion sources; no Western Cape location in result text
-- We're here to listen! Weigh in on ABC15 poll of the day | title does not clearly request buying a vehicle; outside approved public discussion sources; no Western Cape location in result text; older than age limit
-- Contact Let ABC15 Know | ABC15 Arizona | KNXV - TV | title does not clearly request buying a vehicle; outside approved public discussion sources; no Western Cape location in result text; older than age limit
-- Uplifting Arizona | Highlighting positive stories | ABC15 | Local ... | title does not clearly request buying a vehicle; outside approved public discussion sources; no Western Cape location in result text
-- Phoenix, Arizona Weather Radar | ABC15 Arizona | KNXV - TV | title does not clearly request buying a vehicle; outside approved public discussion sources; no Western Cape location in result text
-- What's going on at Scottsdale's McCormick Ranch lakefront? - ABC15 Arizona | title does not clearly request buying a vehicle; outside approved public discussion sources; no Western Cape location in result text
-- Staff | Meet the ABC15 team | ABC15 Arizona | title does not clearly request buying a vehicle; outside approved public discussion sources; no Western Cape location in result text; older than age limit
-- Let ABC15 Know | Consumer issues, scams in Phoenix, Arizona | ABC15 Arizona | title does not clearly request buying a vehicle; outside approved public discussion sources; no Western Cape location in result text
+- Which, That, and Who - Grammar Monster | title does not clearly request buying a vehicle; outside approved public discussion sources; no Western Cape location in result text
+- which - Wiktionary, the free dictionary | title does not clearly request buying a vehicle; outside approved public discussion sources; no Western Cape location in result text; irrelevant reference/entertainment website
+- Front page | Everhart & Hoover Power Line Constuction | title does not clearly request buying a vehicle; outside approved public discussion sources; no Western Cape location in result text
+- About Us | Everhart & Hoover Power Line Constuction | title does not clearly request buying a vehicle; outside approved public discussion sources; no Western Cape location in result text
+- About | Everhart and Hoover | title does not clearly request buying a vehicle; outside approved public discussion sources; no Western Cape location in result text
+- Best Buy | Official Online Store | Shop Now & Save | title does not clearly request buying a vehicle; outside approved public discussion sources; no Western Cape location in result text
+- Local Marketplace: Buy & Sell Nearby With Mobile App | title does not clearly request buying a vehicle; outside approved public discussion sources; no Western Cape location in result text
+- Best Buy Store Locator: Store Hours, Directions & Events | title does not clearly request buying a vehicle; outside approved public discussion sources; no Western Cape location in result text
+- BUY Definition & Meaning - Merriam-Webster | title does not clearly request buying a vehicle; outside approved public discussion sources; no Western Cape location in result text; irrelevant reference/entertainment website
+- Facebook Marketplace: Buy and Sell Items Locally or Shipped | title does not clearly request buying a vehicle; outside approved public discussion sources; no Western Cape location in result text
+- Welcome to Costco Wholesale | title does not clearly request buying a vehicle; outside approved public discussion sources; no Western Cape location in result text
+- Amazon.com. Spend less. Smile more. | title does not clearly request buying a vehicle; outside approved public discussion sources; no Western Cape location in result text
+- Welcome to eBay | eBay.com | title does not clearly request buying a vehicle; outside approved public discussion sources; no Western Cape location in result text
+- Etsy - Shop for handmade, vintage, custom, and unique gifts for everyone | title does not clearly request buying a vehicle; outside approved public discussion sources; no Western Cape location in result text
