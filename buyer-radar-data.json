@@ -1,21 +1,52 @@
 {
   "version": "7.4",
-  "last_scan_utc": "2026-10-22T13:28:03+00:00",
+  "last_scan_utc": "2026-10-22T13:36:45+00:00",
   "status": "completed",
   "stats": {
-    "sources_checked": 0,
-    "sources_accessible": 0,
-    "items_checked": 0,
+    "sources_checked": 1,
+    "sources_accessible": 1,
+    "items_checked": 1,
     "matches_this_scan": 0,
     "new_this_scan": 0,
     "dashboard_opportunities": 0,
     "retained_from_prior_scans": 0,
     "direct_feed_failures": 0
   },
-  "rejection_reasons": {},
-  "feed_stats": [],
-  "rejection_samples": [],
-  "candidate_samples": [],
+  "rejection_reasons": {
+    "unrelated subject in title": 1,
+    "title does not clearly request buying a vehicle": 1
+  },
+  "feed_stats": [
+    {
+      "source": "Approved RSS 1",
+      "items": 1,
+      "discussion_items": 1,
+      "buyer_title_candidates": 0,
+      "matches": 0,
+      "error": ""
+    }
+  ],
+  "rejection_samples": [
+    {
+      "title": "Do you guys buy food for beggars outside takeaway restaurants?",
+      "reasons": [
+        "title does not clearly request buying a vehicle",
+        "unrelated subject in title"
+      ],
+      "source": "Approved RSS 1"
+    }
+  ],
+  "candidate_samples": [
+    {
+      "title": "Do you guys buy food for beggars outside takeaway restaurants?",
+      "url": "https://www.reddit.com/r/capetown/comments/1wwvgqa/do_you_guys_buy_food_for_beggars_outside_takeaway/",
+      "reasons": [
+        "title does not clearly request buying a vehicle",
+        "unrelated subject in title"
+      ],
+      "source": "Approved RSS 1"
+    }
+  ],
   "opportunities": [],
   "disclaimer": "Unverified public RSS results, not confirmed buyers. Verify post date, intent, location and platform rules. No private contact data collected."
 }

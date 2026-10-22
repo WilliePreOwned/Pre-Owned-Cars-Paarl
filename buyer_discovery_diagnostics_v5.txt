@@ -1,13 +1,18 @@
-Willie Buyer Radar 7.4 — 2026-10-22T13:28:03+00:00
-Checked 0 results across 0 feeds; matched 0; dashboard has 0 opportunities.
+Willie Buyer Radar 7.4 — 2026-10-22T13:36:45+00:00
+Checked 1 results across 1 feeds; matched 0; dashboard has 0 opportunities.
 
 REJECTION REASONS:
+unrelated subject in title: 1
+title does not clearly request buying a vehicle: 1
 
 DIRECT FEED FAILURES: 0 (HTTP 403/429 may indicate access restrictions; do not bypass)
 FEED RESULTS:
+Approved RSS 1: 1 items, 1 discussion links, 0 buyer-title candidates, 0 matches
 
 SOURCE QUALITY: Zero discussion links means search results were off-target; not evidence of zero buyers.
 
 DISCUSSION SOURCE CANDIDATES (review relevance and reasons):
+- Do you guys buy food for beggars outside takeaway restaurants? | https://www.reddit.com/r/capetown/comments/1wwvgqa/do_you_guys_buy_food_for_beggars_outside_takeaway/ | title does not clearly request buying a vehicle; unrelated subject in title
 
 SAMPLE REJECTIONS:
+- Do you guys buy food for beggars outside takeaway restaurants? | title does not clearly request buying a vehicle; unrelated subject in title
