@@ -1,24 +1,24 @@
 {
   "version": "6.0",
-  "last_scan_utc": "2026-10-22T01:10:15+00:00",
+  "last_scan_utc": "2026-10-22T07:01:58+00:00",
   "status": "completed",
   "stats": {
     "sources_checked": 17,
     "sources_accessible": 17,
-    "items_checked": 182,
+    "items_checked": 175,
     "matches_this_scan": 0,
     "new_this_scan": 0,
     "dashboard_opportunities": 0,
     "retained_from_prior_scans": 0
   },
   "rejection_reasons": {
-    "title does not clearly request buying a vehicle": 180,
-    "no Western Cape location in result text": 169,
-    "irrelevant reference/entertainment website": 55,
-    "older than age limit": 30,
-    "seller/advertisement title": 10,
-    "unrelated subject in title": 3,
-    "publication date unavailable": 2
+    "title does not clearly request buying a vehicle": 173,
+    "no Western Cape location in result text": 162,
+    "irrelevant reference/entertainment website": 65,
+    "older than age limit": 39,
+    "seller/advertisement title": 12,
+    "unrelated subject in title": 7,
+    "publication date unavailable": 1
   },
   "feed_stats": [
     {
@@ -53,7 +53,7 @@
     },
     {
       "source": "Bing RSS: \"want to buy a car\" \"Stellenbosch\" -dealer",
-      "items": 10,
+      "items": 7,
       "matches": 0,
       "error": ""
     },
@@ -71,7 +71,7 @@
     },
     {
       "source": "Bing RSS: \"what car should I buy\" \"Cape Town\"",
-      "items": 10,
+      "items": 7,
       "matches": 0,
       "error": ""
     },
@@ -113,7 +113,7 @@
     },
     {
       "source": "Bing RSS: site:reddit.com/r/askSouthAfrica \"buy a car\" \"Cape Town\"",
-      "items": 11,
+      "items": 10,
       "matches": 0,
       "error": ""
     },
@@ -171,19 +171,19 @@
       "source": "Bing RSS: \"looking to buy a car\" \"Cape Town\" -dealer"
     },
     {
-      "title": "Looking - watch tv show streaming online - JustWatch",
-      "reasons": [
-        "title does not clearly request buying a vehicle",
-        "no Western Cape location in result text"
-      ],
-      "source": "Bing RSS: \"looking to buy a car\" \"Cape Town\" -dealer"
-    },
-    {
       "title": "Looking - Wikipedia",
       "reasons": [
         "title does not clearly request buying a vehicle",
         "no Western Cape location in result text",
         "irrelevant reference/entertainment website"
+      ],
+      "source": "Bing RSS: \"looking to buy a car\" \"Cape Town\" -dealer"
+    },
+    {
+      "title": "Looking - watch tv show streaming online - JustWatch",
+      "reasons": [
+        "title does not clearly request buying a vehicle",
+        "no Western Cape location in result text"
       ],
       "source": "Bing RSS: \"looking to buy a car\" \"Cape Town\" -dealer"
     },
@@ -197,7 +197,7 @@
       "source": "Bing RSS: \"looking to buy a car\" \"Cape Town\" -dealer"
     },
     {
-      "title": "LOOKING Definition & Meaning | Dictionary.com",
+      "title": "Looking (TV Series 2014–2015) - Full cast & crew - IMDb",
       "reasons": [
         "title does not clearly request buying a vehicle",
         "no Western Cape location in result text",
@@ -260,19 +260,19 @@
       "source": "Bing RSS: \"looking to buy a bakkie\" \"Western Cape\" -dealer"
     },
     {
-      "title": "Looking - watch tv show streaming online - JustWatch",
-      "reasons": [
-        "title does not clearly request buying a vehicle",
-        "no Western Cape location in result text"
-      ],
-      "source": "Bing RSS: \"looking to buy a bakkie\" \"Western Cape\" -dealer"
-    },
-    {
       "title": "Looking - Wikipedia",
       "reasons": [
         "title does not clearly request buying a vehicle",
         "no Western Cape location in result text",
         "irrelevant reference/entertainment website"
+      ],
+      "source": "Bing RSS: \"looking to buy a bakkie\" \"Western Cape\" -dealer"
+    },
+    {
+      "title": "Looking - watch tv show streaming online - JustWatch",
+      "reasons": [
+        "title does not clearly request buying a vehicle",
+        "no Western Cape location in result text"
       ],
       "source": "Bing RSS: \"looking to buy a bakkie\" \"Western Cape\" -dealer"
     },
@@ -286,7 +286,7 @@
       "source": "Bing RSS: \"looking to buy a bakkie\" \"Western Cape\" -dealer"
     },
     {
-      "title": "LOOKING Definition & Meaning | Dictionary.com",
+      "title": "Looking (TV Series 2014–2015) - Full cast & crew - IMDb",
       "reasons": [
         "title does not clearly request buying a vehicle",
         "no Western Cape location in result text",
@@ -349,19 +349,19 @@
       "source": "Bing RSS: \"looking for a used car\" \"Paarl\" -dealer"
     },
     {
-      "title": "Looking - watch tv show streaming online - JustWatch",
-      "reasons": [
-        "title does not clearly request buying a vehicle",
-        "no Western Cape location in result text"
-      ],
-      "source": "Bing RSS: \"looking for a used car\" \"Paarl\" -dealer"
-    },
-    {
       "title": "Looking - Wikipedia",
       "reasons": [
         "title does not clearly request buying a vehicle",
         "no Western Cape location in result text",
         "irrelevant reference/entertainment website"
+      ],
+      "source": "Bing RSS: \"looking for a used car\" \"Paarl\" -dealer"
+    },
+    {
+      "title": "Looking - watch tv show streaming online - JustWatch",
+      "reasons": [
+        "title does not clearly request buying a vehicle",
+        "no Western Cape location in result text"
       ],
       "source": "Bing RSS: \"looking for a used car\" \"Paarl\" -dealer"
     },
@@ -375,7 +375,7 @@
       "source": "Bing RSS: \"looking for a used car\" \"Paarl\" -dealer"
     },
     {
-      "title": "LOOKING Definition & Meaning | Dictionary.com",
+      "title": "Looking (TV Series 2014–2015) - Full cast & crew - IMDb",
       "reasons": [
         "title does not clearly request buying a vehicle",
         "no Western Cape location in result text",
@@ -393,16 +393,7 @@
       "source": "Bing RSS: \"looking for a used car\" \"Paarl\" -dealer"
     },
     {
-      "title": "Microsoft - Official Home Page",
-      "reasons": [
-        "title does not clearly request buying a vehicle",
-        "no Western Cape location in result text",
-        "publication date unavailable"
-      ],
-      "source": "Bing RSS: \"need a car\" \"Cape Town\" -rental -dealer"
-    },
-    {
-      "title": "Microsoft – AI, Cloud, Productivity, Computing, Gaming & Apps",
+      "title": "National Energy Education Development Program · National Energy ...",
       "reasons": [
         "title does not clearly request buying a vehicle",
         "no Western Cape location in result text"
@@ -410,31 +401,7 @@
       "source": "Bing RSS: \"need a car\" \"Cape Town\" -rental -dealer"
     },
     {
-      "title": "Microsoft account | Sign In or Create Your Account Today – Microsoft",
-      "reasons": [
-        "title does not clearly request buying a vehicle",
-        "no Western Cape location in result text"
-      ],
-      "source": "Bing RSS: \"need a car\" \"Cape Town\" -rental -dealer"
-    },
-    {
-      "title": "Sign in to your account - myaccount.microsoft.com",
-      "reasons": [
-        "title does not clearly request buying a vehicle",
-        "no Western Cape location in result text"
-      ],
-      "source": "Bing RSS: \"need a car\" \"Cape Town\" -rental -dealer"
-    },
-    {
-      "title": "Sign in to your account",
-      "reasons": [
-        "title does not clearly request buying a vehicle",
-        "no Western Cape location in result text"
-      ],
-      "source": "Bing RSS: \"need a car\" \"Cape Town\" -rental -dealer"
-    },
-    {
-      "title": "Microsoft - Wikipedia",
+      "title": "NEED Definition & Meaning - Merriam-Webster",
       "reasons": [
         "title does not clearly request buying a vehicle",
         "no Western Cape location in result text",
@@ -443,48 +410,76 @@
       "source": "Bing RSS: \"need a car\" \"Cape Town\" -rental -dealer"
     },
     {
-      "title": "Sign in - account.microsoft.com",
-      "reasons": [
-        "title does not clearly request buying a vehicle",
-        "no Western Cape location in result text"
-      ],
-      "source": "Bing RSS: \"need a car\" \"Cape Town\" -rental -dealer"
-    },
-    {
-      "title": "Sign in to Microsoft 365",
-      "reasons": [
-        "title does not clearly request buying a vehicle",
-        "no Western Cape location in result text"
-      ],
-      "source": "Bing RSS: \"need a car\" \"Cape Town\" -rental -dealer"
-    },
-    {
-      "title": "Sign in to your account",
-      "reasons": [
-        "title does not clearly request buying a vehicle",
-        "no Western Cape location in result text"
-      ],
-      "source": "Bing RSS: \"need a car\" \"Cape Town\" -rental -dealer"
-    },
-    {
-      "title": "Contact Microsoft customer support",
-      "reasons": [
-        "title does not clearly request buying a vehicle",
-        "no Western Cape location in result text"
-      ],
-      "source": "Bing RSS: \"need a car\" \"Cape Town\" -rental -dealer"
-    },
-    {
-      "title": "Microsoft - Official Home Page",
+      "title": "Need - definition of need by The Free Dictionary",
       "reasons": [
         "title does not clearly request buying a vehicle",
         "no Western Cape location in result text",
-        "publication date unavailable"
+        "irrelevant reference/entertainment website"
       ],
-      "source": "Bing RSS: \"need a bakkie\" \"Western Cape\" -rental -dealer"
+      "source": "Bing RSS: \"need a car\" \"Cape Town\" -rental -dealer"
     },
     {
-      "title": "Microsoft – AI, Cloud, Productivity, Computing, Gaming & Apps",
+      "title": "NEED | English meaning - Cambridge Dictionary",
+      "reasons": [
+        "title does not clearly request buying a vehicle",
+        "no Western Cape location in result text"
+      ],
+      "source": "Bing RSS: \"need a car\" \"Cape Town\" -rental -dealer"
+    },
+    {
+      "title": "NEED Synonyms: 184 Similar and Opposite Words - Merriam-Webster",
+      "reasons": [
+        "title does not clearly request buying a vehicle",
+        "no Western Cape location in result text",
+        "irrelevant reference/entertainment website"
+      ],
+      "source": "Bing RSS: \"need a car\" \"Cape Town\" -rental -dealer"
+    },
+    {
+      "title": "NEED Definition & Meaning | Dictionary.com",
+      "reasons": [
+        "title does not clearly request buying a vehicle",
+        "no Western Cape location in result text",
+        "irrelevant reference/entertainment website"
+      ],
+      "source": "Bing RSS: \"need a car\" \"Cape Town\" -rental -dealer"
+    },
+    {
+      "title": "Need - Wikipedia",
+      "reasons": [
+        "title does not clearly request buying a vehicle",
+        "no Western Cape location in result text",
+        "irrelevant reference/entertainment website"
+      ],
+      "source": "Bing RSS: \"need a car\" \"Cape Town\" -rental -dealer"
+    },
+    {
+      "title": "Need: Definition, Meaning, and Examples - usdictionary.com",
+      "reasons": [
+        "title does not clearly request buying a vehicle",
+        "no Western Cape location in result text"
+      ],
+      "source": "Bing RSS: \"need a car\" \"Cape Town\" -rental -dealer"
+    },
+    {
+      "title": "NEED Synonyms & Antonyms - 166 words | Thesaurus.com",
+      "reasons": [
+        "title does not clearly request buying a vehicle",
+        "no Western Cape location in result text",
+        "irrelevant reference/entertainment website"
+      ],
+      "source": "Bing RSS: \"need a car\" \"Cape Town\" -rental -dealer"
+    },
+    {
+      "title": "Needthings - Find A Spa Near You | Best Spa Services",
+      "reasons": [
+        "title does not clearly request buying a vehicle",
+        "no Western Cape location in result text"
+      ],
+      "source": "Bing RSS: \"need a car\" \"Cape Town\" -rental -dealer"
+    },
+    {
+      "title": "National Energy Education Development Program · National Energy ...",
       "reasons": [
         "title does not clearly request buying a vehicle",
         "no Western Cape location in result text"
@@ -492,31 +487,7 @@
       "source": "Bing RSS: \"need a bakkie\" \"Western Cape\" -rental -dealer"
     },
     {
-      "title": "Microsoft account | Sign In or Create Your Account Today – Microsoft",
-      "reasons": [
-        "title does not clearly request buying a vehicle",
-        "no Western Cape location in result text"
-      ],
-      "source": "Bing RSS: \"need a bakkie\" \"Western Cape\" -rental -dealer"
-    },
-    {
-      "title": "Sign in to your account - myaccount.microsoft.com",
-      "reasons": [
-        "title does not clearly request buying a vehicle",
-        "no Western Cape location in result text"
-      ],
-      "source": "Bing RSS: \"need a bakkie\" \"Western Cape\" -rental -dealer"
-    },
-    {
-      "title": "Sign in to your account",
-      "reasons": [
-        "title does not clearly request buying a vehicle",
-        "no Western Cape location in result text"
-      ],
-      "source": "Bing RSS: \"need a bakkie\" \"Western Cape\" -rental -dealer"
-    },
-    {
-      "title": "Microsoft - Wikipedia",
+      "title": "NEED Definition & Meaning - Merriam-Webster",
       "reasons": [
         "title does not clearly request buying a vehicle",
         "no Western Cape location in result text",
@@ -525,7 +496,16 @@
       "source": "Bing RSS: \"need a bakkie\" \"Western Cape\" -rental -dealer"
     },
     {
-      "title": "Sign in - account.microsoft.com",
+      "title": "Need - definition of need by The Free Dictionary",
+      "reasons": [
+        "title does not clearly request buying a vehicle",
+        "no Western Cape location in result text",
+        "irrelevant reference/entertainment website"
+      ],
+      "source": "Bing RSS: \"need a bakkie\" \"Western Cape\" -rental -dealer"
+    },
+    {
+      "title": "NEED | English meaning - Cambridge Dictionary",
       "reasons": [
         "title does not clearly request buying a vehicle",
         "no Western Cape location in result text"
@@ -533,7 +513,34 @@
       "source": "Bing RSS: \"need a bakkie\" \"Western Cape\" -rental -dealer"
     },
     {
-      "title": "Sign in to Microsoft 365",
+      "title": "NEED Synonyms: 184 Similar and Opposite Words - Merriam-Webster",
+      "reasons": [
+        "title does not clearly request buying a vehicle",
+        "no Western Cape location in result text",
+        "irrelevant reference/entertainment website"
+      ],
+      "source": "Bing RSS: \"need a bakkie\" \"Western Cape\" -rental -dealer"
+    },
+    {
+      "title": "NEED Definition & Meaning | Dictionary.com",
+      "reasons": [
+        "title does not clearly request buying a vehicle",
+        "no Western Cape location in result text",
+        "irrelevant reference/entertainment website"
+      ],
+      "source": "Bing RSS: \"need a bakkie\" \"Western Cape\" -rental -dealer"
+    },
+    {
+      "title": "Need - Wikipedia",
+      "reasons": [
+        "title does not clearly request buying a vehicle",
+        "no Western Cape location in result text",
+        "irrelevant reference/entertainment website"
+      ],
+      "source": "Bing RSS: \"need a bakkie\" \"Western Cape\" -rental -dealer"
+    },
+    {
+      "title": "Need: Definition, Meaning, and Examples - usdictionary.com",
       "reasons": [
         "title does not clearly request buying a vehicle",
         "no Western Cape location in result text"
@@ -541,15 +548,16 @@
       "source": "Bing RSS: \"need a bakkie\" \"Western Cape\" -rental -dealer"
     },
     {
-      "title": "Sign in to your account",
+      "title": "NEED Synonyms & Antonyms - 166 words | Thesaurus.com",
       "reasons": [
         "title does not clearly request buying a vehicle",
-        "no Western Cape location in result text"
+        "no Western Cape location in result text",
+        "irrelevant reference/entertainment website"
       ],
       "source": "Bing RSS: \"need a bakkie\" \"Western Cape\" -rental -dealer"
     },
     {
-      "title": "Contact Microsoft customer support",
+      "title": "Needthings - Find A Spa Near You | Best Spa Services",
       "reasons": [
         "title does not clearly request buying a vehicle",
         "no Western Cape location in result text"
