@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Willie Buyer Radar 6.0. Public RSS only; no private profiles or contact harvesting."""
+"""Willie Buyer Radar 7.1. Public RSS only; no private profiles or contact harvesting."""
 import collections
 import csv
 import datetime as dt
@@ -23,29 +23,40 @@ UTC = dt.timezone.utc
 FIELDS = ['first_seen_utc','published_utc','source','title','url','summary','locations','score','priority','new_this_run']
 
 # Search engines are discovery aids, not proof of a buyer. The title must be an actual vehicle request.
+# Wider coverage of *public indexed discussions*, not advertisements or private groups.
+# Search results are only leads when the original post passes strict title, date and area checks.
 SEARCHES = [
-    '"looking to buy a car" "Cape Town" -dealer',
-    '"looking to buy a bakkie" "Western Cape" -dealer',
-    '"looking for a used car" "Paarl" -dealer',
-    '"need a car" "Cape Town" -rental -dealer',
-    '"need a bakkie" "Western Cape" -rental -dealer',
-    '"want to buy a car" "Stellenbosch" -dealer',
-    '"looking for a double cab" "Cape Town" -dealer',
-    '"buying my first car" "Cape Town"',
+    'site:reddit.com/r/capetown/ "looking for" "car"',
+    'site:reddit.com/r/capetown/ "buy" "bakkie"',
+    'site:reddit.com/r/capetown/ "first car" "buy"',
+    'site:reddit.com/r/capetown/ "which car" "buy"',
+    'site:reddit.com/r/askSouthAfrica/ "buy a car" "Cape Town"',
+    'site:mybroadband.co.za/forum/ "looking to buy" "car" "Cape Town"',
+    'site:4x4community.co.za/forum/ "looking for" "bakkie" "Western Cape"',
+    '"looking to buy a car" "Cape Town" -dealer -stock',
+    '"looking for a used car" "Paarl" -dealer -stock',
+    '"looking to buy a bakkie" "Western Cape" -dealer -stock',
+    '"want to buy a car" "Stellenbosch" -dealer -stock',
     '"what car should I buy" "Cape Town"',
-    '"car wanted" "Western Cape" -dealer',
-    '"bakkie wanted" "Paarl" -dealer',
-    '"soek n kar" "Kaapstad"',
-    '"soek n bakkie" "Paarl"',
-    'site:reddit.com/r/capetown "buying a car"',
-    'site:reddit.com/r/capetown "looking for a car"',
-    'site:reddit.com/r/askSouthAfrica "buy a car" "Cape Town"',
+    '"which car should I buy" "Western Cape"',
+    '"looking for my first car" "Cape Town"',
+    '"anyone selling a bakkie" "Cape Town"',
+    '"need a reliable car" "Cape Town" -rental -dealer',
+    '"need a car under" "Cape Town" -rental -dealer',
+    '"car wanted" "Western Cape" -dealer -stock',
+    '"bakkie wanted" "Paarl" -dealer -stock',
+    '"op soek na" "bakkie" "Kaapstad"',
+    '"soek n kar" "Paarl"',
+    '"soek n bakkie" "Wes-Kaap"',
+    '"waar kan ek" "kar koop" "Kaapstad"',
+    '"koop raad" "motor" "Wes-Kaap"',
 ]
+
 LOCATIONS = ['western cape','cape town','paarl','stellenbosch','bellville','durbanville','somerset west',
              'brackenfell','kuils river','wellington','strand','goodwood','milnerton','malmesbury',
              'franschhoek','george','table view','cape winelands','kaapstad','wes-kaap','parow',
              'kraaifontein','claremont','mitchells plain','muizenberg','blouberg','hermanus',
-             'oudtshoorn','knysna','mossel bay','vredenburg','saldanha','langebaan','worcester','ceres']
+             'oudtshoorn','knysna','mossel bay','vredenburg','saldanha','langebaan','worcester','ceres','fish hoek','hout bay','constantia','gordon’s bay','gordons bay','observatory','sea point','northern suburbs','southern suburbs']
 VEHICLE = r'(?:car|cars|vehicle|vehicles|bakkie|bakkies|pickup|suv|hatchback|sedan|4x4|hilux|ranger|polo|corolla|fortuner|double[ -]?cab|kar|voertuig|motor|np200|swift|picanto)'
 # Match purchase intent in a single coherent phrase. No 'buy food' + 'car' false positives.
 BUYER_TITLE = re.compile(
@@ -54,7 +65,11 @@ BUYER_TITLE = re.compile(
     rf'|\b{VEHICLE}\s+(?:wanted|to\s+buy|for\s+purchase)\b'
     rf'|\b(?:what|which)\s+{VEHICLE}\s+should\s+i\s+buy\b'
     rf'|\b(?:help\s+with|advice\s+on)\s+buying\s+(?:(?:a|an|used|second[ -]?hand)\s+){{0,3}}{VEHICLE}\b'
-    rf'|\b(?:soek\s+(?:\x27n|n|vir)|op\s+soek\s+na)\s+(?:(?:\x27n|n|\w+)\s+){{0,3}}{VEHICLE}\b', re.I)
+    rf'|\b(?:my\s+first|first)\s+{VEHICLE}\s*[-:]?\s*(?:what\s+should\s+i\s+buy|recommendations|advice)\b'
+    rf'|\b(?:recommend|suggest)\s+(?:me\s+)?(?:(?:a|an|used|reliable|affordable)\s+){{0,3}}{VEHICLE}\b'
+    rf'|\b(?:where\s+can\s+i\s+find)\s+(?:(?:a|an|used|second[ -]?hand)\s+){{0,3}}{VEHICLE}\s+(?:to\s+buy|for\s+sale)\b'
+    rf'|\b(?:soek\s+(?:\x27n|n|vir)|op\s+soek\s+na)\s+(?:(?:\x27n|n|\w+)\s+){{0,3}}{VEHICLE}\b'
+    rf'|\b(?:waar\s+kan\s+ek|ek\s+wil)\s+(?:(?:\x27n|n|\w+)\s+){{0,4}}{VEHICLE}\s+koop\b', re.I)
 # A few highly relevant questions can be accepted, but only when explicitly vehicle-specific.
 BUYER_QUESTION = re.compile(rf'\b(?:where\s+(?:can|should)\s+i\s+buy|anyone\s+selling)\s+(?:(?:a|an|used|second[ -]?hand)\s+){{0,3}}{VEHICLE}\b', re.I)
 SELLER = re.compile(r'\b(?:for sale|selling my|we sell|our stock|stock available|dealership|dealer special|apply for finance|book a test drive|browse our stock|cars for sale|vehicles for sale|buying guide|how to buy)\b', re.I)
@@ -107,6 +122,7 @@ def assess(title,summary,published,now,url='',max_age=30):
     if not request: reasons.append('title does not clearly request buying a vehicle')
     if not locs: reasons.append('no Western Cape location in result text')
     if SELLER.search(title): reasons.append('seller/advertisement title')
+    if re.search(r'\b(?:looking for|need|want)\s+(?:a\s+)?(?:driver|mechanic|car wash|car parts|car seat|car insurance|car loan)\b',title,re.I): reasons.append('not a vehicle purchase')
     if UNRELATED.search(title): reasons.append('unrelated subject in title')
     if published is None: reasons.append('publication date unavailable')
     elif published > now+dt.timedelta(days=1): reasons.append('publication date in future')
@@ -147,7 +163,7 @@ def main():
         checked=matched=0
         error=''
         try:
-            req=urllib.request.Request(feed,headers={'User-Agent':'Mozilla/5.0 (compatible; WillieBuyerRadar/6.0; public RSS reader)', 'Accept':'application/rss+xml,application/atom+xml,application/xml,text/xml'})
+            req=urllib.request.Request(feed,headers={'User-Agent':'Mozilla/5.0 (compatible; WillieBuyerRadar/7.1; public RSS reader)', 'Accept':'application/rss+xml,application/atom+xml,application/xml,text/xml'})
             with urllib.request.urlopen(req,timeout=15) as response:
                 raw=response.read(1_000_000)
             for title,url,summary,date in parse_feed(raw):
@@ -180,7 +196,7 @@ def main():
         accepted[url]=saved
         retained+=1
     rows=sorted(accepted.values(),key=lambda x:(x['score'],x['first_seen_utc']),reverse=True)[:200]
-    data={'version':'6.0','last_scan_utc':stamp,'status':'completed',
+    data={'version':'7.1','last_scan_utc':stamp,'status':'completed',
           'stats':{'sources_checked':len(queries),'sources_accessible':sum(not x['error'] for x in feed_stats),
                    'items_checked':checked_total,'matches_this_scan':sum(x['matches'] for x in feed_stats),
                    'new_this_scan':sum(x['new_this_run'] for x in rows),
@@ -194,12 +210,12 @@ def main():
         writer=csv.DictWriter(f,fieldnames=FIELDS)
         writer.writeheader()
         for rec in rows: writer.writerow({**rec,'locations':', '.join(rec['locations'])})
-    lines=[f'Willie Buyer Radar 6.0 — {stamp}',f'Checked {checked_total} results across {len(queries)} feeds; matched {data["stats"]["matches_this_scan"]}; dashboard has {len(rows)} opportunities.', '', 'REJECTION REASONS:']
+    lines=[f'Willie Buyer Radar 7.1 — {stamp}',f'Checked {checked_total} results across {len(queries)} feeds; matched {data["stats"]["matches_this_scan"]}; dashboard has {len(rows)} opportunities.', '', 'REJECTION REASONS:']
     lines += [f'{k}: {v}' for k,v in rejected.most_common()]
     lines += ['', 'FEED RESULTS:']+[f'{f["source"]}: {f["items"]} items, {f["matches"]} matches'+(f', ERROR {f["error"]}' if f['error'] else '') for f in feed_stats]
     lines += ['', 'SAMPLE REJECTIONS:']+[f'- {s["title"]} | {"; ".join(s["reasons"])}' for s in samples]
     DIAG_OUT.write_text('\n'.join(lines)+'\n',encoding='utf-8')
-    print(f'Radar 6.0: {checked_total} checked, {data["stats"]["matches_this_scan"]} matched, {len(rows)} displayed')
+    print(f'Radar 7.1: {checked_total} checked, {data["stats"]["matches_this_scan"]} matched, {len(rows)} displayed')
 
 if __name__=='__main__':
     main()
