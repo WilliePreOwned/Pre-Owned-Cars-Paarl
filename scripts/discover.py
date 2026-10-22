@@ -39,8 +39,6 @@ SEARCHES = [
     '"soek n bakkie" "Wes-Kaap" site:reddit.com',
     '"op soek na" "kar" "Kaapstad" site:reddit.com',
 ]
-
-]
 # Only these public discussion communities are candidates. Bing often ignores
 # query site restrictions and returns US retailers, shopping and spam sites.
 ALLOWED_DISCUSSION_HOSTS = ('reddit.com', 'mybroadband.co.za', '4x4community.co.za')
