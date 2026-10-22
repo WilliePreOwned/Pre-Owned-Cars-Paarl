@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Willie Buyer Radar 7.2. Public RSS only; no private profiles or contact harvesting."""
+"""Willie Buyer Radar 7.3. Public RSS only; no private profiles or contact harvesting."""
 import collections
 import csv
 import datetime as dt
@@ -45,7 +45,7 @@ SEARCHES = [
 # Only these public discussion communities are candidates. Bing often ignores
 # query site restrictions and returns US retailers, shopping and spam sites.
 ALLOWED_DISCUSSION_HOSTS = ('reddit.com', 'mybroadband.co.za', '4x4community.co.za')
-FOREIGN_PLACE = re.compile(r'\\b(?:Renton|Seattle|Washington State|California|Texas|United States|\\bUSA\\b|\\bUK\\b)\\b', re.I)
+FOREIGN_PLACE = re.compile(r'\b(?:Renton|Seattle|Washington State|California|Texas|United States|\bUSA\b|\bUK\b)\b', re.I)
 
 LOCATIONS = ['western cape','cape town','paarl','stellenbosch','bellville','durbanville','somerset west',
              'brackenfell','kuils river','wellington','strand','goodwood','milnerton','malmesbury',
@@ -113,12 +113,12 @@ def assess(title,summary,published,now,url='',max_age=30):
     request = bool(BUYER_TITLE.search(title) or BUYER_QUESTION.search(title))
     # Explicit buying-advice questions, without matching unrelated 'buy' mentions.
     request = request or bool(re.search(
-        rf'\\b(?:help|advice|tips|recommendations?)\\s+(?:me\\s+)?(?:with|on|for|about)\\s+'
-        rf'(?:buying|purchasing)\\s+(?:(?:a|an|the|used|second[ -]?hand|first)\\s+){{0,4}}{VEHICLE}\\b',
+        rf'\b(?:help|advice|tips|recommendations?)\s+(?:me\s+)?(?:with|on|for|about)\s+'
+        rf'(?:buying|purchasing)\s+(?:(?:a|an|the|used|second[ -]?hand|first)\s+){{0,4}}{VEHICLE}\b',
         title, re.I))
     # 'Buying a used car in Cape Town?' is a genuine first-person discussion topic.
     request = request or bool(re.search(
-        rf'^\\s*buying\\s+(?:(?:a|an|the|used|second[ -]?hand|first)\\s+){{0,4}}{VEHICLE}\\b',
+        rf'^\s*buying\s+(?:(?:a|an|the|used|second[ -]?hand|first)\s+){{0,4}}{VEHICLE}\b',
         title, re.I))
     if not locs and is_cpt and request:
         locs = ['cape town (community; verify location)']
@@ -155,12 +155,27 @@ def main():
     now=dt.datetime.now(UTC)
     stamp=now.isoformat(timespec='seconds')
     max_age=int(os.getenv('MAX_POST_AGE_DAYS','30'))
-    queries=[('Bing RSS: '+q,'https://www.bing.com/search?format=rss&q='+urllib.parse.quote(q)) for q in SEARCHES]
-    # Optional user-approved RSS URLs. Do not include Reddit feeds as a permanent dependency.
+    # Direct public discussion search feeds first. These can return HTTP 403/429;
+    # a failed feed is logged, never treated as zero confirmed buyers.
+    direct_terms = ['buy car', 'buying car', 'second hand car', 'looking for bakkie']
+    queries = []
+    for community in ('capetown', 'askSouthAfrica'):
+        for term in direct_terms:
+            params = urllib.parse.urlencode({'q':term,'restrict_sr':'1','sort':'new','t':'month','limit':'50'})
+            queries.append((f'Reddit direct r/{community}: {term}',
+                            f'https://www.reddit.com/r/{community}/search.rss?{params}'))
+    # Bing is supplemental, limited to targeted queries to avoid dictionary/US retail noise.
+    for q in SEARCHES[:6]:
+        queries.append(('Bing RSS: '+q,
+                        'https://www.bing.com/search?format=rss&q='+urllib.parse.quote(q)))
+    # Optional user-approved public RSS feeds from the GitHub Actions environment.
     for i,url in enumerate(os.getenv('EXTRA_RSS_FEEDS','').split(','),1):
         url=url.strip()
-        if url.startswith('https://'):
+        parsed=urllib.parse.urlparse(url)
+        if parsed.scheme == 'https' and parsed.hostname:
             queries.append((f'Approved RSS {i}',url))
+    # Do not scan the same feed twice when a user-configured feed overlaps.
+    queries=list(dict((url,(name,url)) for name,url in queries).values())
     seen=read_json(STATE,{})
     if not isinstance(seen,dict): seen={}
     previous=read_json(JSON_OUT,{})
@@ -169,20 +184,29 @@ def main():
     rejected=collections.Counter()
     samples=[]
     candidate_samples=[]
+    seen_candidate_urls=set()
     feed_stats=[]
     checked_total=0
     for source,feed in queries:
         checked=matched=0
         error=''
         try:
-            req=urllib.request.Request(feed,headers={'User-Agent':'Mozilla/5.0 (compatible; WillieBuyerRadar/7.2; public RSS reader)', 'Accept':'application/rss+xml,application/atom+xml,application/xml,text/xml'})
-            with urllib.request.urlopen(req,timeout=15) as response:
+            req=urllib.request.Request(feed,headers={'User-Agent':'Mozilla/5.0 (compatible; WillieBuyerRadar/7.3; public RSS reader)', 'Accept':'application/rss+xml,application/atom+xml,application/xml,text/xml'})
+            with urllib.request.urlopen(req,timeout=8) as response:
                 raw=response.read(1_000_000)
             for title,url,summary,date in parse_feed(raw):
                 checked+=1
                 checked_total+=1
                 pub=parse_date(date)
                 score,locs,reasons,priority=assess(title,summary,pub,now,url,max_age)
+                # Keep relevant public-discussion candidates in diagnostics, including
+                # those rejected on date/location, so we can improve source quality.
+                host=(urllib.parse.urlparse(url).hostname or '').lower()
+                is_discussion=any(host==d or host.endswith('.'+d) for d in ALLOWED_DISCUSSION_HOSTS)
+                if is_discussion and url not in seen_candidate_urls and len(candidate_samples)<40:
+                    candidate_samples.append({'title':clean(title)[:180], 'url':url,
+                                              'reasons':reasons, 'source':source})
+                    seen_candidate_urls.add(url)
                 if reasons:
                     rejected.update(set(reasons))
                     if len(samples)<50: samples.append({'title':clean(title)[:180],'reasons':reasons,'source':source})
@@ -208,11 +232,12 @@ def main():
         accepted[url]=saved
         retained+=1
     rows=sorted(accepted.values(),key=lambda x:(x['score'],x['first_seen_utc']),reverse=True)[:200]
-    data={'version':'7.2','last_scan_utc':stamp,'status':'completed',
+    direct_failures=sum(bool(f['error']) for f in feed_stats if f['source'].startswith('Reddit direct'))
+    data={'version':'7.3','last_scan_utc':stamp,'status':'completed',
           'stats':{'sources_checked':len(queries),'sources_accessible':sum(not x['error'] for x in feed_stats),
                    'items_checked':checked_total,'matches_this_scan':sum(x['matches'] for x in feed_stats),
                    'new_this_scan':sum(x['new_this_run'] for x in rows),
-                   'dashboard_opportunities':len(rows),'retained_from_prior_scans':retained},
+                   'dashboard_opportunities':len(rows),'retained_from_prior_scans':retained,'direct_feed_failures':direct_failures},
           'rejection_reasons':dict(rejected.most_common()),'feed_stats':feed_stats,
           'rejection_samples':samples,'candidate_samples':candidate_samples,'opportunities':rows,
           'disclaimer':'Unverified public RSS results, not confirmed buyers. Verify post date, intent, location and platform rules. No private contact data collected.'}
@@ -222,14 +247,14 @@ def main():
         writer=csv.DictWriter(f,fieldnames=FIELDS)
         writer.writeheader()
         for rec in rows: writer.writerow({**rec,'locations':', '.join(rec['locations'])})
-    lines=[f'Willie Buyer Radar 7.2 — {stamp}',f'Checked {checked_total} results across {len(queries)} feeds; matched {data["stats"]["matches_this_scan"]}; dashboard has {len(rows)} opportunities.', '', 'REJECTION REASONS:']
+    lines=[f'Willie Buyer Radar 7.3 — {stamp}',f'Checked {checked_total} results across {len(queries)} feeds; matched {data["stats"]["matches_this_scan"]}; dashboard has {len(rows)} opportunities.', '', 'REJECTION REASONS:']
     lines += [f'{k}: {v}' for k,v in rejected.most_common()]
-    lines += ['', 'FEED RESULTS:']+[f'{f["source"]}: {f["items"]} items, {f["matches"]} matches'+(f', ERROR {f["error"]}' if f['error'] else '') for f in feed_stats]
+    lines += ['', f'DIRECT FEED FAILURES: {direct_failures} (HTTP 403/429 may indicate access restrictions; do not bypass)', 'FEED RESULTS:']+[f'{f["source"]}: {f["items"]} items, {f["matches"]} matches'+(f', ERROR {f["error"]}' if f['error'] else '') for f in feed_stats]
     lines += ['', 'DISCUSSION SOURCE CANDIDATES (review relevance and reasons):']
     lines += [f'- {s["title"]} | {s["url"]} | {"; ".join(s["reasons"]) or "ACCEPTED"}' for s in candidate_samples]
     lines += ['', 'SAMPLE REJECTIONS:']+[f'- {s["title"]} | {"; ".join(s["reasons"])}' for s in samples]
     DIAG_OUT.write_text('\n'.join(lines)+'\n',encoding='utf-8')
-    print(f'Radar 7.2: {checked_total} checked, {data["stats"]["matches_this_scan"]} matched, {len(rows)} displayed')
+    print(f'Radar 7.3: {checked_total} checked, {data["stats"]["matches_this_scan"]} matched, {len(rows)} displayed; {direct_failures} direct feeds unavailable')
 
 if __name__=='__main__':
     main()
