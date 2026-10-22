@@ -1,11 +1,11 @@
 {
   "version": "7.3",
-  "last_scan_utc": "2026-10-22T12:35:54+00:00",
+  "last_scan_utc": "2026-10-22T12:39:05+00:00",
   "status": "completed",
   "stats": {
     "sources_checked": 14,
     "sources_accessible": 7,
-    "items_checked": 51,
+    "items_checked": 56,
     "matches_this_scan": 0,
     "new_this_scan": 0,
     "dashboard_opportunities": 0,
@@ -13,19 +13,19 @@
     "direct_feed_failures": 7
   },
   "rejection_reasons": {
-    "no Western Cape location in result text": 51,
-    "outside approved public discussion sources": 51,
-    "title does not clearly request buying a vehicle": 51,
+    "title does not clearly request buying a vehicle": 56,
+    "outside approved public discussion sources": 55,
+    "no Western Cape location in result text": 55,
     "seller/advertisement title": 11,
-    "irrelevant reference/entertainment website": 9,
-    "older than age limit": 6,
+    "irrelevant reference/entertainment website": 10,
+    "older than age limit": 8,
     "foreign location in title": 5,
-    "unrelated subject in title": 1
+    "unrelated subject in title": 2
   },
   "feed_stats": [
     {
       "source": "Reddit direct r/capetown: buy car",
-      "items": 0,
+      "items": 1,
       "matches": 0,
       "error": ""
     },
@@ -97,7 +97,7 @@
     },
     {
       "source": "Bing RSS: site:reddit.com/r/capetown/ \"bakkie\" \"buy\"",
-      "items": 3,
+      "items": 7,
       "matches": 0,
       "error": ""
     },
@@ -109,6 +109,14 @@
     }
   ],
   "rejection_samples": [
+    {
+      "title": "Do you guys buy food for beggars outside takeaway restaurants?",
+      "reasons": [
+        "title does not clearly request buying a vehicle",
+        "unrelated subject in title"
+      ],
+      "source": "Reddit direct r/capetown: buy car"
+    },
     {
       "title": "Realtor.com® | Homes for Sale, Apartments & Houses for Rent",
       "reasons": [
@@ -482,7 +490,7 @@
       "source": "Bing RSS: site:reddit.com/r/capetown/ \"which car should\""
     },
     {
-      "title": "Front page | Everhart & Hoover Power Line Constuction",
+      "title": "CITGO | Safe. Reliable. Responsible.",
       "reasons": [
         "title does not clearly request buying a vehicle",
         "outside approved public discussion sources",
@@ -491,7 +499,17 @@
       "source": "Bing RSS: site:reddit.com/r/capetown/ \"bakkie\" \"buy\""
     },
     {
-      "title": "About Us | Everhart & Hoover Power Line Constuction",
+      "title": "Citgo - Wikipedia",
+      "reasons": [
+        "title does not clearly request buying a vehicle",
+        "outside approved public discussion sources",
+        "no Western Cape location in result text",
+        "irrelevant reference/entertainment website"
+      ],
+      "source": "Bing RSS: site:reddit.com/r/capetown/ \"bakkie\" \"buy\""
+    },
+    {
+      "title": "Who We Are | CITGO",
       "reasons": [
         "title does not clearly request buying a vehicle",
         "outside approved public discussion sources",
@@ -500,11 +518,40 @@
       "source": "Bing RSS: site:reddit.com/r/capetown/ \"bakkie\" \"buy\""
     },
     {
-      "title": "About | Everhart and Hoover",
+      "title": "Long fight over refiner Citgo progresses at US appeals court",
       "reasons": [
         "title does not clearly request buying a vehicle",
         "outside approved public discussion sources",
         "no Western Cape location in result text"
+      ],
+      "source": "Bing RSS: site:reddit.com/r/capetown/ \"bakkie\" \"buy\""
+    },
+    {
+      "title": "Factbox-Long Fight Over Refiner Citgo Progresses at US ...",
+      "reasons": [
+        "title does not clearly request buying a vehicle",
+        "outside approved public discussion sources",
+        "no Western Cape location in result text"
+      ],
+      "source": "Bing RSS: site:reddit.com/r/capetown/ \"bakkie\" \"buy\""
+    },
+    {
+      "title": "Citgo Petroleum News - World Energy News",
+      "reasons": [
+        "title does not clearly request buying a vehicle",
+        "outside approved public discussion sources",
+        "no Western Cape location in result text",
+        "older than age limit"
+      ],
+      "source": "Bing RSS: site:reddit.com/r/capetown/ \"bakkie\" \"buy\""
+    },
+    {
+      "title": "CITGO Petroleum Corp | Reuters",
+      "reasons": [
+        "title does not clearly request buying a vehicle",
+        "outside approved public discussion sources",
+        "no Western Cape location in result text",
+        "older than age limit"
       ],
       "source": "Bing RSS: site:reddit.com/r/capetown/ \"bakkie\" \"buy\""
     },
@@ -544,54 +591,19 @@
         "irrelevant reference/entertainment website"
       ],
       "source": "Bing RSS: site:reddit.com/r/askSouthAfrica/ \"buy a car\" \"Cape Town\""
-    },
-    {
-      "title": "Facebook Marketplace: Buy and Sell Items Locally or Shipped",
-      "reasons": [
-        "title does not clearly request buying a vehicle",
-        "outside approved public discussion sources",
-        "no Western Cape location in result text"
-      ],
-      "source": "Bing RSS: site:reddit.com/r/askSouthAfrica/ \"buy a car\" \"Cape Town\""
-    },
-    {
-      "title": "Welcome to Costco Wholesale",
-      "reasons": [
-        "title does not clearly request buying a vehicle",
-        "outside approved public discussion sources",
-        "no Western Cape location in result text"
-      ],
-      "source": "Bing RSS: site:reddit.com/r/askSouthAfrica/ \"buy a car\" \"Cape Town\""
-    },
-    {
-      "title": "Amazon.com. Spend less. Smile more.",
-      "reasons": [
-        "title does not clearly request buying a vehicle",
-        "outside approved public discussion sources",
-        "no Western Cape location in result text"
-      ],
-      "source": "Bing RSS: site:reddit.com/r/askSouthAfrica/ \"buy a car\" \"Cape Town\""
-    },
-    {
-      "title": "Welcome to eBay | eBay.com",
-      "reasons": [
-        "title does not clearly request buying a vehicle",
-        "outside approved public discussion sources",
-        "no Western Cape location in result text"
-      ],
-      "source": "Bing RSS: site:reddit.com/r/askSouthAfrica/ \"buy a car\" \"Cape Town\""
-    },
-    {
-      "title": "Etsy - Shop for handmade, vintage, custom, and unique gifts for everyone",
-      "reasons": [
-        "title does not clearly request buying a vehicle",
-        "outside approved public discussion sources",
-        "no Western Cape location in result text"
-      ],
-      "source": "Bing RSS: site:reddit.com/r/askSouthAfrica/ \"buy a car\" \"Cape Town\""
     }
   ],
-  "candidate_samples": [],
+  "candidate_samples": [
+    {
+      "title": "Do you guys buy food for beggars outside takeaway restaurants?",
+      "url": "https://www.reddit.com/r/capetown/comments/1wwvgqa/do_you_guys_buy_food_for_beggars_outside_takeaway/",
+      "reasons": [
+        "title does not clearly request buying a vehicle",
+        "unrelated subject in title"
+      ],
+      "source": "Reddit direct r/capetown: buy car"
+    }
+  ],
   "opportunities": [],
   "disclaimer": "Unverified public RSS results, not confirmed buyers. Verify post date, intent, location and platform rules. No private contact data collected."
 }
