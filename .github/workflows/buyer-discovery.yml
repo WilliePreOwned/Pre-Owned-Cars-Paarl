@@ -1,17 +1,13 @@
 name: Hourly Buyer Discovery
-
 on:
   workflow_dispatch:
   schedule:
     - cron: '0 * * * *'
-
 permissions:
   contents: write
-
 concurrency:
   group: willie-buyer-radar
   cancel-in-progress: false
-
 jobs:
   discover-buyers:
     runs-on: ubuntu-latest
@@ -24,26 +20,27 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Run Buyer Radar 5.2
-        env:
-          EXTRA_RSS_FEEDS: "https://www.reddit.com/r/capetown/search.rss?q=buy%20car&restrict_sr=1&sort=new&t=year"
+      - name: Run existing Buyer Radar scanner
         run: python scripts/discover.py
-      - name: Commit public dashboard data
+      - name: Update daily history and unique leads
+        run: python scripts/build_daily_report.py
+      - name: Commit published data and history
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add buyer-radar-data.json buyer_opportunities_v5.csv buyer_discovery_diagnostics_v5.txt buyer_radar_seen_v5.json
+          git add buyer-radar-data.json buyer_opportunities_v5.csv buyer_discovery_diagnostics_v5.txt buyer_radar_seen_v5.json buyer-radar-history-v7.json buyer-radar-daily-v7.csv
           if ! git diff --cached --quiet; then
-            git commit -m "Update Buyer Radar 5.0 dashboard [skip ci]"
+            git commit -m "Update Buyer Radar daily results [skip ci]"
             git push
           fi
-      - name: Upload reports for download
+      - name: Upload daily reports
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: buyer-opportunities-v5
+          name: buyer-radar-daily-v7
           path: |
             buyer-radar-data.json
-            buyer_opportunities_v5.csv
+            buyer-radar-history-v7.json
+            buyer-radar-daily-v7.csv
             buyer_discovery_diagnostics_v5.txt
           if-no-files-found: warn
