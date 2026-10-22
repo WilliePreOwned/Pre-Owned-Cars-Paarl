@@ -26,21 +26,20 @@ FIELDS = ['first_seen_utc','published_utc','source','title','url','summary','loc
 # Wider coverage of *public indexed discussions*, not advertisements or private groups.
 # Search results are only leads when the original post passes strict title, date and area checks.
 SEARCHES = [
-    'site:reddit.com/r/capetown/ "buying" "car"',
-    'site:reddit.com/r/capetown/ "looking for" "car"',
-    'site:reddit.com/r/capetown/ "first car"',
-    'site:reddit.com/r/capetown/ "which car should"',
-    'site:reddit.com/r/capetown/ "bakkie" "buy"',
+    'site:reddit.com/r/capetown/ "looking to buy" "car"',
+    'site:reddit.com/r/capetown/ "buying a used car"',
+    'site:reddit.com/r/capetown/ "first car" "buy"',
     'site:reddit.com/r/askSouthAfrica/ "buy a car" "Cape Town"',
-    'site:mybroadband.co.za/forum/ "buy a car" "Cape Town"',
+    'site:mybroadband.co.za/forum/ "buying a car" "Cape Town"',
     'site:4x4community.co.za/forum/ "looking for" "bakkie"',
-    'site:reddit.com/r/capetown/ "second hand car"',
-    'site:reddit.com/r/capetown/ "recommend" "car"',
     '"looking to buy a car" "Cape Town" site:reddit.com',
     '"looking to buy a bakkie" "Western Cape" site:reddit.com',
-    '"what car should I buy" "Cape Town" site:reddit.com',
+    '"looking for a used car" "Paarl" site:reddit.com',
+    '"buying my first car" "Cape Town" site:reddit.com',
     '"soek n bakkie" "Wes-Kaap" site:reddit.com',
     '"op soek na" "kar" "Kaapstad" site:reddit.com',
+]
+
 ]
 # Only these public discussion communities are candidates. Bing often ignores
 # query site restrictions and returns US retailers, shopping and spam sites.
