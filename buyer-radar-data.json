@@ -1,24 +1,22 @@
 {
   "version": "6.0",
-  "last_scan_utc": "2026-10-22T07:01:58+00:00",
+  "last_scan_utc": "2026-10-22T11:45:55+00:00",
   "status": "completed",
   "stats": {
-    "sources_checked": 17,
-    "sources_accessible": 17,
-    "items_checked": 175,
+    "sources_checked": 16,
+    "sources_accessible": 16,
+    "items_checked": 160,
     "matches_this_scan": 0,
     "new_this_scan": 0,
     "dashboard_opportunities": 0,
     "retained_from_prior_scans": 0
   },
   "rejection_reasons": {
-    "title does not clearly request buying a vehicle": 173,
-    "no Western Cape location in result text": 162,
-    "irrelevant reference/entertainment website": 65,
-    "older than age limit": 39,
-    "seller/advertisement title": 12,
-    "unrelated subject in title": 7,
-    "publication date unavailable": 1
+    "no Western Cape location in result text": 160,
+    "title does not clearly request buying a vehicle": 155,
+    "irrelevant reference/entertainment website": 57,
+    "seller/advertisement title": 18,
+    "older than age limit": 11
   },
   "feed_stats": [
     {
@@ -53,7 +51,7 @@
     },
     {
       "source": "Bing RSS: \"want to buy a car\" \"Stellenbosch\" -dealer",
-      "items": 7,
+      "items": 10,
       "matches": 0,
       "error": ""
     },
@@ -71,7 +69,7 @@
     },
     {
       "source": "Bing RSS: \"what car should I buy\" \"Cape Town\"",
-      "items": 7,
+      "items": 10,
       "matches": 0,
       "error": ""
     },
@@ -114,12 +112,6 @@
     {
       "source": "Bing RSS: site:reddit.com/r/askSouthAfrica \"buy a car\" \"Cape Town\"",
       "items": 10,
-      "matches": 0,
-      "error": ""
-    },
-    {
-      "source": "Approved RSS 1",
-      "items": 21,
       "matches": 0,
       "error": ""
     }
@@ -197,20 +189,20 @@
       "source": "Bing RSS: \"looking to buy a car\" \"Cape Town\" -dealer"
     },
     {
-      "title": "Looking (TV Series 2014–2015) - Full cast & crew - IMDb",
-      "reasons": [
-        "title does not clearly request buying a vehicle",
-        "no Western Cape location in result text",
-        "irrelevant reference/entertainment website"
-      ],
-      "source": "Bing RSS: \"looking to buy a car\" \"Cape Town\" -dealer"
-    },
-    {
       "title": "'Looking' cast: Where are they now? | Out.com",
       "reasons": [
         "title does not clearly request buying a vehicle",
         "no Western Cape location in result text",
         "older than age limit"
+      ],
+      "source": "Bing RSS: \"looking to buy a car\" \"Cape Town\" -dealer"
+    },
+    {
+      "title": "Looking (TV Series 2014–2015) - Full cast & crew - IMDb",
+      "reasons": [
+        "title does not clearly request buying a vehicle",
+        "no Western Cape location in result text",
+        "irrelevant reference/entertainment website"
       ],
       "source": "Bing RSS: \"looking to buy a car\" \"Cape Town\" -dealer"
     },
@@ -286,20 +278,20 @@
       "source": "Bing RSS: \"looking to buy a bakkie\" \"Western Cape\" -dealer"
     },
     {
-      "title": "Looking (TV Series 2014–2015) - Full cast & crew - IMDb",
-      "reasons": [
-        "title does not clearly request buying a vehicle",
-        "no Western Cape location in result text",
-        "irrelevant reference/entertainment website"
-      ],
-      "source": "Bing RSS: \"looking to buy a bakkie\" \"Western Cape\" -dealer"
-    },
-    {
       "title": "'Looking' cast: Where are they now? | Out.com",
       "reasons": [
         "title does not clearly request buying a vehicle",
         "no Western Cape location in result text",
         "older than age limit"
+      ],
+      "source": "Bing RSS: \"looking to buy a bakkie\" \"Western Cape\" -dealer"
+    },
+    {
+      "title": "Looking (TV Series 2014–2015) - Full cast & crew - IMDb",
+      "reasons": [
+        "title does not clearly request buying a vehicle",
+        "no Western Cape location in result text",
+        "irrelevant reference/entertainment website"
       ],
       "source": "Bing RSS: \"looking to buy a bakkie\" \"Western Cape\" -dealer"
     },
@@ -375,15 +367,6 @@
       "source": "Bing RSS: \"looking for a used car\" \"Paarl\" -dealer"
     },
     {
-      "title": "Looking (TV Series 2014–2015) - Full cast & crew - IMDb",
-      "reasons": [
-        "title does not clearly request buying a vehicle",
-        "no Western Cape location in result text",
-        "irrelevant reference/entertainment website"
-      ],
-      "source": "Bing RSS: \"looking for a used car\" \"Paarl\" -dealer"
-    },
-    {
       "title": "'Looking' cast: Where are they now? | Out.com",
       "reasons": [
         "title does not clearly request buying a vehicle",
@@ -393,12 +376,13 @@
       "source": "Bing RSS: \"looking for a used car\" \"Paarl\" -dealer"
     },
     {
-      "title": "National Energy Education Development Program · National Energy ...",
+      "title": "Looking (TV Series 2014–2015) - Full cast & crew - IMDb",
       "reasons": [
         "title does not clearly request buying a vehicle",
-        "no Western Cape location in result text"
+        "no Western Cape location in result text",
+        "irrelevant reference/entertainment website"
       ],
-      "source": "Bing RSS: \"need a car\" \"Cape Town\" -rental -dealer"
+      "source": "Bing RSS: \"looking for a used car\" \"Paarl\" -dealer"
     },
     {
       "title": "NEED Definition & Meaning - Merriam-Webster",
@@ -410,11 +394,10 @@
       "source": "Bing RSS: \"need a car\" \"Cape Town\" -rental -dealer"
     },
     {
-      "title": "Need - definition of need by The Free Dictionary",
+      "title": "National Energy Education Development Program · National Energy ...",
       "reasons": [
         "title does not clearly request buying a vehicle",
-        "no Western Cape location in result text",
-        "irrelevant reference/entertainment website"
+        "no Western Cape location in result text"
       ],
       "source": "Bing RSS: \"need a car\" \"Cape Town\" -rental -dealer"
     },
@@ -427,25 +410,16 @@
       "source": "Bing RSS: \"need a car\" \"Cape Town\" -rental -dealer"
     },
     {
-      "title": "NEED Synonyms: 184 Similar and Opposite Words - Merriam-Webster",
-      "reasons": [
-        "title does not clearly request buying a vehicle",
-        "no Western Cape location in result text",
-        "irrelevant reference/entertainment website"
-      ],
-      "source": "Bing RSS: \"need a car\" \"Cape Town\" -rental -dealer"
-    },
-    {
-      "title": "NEED Definition & Meaning | Dictionary.com",
-      "reasons": [
-        "title does not clearly request buying a vehicle",
-        "no Western Cape location in result text",
-        "irrelevant reference/entertainment website"
-      ],
-      "source": "Bing RSS: \"need a car\" \"Cape Town\" -rental -dealer"
-    },
-    {
       "title": "Need - Wikipedia",
+      "reasons": [
+        "title does not clearly request buying a vehicle",
+        "no Western Cape location in result text",
+        "irrelevant reference/entertainment website"
+      ],
+      "source": "Bing RSS: \"need a car\" \"Cape Town\" -rental -dealer"
+    },
+    {
+      "title": "Need - definition of need by The Free Dictionary",
       "reasons": [
         "title does not clearly request buying a vehicle",
         "no Western Cape location in result text",
@@ -471,20 +445,30 @@
       "source": "Bing RSS: \"need a car\" \"Cape Town\" -rental -dealer"
     },
     {
-      "title": "Needthings - Find A Spa Near You | Best Spa Services",
+      "title": "NEED Definition & Meaning | Dictionary.com",
+      "reasons": [
+        "title does not clearly request buying a vehicle",
+        "no Western Cape location in result text",
+        "irrelevant reference/entertainment website"
+      ],
+      "source": "Bing RSS: \"need a car\" \"Cape Town\" -rental -dealer"
+    },
+    {
+      "title": "NEED Synonyms: 184 Similar and Opposite Words - Merriam-Webster",
+      "reasons": [
+        "title does not clearly request buying a vehicle",
+        "no Western Cape location in result text",
+        "irrelevant reference/entertainment website"
+      ],
+      "source": "Bing RSS: \"need a car\" \"Cape Town\" -rental -dealer"
+    },
+    {
+      "title": "Need - Definition, Meaning & Synonyms | Vocabulary.com",
       "reasons": [
         "title does not clearly request buying a vehicle",
         "no Western Cape location in result text"
       ],
       "source": "Bing RSS: \"need a car\" \"Cape Town\" -rental -dealer"
-    },
-    {
-      "title": "National Energy Education Development Program · National Energy ...",
-      "reasons": [
-        "title does not clearly request buying a vehicle",
-        "no Western Cape location in result text"
-      ],
-      "source": "Bing RSS: \"need a bakkie\" \"Western Cape\" -rental -dealer"
     },
     {
       "title": "NEED Definition & Meaning - Merriam-Webster",
@@ -496,11 +480,10 @@
       "source": "Bing RSS: \"need a bakkie\" \"Western Cape\" -rental -dealer"
     },
     {
-      "title": "Need - definition of need by The Free Dictionary",
+      "title": "National Energy Education Development Program · National Energy ...",
       "reasons": [
         "title does not clearly request buying a vehicle",
-        "no Western Cape location in result text",
-        "irrelevant reference/entertainment website"
+        "no Western Cape location in result text"
       ],
       "source": "Bing RSS: \"need a bakkie\" \"Western Cape\" -rental -dealer"
     },
@@ -513,25 +496,16 @@
       "source": "Bing RSS: \"need a bakkie\" \"Western Cape\" -rental -dealer"
     },
     {
-      "title": "NEED Synonyms: 184 Similar and Opposite Words - Merriam-Webster",
-      "reasons": [
-        "title does not clearly request buying a vehicle",
-        "no Western Cape location in result text",
-        "irrelevant reference/entertainment website"
-      ],
-      "source": "Bing RSS: \"need a bakkie\" \"Western Cape\" -rental -dealer"
-    },
-    {
-      "title": "NEED Definition & Meaning | Dictionary.com",
-      "reasons": [
-        "title does not clearly request buying a vehicle",
-        "no Western Cape location in result text",
-        "irrelevant reference/entertainment website"
-      ],
-      "source": "Bing RSS: \"need a bakkie\" \"Western Cape\" -rental -dealer"
-    },
-    {
       "title": "Need - Wikipedia",
+      "reasons": [
+        "title does not clearly request buying a vehicle",
+        "no Western Cape location in result text",
+        "irrelevant reference/entertainment website"
+      ],
+      "source": "Bing RSS: \"need a bakkie\" \"Western Cape\" -rental -dealer"
+    },
+    {
+      "title": "Need - definition of need by The Free Dictionary",
       "reasons": [
         "title does not clearly request buying a vehicle",
         "no Western Cape location in result text",
@@ -557,7 +531,25 @@
       "source": "Bing RSS: \"need a bakkie\" \"Western Cape\" -rental -dealer"
     },
     {
-      "title": "Needthings - Find A Spa Near You | Best Spa Services",
+      "title": "NEED Definition & Meaning | Dictionary.com",
+      "reasons": [
+        "title does not clearly request buying a vehicle",
+        "no Western Cape location in result text",
+        "irrelevant reference/entertainment website"
+      ],
+      "source": "Bing RSS: \"need a bakkie\" \"Western Cape\" -rental -dealer"
+    },
+    {
+      "title": "NEED Synonyms: 184 Similar and Opposite Words - Merriam-Webster",
+      "reasons": [
+        "title does not clearly request buying a vehicle",
+        "no Western Cape location in result text",
+        "irrelevant reference/entertainment website"
+      ],
+      "source": "Bing RSS: \"need a bakkie\" \"Western Cape\" -rental -dealer"
+    },
+    {
+      "title": "Need - Definition, Meaning & Synonyms | Vocabulary.com",
       "reasons": [
         "title does not clearly request buying a vehicle",
         "no Western Cape location in result text"
