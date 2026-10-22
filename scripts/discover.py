@@ -164,7 +164,7 @@ def main():
             queries.append((f'Reddit direct r/{community}: {term}',
                             f'https://www.reddit.com/r/{community}/search.rss?{params}'))
     # Bing is supplemental, limited to targeted queries to avoid dictionary/US retail noise.
-    for q in SEARCHES[:6]:
+    for q in SEARCHES:
         queries.append(('Bing RSS: '+q,
                         'https://www.bing.com/search?format=rss&q='+urllib.parse.quote(q)))
     # Optional user-approved public RSS feeds from the GitHub Actions environment.
