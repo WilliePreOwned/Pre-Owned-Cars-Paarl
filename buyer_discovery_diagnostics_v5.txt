@@ -1,9 +1,9 @@
-Willie Buyer Radar 7.4 — 2026-10-25T23:45:41+00:00
+Willie Buyer Radar 7.4 — 2026-10-26T02:59:43+00:00
 Checked 1 results across 1 feeds; matched 0; dashboard has 0 opportunities.
 
 REJECTION REASONS:
-unrelated subject in title: 1
 title does not clearly request buying a vehicle: 1
+unrelated subject in title: 1
 
 DIRECT FEED FAILURES: 0 (HTTP 403/429 may indicate access restrictions; do not bypass)
 FEED RESULTS:
