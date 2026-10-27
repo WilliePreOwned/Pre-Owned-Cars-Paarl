@@ -1,6 +1,54 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Buyer Radar 7 | Pre-Owned Cars Paarl</title><style>
-:root{font-family:Arial,sans-serif;color:#152536;background:#f2f5f9}body{margin:0}.wrap{max-width:1050px;margin:auto;padding:24px}header{background:#102c49;color:white;padding:25px 0}h1{margin:0 0 8px}p{line-height:1.5}.sub{color:#d3e4f5}.controls{display:flex;gap:12px;flex-wrap:wrap;margin:20px 0}input,select,button{padding:12px;border:1px solid #b6c3d0;border-radius:8px;font:inherit}input{flex:1;min-width:190px}button,.btn{background:#1763b1;color:white;border:0;text-decoration:none;display:inline-block;padding:11px 15px;border-radius:8px;cursor:pointer}.card{background:white;border:1px solid #dce3eb;border-radius:12px;padding:20px;margin:12px 0;box-shadow:0 2px 8px #102c4910}.muted{color:#596b7c;font-size:14px}.score{font-weight:bold;color:#126c51}.empty{padding:32px;text-align:center;background:white;border-radius:12px}a{word-break:break-word}small{color:#d3e4f5}
-</style></head><body><header><div class="wrap"><h1>🚗 Buyer Radar 7</h1><p class="sub">Pre-Owned Cars – Paarl | Public new & used vehicle buyer requests</p><small>Public posts are unverified opportunities, not confirmed buyers. No private contact details are collected.</small></div></header><main class="wrap"><p id="summary">Loading latest public search results…</p><div class="controls"><input id="search" placeholder="Filter by vehicle, town or keyword" aria-label="Filter opportunities"><select id="min"><option value="0">All confidence scores</option><option value="60">Score 60+</option><option value="80">Score 80+</option></select><button id="reload">Refresh display</button></div><div id="results" aria-live="polite"></div><p class="muted">Source links may expire. Verify that a person is genuinely seeking to buy before responding. Do not scrape private groups or harvest contact details.</p><p><a href="find-my-car.html">Open your Find My Car enquiry page</a></p></main><script>
-let rows=[];const $=id=>document.getElementById(id);function render(){const q=$('search').value.toLowerCase(),min=+$('min').value;const filtered=rows.filter(x=>x.score>=min&&(x.title+' '+x.description+' '+x.matched_query).toLowerCase().includes(q));$('results').replaceChildren();if(!filtered.length){const e=document.createElement('div');e.className='empty';e.textContent='No matching public buyer requests found. This is not proof that there are no buyers. Check the diagnostics and try again later.';$('results').append(e);return;}for(const r of filtered){const c=document.createElement('article');c.className='card';const h=document.createElement('h3');h.textContent=r.title;const d=document.createElement('p');d.textContent=r.description.slice(0,450);const m=document.createElement('p');m.className='muted';m.textContent=`Score ${r.score}/100 · ${r.published||'Date not supplied'} · Unverified public request`;const a=document.createElement('a');a.className='btn';a.href=r.url;a.target='_blank';a.rel='noopener noreferrer';a.textContent='Open original public source';c.append(h,m,d,a);$('results').append(c);}}
-async function load(){try{const res=await fetch('buyer-radar-7.json?t='+Date.now(),{cache:'no-store'});if(!res.ok)throw Error('Results file not available');const data=await res.json();rows=Array.isArray(data.results)?data.results:[];$('summary').textContent=`${rows.length} public opportunities · Last scan ${new Date(data.generated_at).toLocaleString()} · ${data.errors} source errors`;render();}catch(e){$('summary').textContent='No scan data yet. Run the GitHub workflow first.';$('results').textContent='The dashboard is ready, but buyer-radar-7.json has not been generated.';}}$('search').addEventListener('input',render);$('min').addEventListener('change',render);$('reload').addEventListener('click',load);load();
-</script></body></html>
+#!/usr/bin/env python3
+"""Buyer Radar 7: public RSS discovery only; no personal data collection."""
+import csv, datetime as dt, email.utils, hashlib, html, json, re, urllib.parse, urllib.request
+import xml.etree.ElementTree as ET
+from pathlib import Path
+ROOT = Path(__file__).resolve().parents[1]
+OUT = ROOT / 'buyer-radar-7.json'
+CSV = ROOT / 'buyer-radar-7.csv'
+DIAG = ROOT / 'buyer-radar-7-diagnostics.txt'
+TOWNS = ['Paarl','Wellington','Stellenbosch','Franschhoek','Somerset West','Cape Town','Western Cape']
+PHRASES = ['looking for a car', 'looking to buy a car', 'want to buy a car', 'looking for a bakkie', 'looking for a vehicle', 'car wanted', 'vehicle wanted', 'looking for a Toyota', 'looking for a Ford']
+INTENT = re.compile(r'\b(looking for|looking to buy|want to buy|wanting to buy|need to buy|in search of|iso|wanted|seeking|need a|looking to purchase)\b', re.I)
+VEHICLE = re.compile(r'\b(car|cars|vehicle|vehicles|bakkie|suv|sedan|hatchback|toyota|ford|vw|volkswagen|hyundai|kia|nissan|suzuki|bmw|mercedes|isuzu|hilux|ranger|polo|corolla)\b', re.I)
+SELLER = re.compile(r'\b(for sale|we sell|stock available|available now|special offer|dealership|car dealer|apply for finance|buy from us)\b', re.I)
+REGION = re.compile(r'\b(paarl|wellington|stellenbosch|franschhoek|somerset west|cape town|western cape|winelands)\b', re.I)
+def fetch(url):
+    req = urllib.request.Request(url, headers={'User-Agent':'Mozilla/5.0 (compatible; PublicBuyerRadar/7.0)'})
+    with urllib.request.urlopen(req, timeout=18) as r: return r.read(1_500_000)
+def clean(value): return re.sub(r'\s+', ' ', html.unescape(re.sub(r'<[^>]*>', ' ', value or ''))).strip()
+def parse_rss(data):
+    root=ET.fromstring(data)
+    for item in root.findall('.//item'):
+        def val(tag): return clean(item.findtext(tag, default=''))
+        yield {'title':val('title'), 'description':val('description'), 'url':val('link'), 'published':val('pubDate')}
+def score(item):
+    text=(item['title']+' '+item['description'])[:2500]
+    if not INTENT.search(text) or not VEHICLE.search(text) or SELLER.search(item['title']): return 0
+    if not REGION.search(text): return 0
+    return min(100, 45 + (20 if REGION.search(item['title']) else 0) + (15 if INTENT.search(item['title']) else 0) + (10 if re.search(r'\b(R\s?\d|budget|under R|cash|finance)\b',text,re.I) else 0))
+def main():
+    found={}; errors=[]; queried=0; received=0
+    # Public Bing RSS search; provider may block requests or return no results.
+    queries=[f'"{phrase}" "{town}"' for phrase in PHRASES[:6] for town in TOWNS[:3]]
+    queries += [f'"{phrase}" "{town}"' for phrase in PHRASES[6:] for town in TOWNS[3:]]
+    for q in queries:
+        queried+=1
+        url='https://www.bing.com/search?'+urllib.parse.urlencode({'q':q,'format':'rss'})
+        try:
+            items=list(parse_rss(fetch(url))); received+=len(items)
+            for item in items:
+                s=score(item)
+                if not s or not item['url'].startswith(('https://','http://')): continue
+                key=hashlib.sha256(item['url'].encode()).hexdigest()[:16]
+                item.update(id=key, score=s, matched_query=q, status='Unverified public request')
+                if key not in found or s>found[key]['score']: found[key]=item
+        except Exception as e: errors.append(f'{q}: {type(e).__name__}: {e}')
+    records=sorted(found.values(),key=lambda x:-x['score'])[:150]
+    payload={'generated_at':dt.datetime.now(dt.timezone.utc).isoformat(), 'total':len(records),'results':records,'sources_checked':queried,'source_items_seen':received,'errors':len(errors)}
+    OUT.write_text(json.dumps(payload,ensure_ascii=False,indent=2),encoding='utf-8')
+    with CSV.open('w',newline='',encoding='utf-8-sig') as f:
+        w=csv.DictWriter(f,fieldnames=['title','description','url','published','score','matched_query','status']);w.writeheader();w.writerows({k:r.get(k,'') for k in w.fieldnames} for r in records)
+    DIAG.write_text(f'Queries attempted: {queried}\nRSS entries seen: {received}\nQualified opportunities: {len(records)}\nErrors: {len(errors)}\n\n'+'\n'.join(errors),encoding='utf-8')
+    print(f'Buyer Radar 7: {len(records)} public opportunities, {received} entries checked, {len(errors)} errors')
+if __name__=='__main__': main()
