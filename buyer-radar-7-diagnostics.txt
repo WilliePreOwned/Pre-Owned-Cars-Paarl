@@ -1,0 +1,5 @@
+Queries attempted: 30
+RSS entries seen: 240
+Qualified opportunities: 0
+Errors: 0
+
