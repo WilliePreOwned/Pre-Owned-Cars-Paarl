@@ -17,7 +17,7 @@ jobs:
         env:
           FB_PAGE_ACCESS_TOKEN: ${{ secrets.FACEBOOK_PAGE_ACCESS_TOKEN }}
           FB_PAGE_ID: ${{ secrets.FACEBOOK_PAGE_ID }}
-          FB_PUBLISH_ENABLED: ${{ vars.FB_PUBLISH_ENABLED }}
+          FB_PUBLISH_ENABLED: false
           META_GRAPH_VERSION: v26.0
         run: python3 scripts/publish_facebook.py
       - name: Commit published status
