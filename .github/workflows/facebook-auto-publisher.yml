@@ -1,0 +1,31 @@
+name: Facebook Auto Publisher 1.2
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '*/15 * * * *'
+permissions:
+  contents: write
+concurrency:
+  group: facebook-auto-publisher
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Publish approved due posts
+        env:
+          FB_PAGE_ACCESS_TOKEN: ${{ secrets.FB_PAGE_ACCESS_TOKEN }}
+          FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
+          FB_PUBLISH_ENABLED: ${{ vars.FB_PUBLISH_ENABLED }}
+          META_GRAPH_VERSION: v26.0
+        run: python3 scripts/publish_facebook.py
+      - name: Commit published status
+        run: |
+          if ! git diff --quiet -- facebook-approved-queue.json; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add facebook-approved-queue.json
+            git commit -m "Record Facebook published advertisements"
+            git push
+          fi
