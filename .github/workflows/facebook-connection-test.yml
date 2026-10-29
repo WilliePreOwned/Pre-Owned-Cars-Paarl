@@ -1,0 +1,64 @@
+
+name: Test Facebook Page Connection
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test-connection:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - name: Verify Facebook Page credentials
+        env:
+          FB_PAGE_ACCESS_TOKEN: ${{ secrets.FACEBOOK_PAGE_ACCESS_TOKEN }}
+          FB_PAGE_ID: ${{ secrets.FACEBOOK_PAGE_ID }}
+        run: |
+          python3 - <<'PY'
+          import json
+          import os
+          import urllib.parse
+          import urllib.request
+          import urllib.error
+
+          token = os.environ.get("FB_PAGE_ACCESS_TOKEN", "")
+          page_id = os.environ.get("FB_PAGE_ID", "")
+
+          if not token or not page_id:
+              raise SystemExit("FAILED: Missing GitHub Page credentials.")
+
+          if not page_id.isdigit():
+              raise SystemExit("FAILED: Page ID must contain only digits.")
+
+          url = (
+              "https://graph.facebook.com/v26.0/"
+              + urllib.parse.quote(page_id, safe="")
+              + "?fields=id,name"
+          )
+          request = urllib.request.Request(
+              url,
+              headers={"Authorization": "Bearer " + token}
+          )
+
+          try:
+              with urllib.request.urlopen(request, timeout=20) as response:
+                  data = json.load(response)
+          except urllib.error.HTTPError as exc:
+              print("FAILED: Facebook API returned HTTP", exc.code)
+              raise SystemExit(1)
+          except Exception:
+              print("FAILED: Could not verify the Facebook connection.")
+              raise SystemExit(1)
+
+          if str(data.get("id")) != page_id:
+              raise SystemExit("FAILED: Facebook Page ID mismatch.")
+
+          print("SUCCESS: Facebook Page connection verified.")
+          print("Page name:", data.get("name", "Unknown"))
+          print("Page ID matches the configured secret.")
+          print("No Facebook posts were created.")
+          PY
+  
