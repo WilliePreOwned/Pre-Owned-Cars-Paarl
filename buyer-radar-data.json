@@ -1,6 +1,6 @@
 {
   "version": "7.4",
-  "last_scan_utc": "2026-11-01T11:38:11+00:00",
+  "last_scan_utc": "2026-11-01T17:34:31+00:00",
   "status": "completed",
   "stats": {
     "sources_checked": 1,
@@ -13,8 +13,8 @@
     "direct_feed_failures": 0
   },
   "rejection_reasons": {
-    "unrelated subject in title": 1,
-    "title does not clearly request buying a vehicle": 1
+    "title does not clearly request buying a vehicle": 1,
+    "unrelated subject in title": 1
   },
   "feed_stats": [
     {
