@@ -1,6 +1,6 @@
 {
   "version": "7.4",
-  "last_scan_utc": "2026-11-03T17:29:09+00:00",
+  "last_scan_utc": "2026-11-03T22:50:46+00:00",
   "status": "completed",
   "stats": {
     "sources_checked": 1,
@@ -13,9 +13,9 @@
     "direct_feed_failures": 0
   },
   "rejection_reasons": {
-    "older than age limit": 1,
     "unrelated subject in title": 1,
-    "title does not clearly request buying a vehicle": 1
+    "title does not clearly request buying a vehicle": 1,
+    "older than age limit": 1
   },
   "feed_stats": [
     {
