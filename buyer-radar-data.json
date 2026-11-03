@@ -1,6 +1,6 @@
 {
   "version": "7.4",
-  "last_scan_utc": "2026-11-02T19:06:38+00:00",
+  "last_scan_utc": "2026-11-03T01:57:51+00:00",
   "status": "completed",
   "stats": {
     "sources_checked": 1,
@@ -13,6 +13,7 @@
     "direct_feed_failures": 0
   },
   "rejection_reasons": {
+    "older than age limit": 1,
     "title does not clearly request buying a vehicle": 1,
     "unrelated subject in title": 1
   },
@@ -31,7 +32,8 @@
       "title": "Do you guys buy food for beggars outside takeaway restaurants?",
       "reasons": [
         "title does not clearly request buying a vehicle",
-        "unrelated subject in title"
+        "unrelated subject in title",
+        "older than age limit"
       ],
       "source": "Approved RSS 1"
     }
@@ -42,7 +44,8 @@
       "url": "https://www.reddit.com/r/capetown/comments/1wwvgqa/do_you_guys_buy_food_for_beggars_outside_takeaway/",
       "reasons": [
         "title does not clearly request buying a vehicle",
-        "unrelated subject in title"
+        "unrelated subject in title",
+        "older than age limit"
       ],
       "source": "Approved RSS 1"
     }
