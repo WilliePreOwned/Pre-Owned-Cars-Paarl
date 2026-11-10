@@ -1,11 +1,11 @@
-Willie Buyer Radar 7.4 — 2026-11-10T17:26:45+00:00
+Willie Buyer Radar 7.4 — 2026-11-10T22:46:21+00:00
 Checked 0 results across 1 feeds; matched 0; dashboard has 0 opportunities.
 
 REJECTION REASONS:
 
 DIRECT FEED FAILURES: 0 (HTTP 403/429 may indicate access restrictions; do not bypass)
 FEED RESULTS:
-Approved RSS 1: 0 items, 0 discussion links, 0 buyer-title candidates, 0 matches
+Approved RSS 1: 0 items, 0 discussion links, 0 buyer-title candidates, 0 matches, ERROR HTTPError: HTTP Error 403: Forbidden
 
 SOURCE QUALITY: Zero discussion links means search results were off-target; not evidence of zero buyers.
 

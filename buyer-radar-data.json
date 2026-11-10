@@ -1,10 +1,10 @@
 {
   "version": "7.4",
-  "last_scan_utc": "2026-11-10T17:26:45+00:00",
+  "last_scan_utc": "2026-11-10T22:46:21+00:00",
   "status": "completed",
   "stats": {
     "sources_checked": 1,
-    "sources_accessible": 1,
+    "sources_accessible": 0,
     "items_checked": 0,
     "matches_this_scan": 0,
     "new_this_scan": 0,
@@ -20,7 +20,7 @@
       "discussion_items": 0,
       "buyer_title_candidates": 0,
       "matches": 0,
-      "error": ""
+      "error": "HTTPError: HTTP Error 403: Forbidden"
     }
   ],
   "rejection_samples": [],
